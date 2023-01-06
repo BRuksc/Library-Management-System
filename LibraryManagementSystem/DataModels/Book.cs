@@ -1,0 +1,32 @@
+﻿using LibraryManagementSystem.DataModels;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LibraryManagementSystem.Models
+{
+    internal class Book
+    {
+        [Key]
+        public int Id { get; set; }
+
+        [Required]
+        public string Title { get; set; } = String.Empty;
+
+        [Required]
+        public string Author { get; set; } = String.Empty;
+
+        [Required]
+        public DateTime DateOfPublished { get; set; }
+        public bool IsBorrowed { get; set; }
+
+        [ForeignKey("libraries")]
+        public int LibraryId { get; set; }
+
+        public virtual LibDataModel? Library { get; set; }
+    }
+}
