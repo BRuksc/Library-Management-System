@@ -24,7 +24,7 @@ namespace LibraryManagementSystem.DataManagers
                 {
                     dataContext.Database.OpenConnection();
 
-                    var libs = dataContext.libraries.ToList();
+                    var libs = dataContext.Libraries.ToList();
                     lib = libs.First(x => x.Name == name);
 
                     dataContext.Database.CloseConnectionAsync();
@@ -50,7 +50,7 @@ namespace LibraryManagementSystem.DataManagers
                 {
                     dataContext.Database.OpenConnection();
 
-                    var libs = dataContext.libraries.ToList();
+                    var libs = dataContext.Libraries.ToList();
                     lib = libs.First(x => x.DunsNumber == dunsNumber);
 
                     dataContext.Database.CloseConnectionAsync();
@@ -76,7 +76,7 @@ namespace LibraryManagementSystem.DataManagers
                 {
                     dataContext.Database.OpenConnection();
 
-                    var libs = dataContext.libraries.ToList();
+                    var libs = dataContext.Libraries.ToList();
                     lib = libs.First(x => x.RegonNumber == regonNumber);
 
                     dataContext.Database.CloseConnectionAsync();
@@ -100,11 +100,11 @@ namespace LibraryManagementSystem.DataManagers
 
                 using (var dataContext = new DbsDataModel())
                 {
-                    if (dataContext.libraries != null)
+                    if (dataContext.Libraries != null)
                     {
                         dataContext.Database.OpenConnection();
 
-                        var libs = dataContext.libraries.ToList();
+                        var libs = dataContext.Libraries.ToList();
                         lib = libs.First(x => x.EmailAddress == email);
 
                         dataContext.Database.CloseConnectionAsync();
@@ -131,7 +131,7 @@ namespace LibraryManagementSystem.DataManagers
                 {
                     dataContext.Database.OpenConnection();
 
-                    var libs = dataContext.libraries.ToList();
+                    var libs = dataContext.Libraries.ToList();
                     lib = libs.First(x => x.NipNumber == nip);
 
                     dataContext.Database.CloseConnectionAsync();
@@ -157,7 +157,7 @@ namespace LibraryManagementSystem.DataManagers
                 {
                     dataContext.Database.OpenConnection();
 
-                    var libs = dataContext.libraries.ToList();
+                    var libs = dataContext.Libraries.ToList();
                     lib = libs.First(x => x.Id == Id);
 
                     dataContext.Database.CloseConnectionAsync();
@@ -182,10 +182,10 @@ namespace LibraryManagementSystem.DataManagers
                 {
                     dataContext.Database.OpenConnection();
 
-                    if (dataContext.libraries == null)
+                    if (dataContext.Libraries == null)
                         data.Id = 1;
 
-                    else data.Id = dataContext.libraries.ToList().Count() + 1;
+                    else data.Id = dataContext.Libraries.ToList().Count() + 1;
 
                     dataContext.Add(data);
                     await dataContext.SaveChangesAsync();
@@ -211,7 +211,7 @@ namespace LibraryManagementSystem.DataManagers
                 {
                     dataContext.Database.OpenConnection();
 
-                    var libs = dataContext.libraries.ToList();
+                    var libs = dataContext.Libraries.ToList();
                     var dataModel = libs.Where(x => x.Id == Id).First();
 
                     libs.Remove(dataModel);
@@ -238,7 +238,7 @@ namespace LibraryManagementSystem.DataManagers
                 {
                     dataContext.Database.OpenConnection();
 
-                    var libs = dataContext.libraries.ToList();
+                    var libs = dataContext.Libraries.ToList();
                     libs.Remove(data);
 
                     foreach (var i in libs)
@@ -276,7 +276,7 @@ namespace LibraryManagementSystem.DataManagers
                 {
                     dataContext.Database.OpenConnection();
 
-                    var libraries = dataContext.libraries.ToList();
+                    var libraries = dataContext.Libraries.ToList();
                     lib = libraries.First(x => x == data);
 
                     dataContext.Database.CloseConnectionAsync(); 

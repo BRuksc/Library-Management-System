@@ -23,7 +23,7 @@ namespace LibraryManagementSystem.MVVM.Models.ValidationSystem
 
         public MainModel()
         {
-            LibNip = "1234567890";
+            LibNip = "1111111111";
             LoginText = "Admin";
             PasswordText = "Password";
         }

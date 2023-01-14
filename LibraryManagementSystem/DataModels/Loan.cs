@@ -20,10 +20,11 @@ namespace LibraryManagementSystem.Models
         [Required]
         public DateTime MaxTerm { get; set; }
 
-        [ForeignKey("libraries")]
+        [ForeignKey("Libraries")]
         [Required]
         public int LibraryId { get; set; }
 
+        [ForeignKey("Loans")]
         [Required]
         public int BookId { get; set; }
 

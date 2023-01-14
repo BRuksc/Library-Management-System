@@ -13,6 +13,7 @@ namespace LibraryManagementSystem.DataModels
 {
     internal class LibDataModel
     {
+        #region DbData
         [Key]
         public int Id { get; set; }
 
@@ -51,11 +52,14 @@ namespace LibraryManagementSystem.DataModels
 
         [Column("ZipCode", TypeName = "int")]
         public int ZipCode { get; set; }
+        #endregion
 
+        #region Collections
         public ICollection<Admin>? Admins { get; set; }
         public ICollection<Worker>? Workers { get; set; }
         public ICollection<User>? Users { get; set; }
         public ICollection<Book>? Books { get; set; }
         public ICollection<Loan>? Loans { get; set; }
+        #endregion
     }
 }

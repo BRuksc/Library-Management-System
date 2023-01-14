@@ -17,7 +17,7 @@ namespace LibraryManagementSystem.DataModels
         [Required]
         public string Password { get; set; } = String.Empty;
 
-        [ForeignKey("libraries")]
+        [ForeignKey("Libraries")]
         public int LibraryId { get; set; }
 
         public LibDataModel? Library { get; set; }

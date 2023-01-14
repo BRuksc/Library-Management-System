@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\obj\Release\net6.0-windows\
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\obj\Release\net6.0-windows\
 LibraryManagementSystem
 none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
-D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\App.xaml
-5-1710334572
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\App.xaml
+8-1563683528
 
-49901731890
-3471869877950
-MVVM\Views\ManagementSystem\AdminWorkerWindow.xaml;MVVM\Views\ManagementSystem\UserWindow.xaml;MVVM\Views\ValidationSystem\EmailCodeVerification.xaml;MVVM\Views\ValidationSystem\MainWindow.xaml;MVVM\Views\ValidationSystem\RegisterWindow.xaml;
+56907236571
+347-1146480135
+MVVM\Views\ManagementSystem\AddingViews\AddBooksWindow.xaml;MVVM\Views\ManagementSystem\AddingViews\AddLoansWindow.xaml;MVVM\Views\ManagementSystem\AddingViews\AddUsersWindow.xaml;MVVM\Views\ManagementSystem\AdminWorkerWindow.xaml;MVVM\Views\ManagementSystem\UserWindow.xaml;MVVM\Views\ValidationSystem\EmailCodeVerification.xaml;MVVM\Views\ValidationSystem\MainWindow.xaml;MVVM\Views\ValidationSystem\RegisterWindow.xaml;
 
-True
+False
 

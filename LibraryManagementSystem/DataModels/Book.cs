@@ -24,7 +24,7 @@ namespace LibraryManagementSystem.Models
         public DateTime DateOfPublished { get; set; }
         public bool IsBorrowed { get; set; }
 
-        [ForeignKey("libraries")]
+        [ForeignKey("Libraries")]
         public int LibraryId { get; set; }
 
         public virtual LibDataModel? Library { get; set; }

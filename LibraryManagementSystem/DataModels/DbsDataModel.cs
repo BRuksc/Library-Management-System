@@ -11,15 +11,24 @@ namespace LibraryManagementSystem.DataModels
 {
     internal class DbsDataModel : DbContext
     {
+        #region ConnString
         private const string connectionString =
-            "Server=KINGA;Database=DbLibraryManager;Trusted_Connection=true;";
+            "Server=localhost;Database=DbLibraryManager;Trusted_Connection=true;";
+        #endregion
 
-        public DbSet<LibDataModel> libraries => Set<LibDataModel>();
+        #region Tables
+        public DbSet<LibDataModel> Libraries => Set<LibDataModel>();
         public DbSet<Admin> Admins => Set<Admin>();
         public DbSet<Worker> Workers => Set<Worker>();
         public DbSet<User> Users => Set<User>();
         public DbSet<Book> Books => Set<Book>();
         public DbSet<Loan> Loans => Set<Loan>();
+        #endregion
+
+        #region Methods
+        public DbsDataModel() : base()
+        {
+        }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -29,7 +38,7 @@ namespace LibraryManagementSystem.DataModels
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<LibDataModel>()
-                .ToTable("libraries", x => x.ExcludeFromMigrations()).HasKey(x => x.Id);
+                .ToTable("Libraries", x => x.ExcludeFromMigrations()).HasKey(x => x.Id);
             modelBuilder.Entity<Admin>().ToTable("Admins").HasKey(x => x.Id);
             modelBuilder.Entity<Worker>().ToTable("Workers").HasKey(x => x.Id);
             modelBuilder.Entity<User>().ToTable("Users").HasKey(x => x.Id);
@@ -44,5 +53,6 @@ namespace LibraryManagementSystem.DataModels
 
             base.OnModelCreating(modelBuilder);
         }
+        #endregion
     }
 }
