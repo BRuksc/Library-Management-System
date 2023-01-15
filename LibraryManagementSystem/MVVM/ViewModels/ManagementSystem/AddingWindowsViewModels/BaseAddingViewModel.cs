@@ -33,7 +33,7 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindows
 
         public string ManyValue
         {
-            get => model.ManyValue; 
+            get => model.ManyValue;
             set
             {
                 model.ManyValue = value;

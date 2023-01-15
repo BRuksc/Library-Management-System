@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.DataModels
 {
-    internal class Admin
+    public class Admin
     {
         [Key]
         public int Id { get; set; }

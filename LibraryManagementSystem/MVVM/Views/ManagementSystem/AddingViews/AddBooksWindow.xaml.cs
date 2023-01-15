@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
 using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels;
 
 namespace LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews
@@ -20,10 +22,10 @@ namespace LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews
     /// </summary>
     public partial class AddBooksWindow : Window
     {
-        public AddBooksWindow()
+        public AddBooksWindow(AdminViewModel viewmodel)
         {
             InitializeComponent();
-            this.DataContext = new AddingBooksViewModel();
+            DataContext = new AddingBooksViewModel(viewmodel);
         }
     }
 }

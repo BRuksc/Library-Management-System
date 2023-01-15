@@ -11,7 +11,7 @@ namespace LibraryManagementSystem.Interfaces.Data
     {
         public Task<bool> AddMany(T[] data);
         public Task<bool> RemoveMany(T[] data);
-        public List<T> SelectAll(int LibraryId);
-        public List<T> SelectAll(LibDataModel library);
+        public IEnumerable<T> SelectAll(int LibraryId);
+        public IEnumerable<T> SelectAll(LibDataModel library);
     }
 }

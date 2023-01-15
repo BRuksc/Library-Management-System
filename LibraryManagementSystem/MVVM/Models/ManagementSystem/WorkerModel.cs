@@ -1,4 +1,5 @@
 ﻿using LibraryManagementSystem.DataModels;
+using LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,11 +8,16 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
 {
-    internal class WorkerModel : BaseModel
+    public class WorkerModel : BaseModel
     {
         public WorkerModel(LibDataModel library) : base(library)
         {
             WindowTitle = "Library Management System - worker panel";
+        }
+
+        public override async Task AddTab2(dynamic viewmodel)
+        {
+            new AddBooksWindow(viewmodel).Show();
         }
     }
 }

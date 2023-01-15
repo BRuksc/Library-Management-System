@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.DataModels
 {
-    internal class LibDataModel
+    public class LibDataModel
     {
         #region DbData
         [Key]

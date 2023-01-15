@@ -11,9 +11,18 @@ using System.Windows.Controls;
 
 namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
 {
-    internal abstract partial class AdminWorkerBaseViewModel : BasicViewModel
+    public abstract partial class AdminWorkerBaseViewModel : BasicViewModel
     {
         protected dynamic model { get; set; }
+        public LibDataModel Library
+        {
+            get => model.Library;
+            set
+            {
+                model.Library = value;
+                OnPropertyChanged(nameof(Library));
+            }
+        }
 
         public string WindowTitle
         {

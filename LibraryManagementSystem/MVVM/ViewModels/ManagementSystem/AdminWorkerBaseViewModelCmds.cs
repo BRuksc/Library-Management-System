@@ -11,7 +11,7 @@ using System.Windows.Navigation;
 
 namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
 {
-    internal abstract partial class AdminWorkerBaseViewModel
+    public abstract partial class AdminWorkerBaseViewModel
     {
         protected ICommand? addTab1 = null;
         protected ICommand? addTab2 = null;
@@ -38,26 +38,6 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
             }
         }
 
-        public ICommand AddTab2
-        {
-            get
-            {
-                if (addTab2 == null)
-                {
-                    addTab2 = new RelayCommand(
-                        async (object o) =>
-                        {
-                            await model.AddTab2();
-                        },
-                        (object o) =>
-                        {
-                            return (Books != null) || (AvailableleBooks != null) || (BorrowedBooks != null)
-                            || (Books == null) || (AvailableleBooks == null) || (BorrowedBooks == null);
-                        });
-                }
-
-                return addTab2;
-            }
-        }
+        public abstract ICommand AddTab2 { get; }
     }
 }

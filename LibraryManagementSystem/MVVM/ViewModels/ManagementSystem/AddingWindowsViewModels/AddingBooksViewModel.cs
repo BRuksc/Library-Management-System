@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 using LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsModels;
+using LibraryManagementSystem.Tools;
 
 namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels
 {
@@ -40,15 +42,30 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindows
             }
         }
 
-        public AddingBooksViewModel()
+        public AddingBooksViewModel(AdminViewModel viewmodel)
         {
-            model = new AddingBooksModel();
+            model = new AddingBooksModel(viewmodel);
+        }
+
+        public AddingBooksViewModel(WorkerViewModel viewmodel)
+        {
+            model = new AddingBooksModel(viewmodel);
         }
 
         public override ICommand Add
         {
             get
             {
+                add = new RelayCommand(
+                    async (object o) =>
+                    {
+                        await model.Add();
+                    },
+                    (object o) =>
+                    {
+                        return (add == null) || (add != null);
+                    });
+
                 return add;
             }
         }

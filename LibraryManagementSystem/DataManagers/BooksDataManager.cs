@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -23,9 +24,12 @@ namespace LibraryManagementSystem.DataManagers
                 {
                     dataContext.Database.OpenConnection();
 
-                    await dataContext.AddAsync(data);
+                    dataContext.Database.ExecuteSqlRaw("SET IDENTITY_INSERT dbo.Books ON");
 
-                    await dataContext.SaveChangesAsync();
+                    data.Id = dataContext.Books.ToList().Count + 1;
+                    dataContext.Add(data);
+
+                    dataContext.SaveChanges();
                     await dataContext.Database.CloseConnectionAsync();
                 }
 
@@ -38,9 +42,31 @@ namespace LibraryManagementSystem.DataManagers
             }
         }
 
-        public Task<bool> AddMany(Book[] data)
+        public async Task<bool> AddMany(Book[] data)
         {
-            throw new NotImplementedException();
+            try
+            {
+                using (var dataContext = new DbsDataModel())
+                {
+                    dataContext.Database.OpenConnection();
+
+                    var books = dataContext.Books.ToList();
+
+                    foreach (var i in data)
+                        books.Add(i);
+
+                    await dataContext.SaveChangesAsync();
+                    await dataContext.Database.CloseConnectionAsync();
+                }
+
+                return true;
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+                return false;
+            }
         }
 
         public Task<bool> Edit(Book oldData, Book newData)
@@ -137,7 +163,7 @@ namespace LibraryManagementSystem.DataManagers
             }
         }
 
-        public List<Book> SelectAll(int LibraryId)
+        public IEnumerable<Book> SelectAll(int LibraryId)
         {
             try
             {
@@ -162,18 +188,18 @@ namespace LibraryManagementSystem.DataManagers
             }
         }
 
-        public List<Book> SelectAll(LibDataModel library)
+        public IEnumerable<Book> SelectAll(LibDataModel library)
         {
             try
             {
-                var books = new List<Book>();
+                IEnumerable<Book> books;
 
                 using (var dataContext = new DbsDataModel())
                 {
                     dataContext.Database.OpenConnection();
 
                     var allOfBooks = dataContext.Books.ToList();
-                    books = (List<Book>)allOfBooks.Where(x => x.LibraryId == library.Id);
+                    books = dataContext.Books.ToList().Where(x => x.LibraryId == library.Id);
 
                     dataContext.Database.CloseConnection();
                 }
@@ -187,7 +213,7 @@ namespace LibraryManagementSystem.DataManagers
             }
         }
 
-        public List<Book> SelectAllOfAvailable(int libraryId)
+        public IEnumerable<Book> SelectAllOfAvailable(int libraryId)
         {
             try
             {
@@ -213,7 +239,7 @@ namespace LibraryManagementSystem.DataManagers
             }
         }
 
-        public List<Book> SelectAllOfAvailable(LibDataModel library)
+        public IEnumerable<Book> SelectAllOfAvailable(LibDataModel library)
         {
             try
             {
@@ -239,7 +265,7 @@ namespace LibraryManagementSystem.DataManagers
             }
         }
 
-        public List<Book> SelectAllOfBorrowed(int libraryId)
+        public IEnumerable<Book> SelectAllOfBorrowed(int libraryId)
         {
             try
             {
@@ -265,7 +291,7 @@ namespace LibraryManagementSystem.DataManagers
             }
         }
 
-        public List<Book> SelectAllOfBorrowed(LibDataModel library)
+        public IEnumerable<Book> SelectAllOfBorrowed(LibDataModel library)
         {
             try
             {

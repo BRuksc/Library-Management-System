@@ -10,9 +10,9 @@ namespace LibraryManagementSystem.Interfaces.Data
 {
     internal interface IBookData
     {
-        public List<Book> SelectAllOfAvailable(int libraryId);
-        public List<Book> SelectAllOfAvailable(LibDataModel library);
-        public List<Book> SelectAllOfBorrowed(int libraryId);
-        public List<Book> SelectAllOfBorrowed(LibDataModel library);
+        public IEnumerable<Book> SelectAllOfAvailable(int libraryId);
+        public IEnumerable<Book> SelectAllOfAvailable(LibDataModel library);
+        public IEnumerable<Book> SelectAllOfBorrowed(int libraryId);
+        public IEnumerable<Book> SelectAllOfBorrowed(LibDataModel library);
     }
 }

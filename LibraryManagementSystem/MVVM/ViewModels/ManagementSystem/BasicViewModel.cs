@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
 {
-    internal abstract class BasicViewModel : INotifyPropertyChanged
+    public abstract class BasicViewModel : INotifyPropertyChanged
     {
         public event PropertyChangedEventHandler? PropertyChanged;
 
-        protected void OnPropertyChanged([CallerMemberName] string propertyName = "")
+        public void OnPropertyChanged([CallerMemberName] string propertyName = "")
         {
             if (PropertyChanged != null)
             {

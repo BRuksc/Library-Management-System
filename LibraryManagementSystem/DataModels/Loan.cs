@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.Models
 {
-    internal class Loan
+    public class Loan
     {
         [Key]
         public int Id { get; set; }

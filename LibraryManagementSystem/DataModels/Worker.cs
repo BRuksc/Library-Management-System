@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.DataModels
 {
-    internal class Worker
+    public class Worker
     {
         [Key]
         public int Id { get; set; }

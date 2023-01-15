@@ -8,12 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews;
+using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
 
 namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
 {
-    internal abstract class BaseModel
+    public abstract class BaseModel
     {
-        protected readonly LibDataModel library;
+        public LibDataModel Library { get; set; }
 
         public string WindowTitle { get; set; } = String.Empty;
         protected string TabSelectedBeforeAdd { get; set; } = "Users";
@@ -42,7 +43,7 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
             Loans = new LoanDataManager().SelectAll(library);
             Books = new BooksDataManager().SelectAll(library);
 
-            this.library = library;
+            this.Library = library;
         }
 
         public async Task AddTab1()
@@ -53,9 +54,6 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
             else new AddLoansWindow().Show();
         }
 
-        public async Task AddTab2()
-        {
-            new AddBooksWindow().Show();
-        }
+        public abstract Task AddTab2(dynamic viewmodel);
     }
 }

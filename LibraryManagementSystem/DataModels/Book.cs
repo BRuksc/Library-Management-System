@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.Models
 {
-    internal class Book
+    public class Book
     {
         [Key]
         public int Id { get; set; }
