@@ -12,7 +12,7 @@ using System.Windows.Controls;
 
 namespace LibraryManagementSystem.DataManagers
 {
-    internal class UsersDataManager : IDataManagement<User>, IManyRecordsOperations<User>
+    public class UsersDataManager : IDataManagement<User>, IManyRecordsOperations<User>
     {
         public async Task<bool> Add(User data)
         {

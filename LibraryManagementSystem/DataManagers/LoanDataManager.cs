@@ -11,7 +11,7 @@ using LibraryManagementSystem.Interfaces.Data;
 
 namespace LibraryManagementSystem.DataManagers
 {
-    internal class LoanDataManager : IDataManagement<Loan>, IManyRecordsOperations<Loan>
+    public class LoanDataManager : IDataManagement<Loan>, IManyRecordsOperations<Loan>
     {
         public async Task<bool> Add(Loan data)
         {

@@ -14,7 +14,7 @@ using Microsoft.Extensions.DependencyModel;
 
 namespace LibraryManagementSystem.DataManagers
 {
-    internal class BooksDataManager : IDataManagement<Book>, IManyRecordsOperations<Book>, IBookData
+    public class BooksDataManager : IDataManagement<Book>, IManyRecordsOperations<Book>, IBookData
     {
         public async Task<bool> Add(Book data)
         {

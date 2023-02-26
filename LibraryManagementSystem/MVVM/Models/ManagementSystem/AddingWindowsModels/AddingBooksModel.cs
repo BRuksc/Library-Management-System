@@ -64,6 +64,8 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
                     await new BooksDataManager().AddMany(books);
                 }
 
+                BasicVM.model.AllOfBooksChanged();
+                BasicVM.model.AllOfBorrowedBooksChanged();
                 BasicVM.OnPropertyChanged(nameof(BasicVM.Books));
 
                 return true;
