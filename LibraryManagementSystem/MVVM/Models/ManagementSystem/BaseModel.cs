@@ -41,7 +41,7 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
         {
             Users = new UsersDataManager().SelectAll(library);
             Loans = new LoanDataManager().SelectAll(library);
-            Books = new BooksDataManager().SelectAll(library);
+            Books = new BooksDataManager().SelectAll(library).ToList();
 
             this.Library = library;
         }

@@ -232,5 +232,15 @@ namespace LibraryManagementSystem.DataManagers
                 return null;
             }
         }
+
+        IEnumerable<Admin> IManyRecordsOperations<Admin>.SelectAll(int LibraryId)
+        {
+            throw new NotImplementedException();
+        }
+
+        IEnumerable<Admin> IManyRecordsOperations<Admin>.SelectAll(LibDataModel library)
+        {
+            throw new NotImplementedException();
+        }
     }
 }
