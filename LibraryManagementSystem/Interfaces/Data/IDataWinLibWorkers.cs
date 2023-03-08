@@ -10,10 +10,10 @@ namespace LibraryManagementSystem.Interfaces.Data
 
     internal interface IDataWinLibWorkers<B,L,U>
     {
-        public U Users { get; set; }
-        public L Loans { get; set; }
-        public B Books { get; set; }
-        public B AvailableBooks { get; set; }
-        public B BorrowedBooks { get; set; }
+        public U Users { get; }
+        public L Loans { get; }
+        public B Books { get; }
+        public B AvailableBooks { get; }
+        public B BorrowedBooks { get; }
     }
 }

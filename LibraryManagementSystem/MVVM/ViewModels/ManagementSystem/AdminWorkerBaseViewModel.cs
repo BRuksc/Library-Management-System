@@ -13,6 +13,7 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
 {
     public abstract partial class AdminWorkerBaseViewModel : BasicViewModel
     {
+        public dynamic Model { get => model; }
         protected dynamic model { get; set; }
         public LibDataModel Library
         {
@@ -74,12 +75,12 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
             }
         }
 
-        public List<Book> AvailableleBooks
+        public List<Book> AvailableBooks
         {
             get => model.AvailableBooks; set
             {
                 model.AvailableBooks = value;
-                OnPropertyChanged(nameof(AvailableleBooks));
+                OnPropertyChanged(nameof(AvailableBooks));
             }
         }
 

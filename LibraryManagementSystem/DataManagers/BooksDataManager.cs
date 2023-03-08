@@ -174,12 +174,12 @@ namespace LibraryManagementSystem.DataManagers
                     dataContext.Database.OpenConnection();
 
                     var allOfBooks = dataContext.Books.ToList();
-                    books = (List<Book>)allOfBooks.Where(x => x.LibraryId == LibraryId);
+                    books = allOfBooks.Where(x => x.LibraryId == LibraryId).ToList();
 
                     dataContext.Database.CloseConnection();
                 }
 
-                return books;
+                return (IEnumerable<Book>)books;
             }
 
             catch (Exception ex)
@@ -199,7 +199,7 @@ namespace LibraryManagementSystem.DataManagers
                     dataContext.Database.OpenConnection();
 
                     var allOfBooks = dataContext.Books.ToList();
-                    books = dataContext.Books.ToList().Where(x => x.LibraryId == library.Id);
+                    books = dataContext.Books.Where(x => x.LibraryId == library.Id).ToList();
 
                     dataContext.Database.CloseConnection();
                 }
@@ -224,13 +224,13 @@ namespace LibraryManagementSystem.DataManagers
                     dataContext.Database.OpenConnection();
 
                     var books = dataContext.Books.ToList();
-                    availableBooks = (List<Book>)books.Where(x => 
-                        (!x.IsBorrowed) && (x.LibraryId == libraryId));
+                    availableBooks = books.Where(x => 
+                        (!x.IsBorrowed) && (x.LibraryId == libraryId)).ToList();
 
                     dataContext.Database.CloseConnectionAsync();
                 }
 
-                return availableBooks;
+                return (IEnumerable<Book>)availableBooks;
             }
 
             catch (Exception ex)
@@ -276,8 +276,8 @@ namespace LibraryManagementSystem.DataManagers
                     dataContext.Database.OpenConnection();
 
                     var books = dataContext.Books.ToList();
-                    borrowedBooks = (List<Book>)books.Where(x => x.IsBorrowed && 
-                        (x.LibraryId == libraryId));
+                    borrowedBooks = books.Where(x => x.IsBorrowed && 
+                        (x.LibraryId == libraryId)).ToList();
 
                     dataContext.Database.CloseConnectionAsync();
                 }

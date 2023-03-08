@@ -13,7 +13,7 @@ using LibraryManagementSystem.Interfaces.Data;
 
 namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
 {
-    public abstract class BaseModel : IDataWinLibWorkers<List<Book>, List<Loan>, List<User>>, IBooksCollectionsChangeAsync<Task>
+    public abstract class BaseModel : IDataWinLibWorkers<List<Book>, List<Loan>, List<User>>
     {
         public LibDataModel Library { get; protected set; }
 
@@ -37,11 +37,11 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
             }
         }
         #region Collections
-        public List<User> Users { get; set; } = new List<User>();
-        public List<Loan> Loans { get; set; } = new List<Loan>();
-        public List<Book> Books { get; set; } = new List<Book>();
-        public List<Book> AvailableBooks { get; set; } = new List<Book>();
-        public List<Book> BorrowedBooks { get; set; } = new List<Book>();
+        public List<User> Users { get => usersDataManager.SelectAll(Library.Id); }
+        public List<Loan> Loans { get => loanDataManager.SelectAll(Library.Id); }
+        public List<Book> Books { get => booksDataManager.SelectAll(Library.Id).ToList(); }
+        public List<Book> AvailableBooks { get => booksDataManager.SelectAllOfAvailable(Library.Id).ToList(); }
+        public List<Book> BorrowedBooks { get => booksDataManager.SelectAllOfBorrowed(Library.Id).ToList();  }
         #endregion
 
         public BaseModel(LibDataModel library)
@@ -49,10 +49,6 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
             this.booksDataManager = new BooksDataManager();
             this.usersDataManager = new UsersDataManager();
             this.loanDataManager = new LoanDataManager();
-
-            Users = usersDataManager.SelectAll(library);
-            Loans = loanDataManager.SelectAll(library);
-            Books = booksDataManager.SelectAll(library).ToList();
 
             this.Library = library;
         }
@@ -66,20 +62,5 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
         }
 
         public abstract Task AddTab2(dynamic viewmodel);
-
-        public async Task AllOfBooksChanged()
-        {
-            Books = booksDataManager.SelectAll(Library.Id).ToList();
-        }
-
-        public async Task BorrowedBooksChanged()
-        {
-            BorrowedBooks = booksDataManager.SelectAllOfBorrowed(Library.Id).ToList();
-        }
-
-        public async Task AvailableBooksChanged()
-        {
-            AvailableBooks = booksDataManager.SelectAllOfAvailable(Library.Id).ToList();
-        }
     }
 }

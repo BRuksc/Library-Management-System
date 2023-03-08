@@ -14,17 +14,6 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
         public string ManyValue { get; set; } = String.Empty;
         public bool ManyValueActive { get; set; }
 
-        protected dynamic BasicVM { get; set; }
-
-        public BaseAddingModel(AdminViewModel viewmodel)
-        {
-            BasicVM = viewmodel;
-        }
-
-        public BaseAddingModel(WorkerViewModel viewmodel)
-        {
-            BasicVM = viewmodel;
-        }
 
         public abstract Task<bool> Add();
     }

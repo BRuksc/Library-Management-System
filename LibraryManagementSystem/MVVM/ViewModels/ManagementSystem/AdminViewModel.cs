@@ -30,8 +30,8 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
                         },
                         (object o) =>
                         {
-                            return (Books != null) || (AvailableleBooks != null) || (BorrowedBooks != null)
-                            || (Books == null) || (AvailableleBooks == null) || (BorrowedBooks == null);
+                            return (Books != null) || (AvailableBooks != null) || (BorrowedBooks != null)
+                            || (Books == null) || (AvailableBooks == null) || (BorrowedBooks == null);
                         });
                 }
 

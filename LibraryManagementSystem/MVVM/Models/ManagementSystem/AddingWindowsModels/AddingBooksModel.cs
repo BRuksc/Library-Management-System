@@ -5,34 +5,41 @@ using System.Text;
 using System.Threading.Tasks;
 using LibraryManagementSystem.DataManagers;
 using LibraryManagementSystem.DataModels;
+using LibraryManagementSystem.Interfaces.Data;
 using LibraryManagementSystem.Models;
 using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
 
 namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsModels
 {
-    public class AddingBooksModel : BaseAddingModel
+    public class AddingBooksModel : BaseAddingModel, IViewModelsTypes
     {
         #region Properties
         public string Title { get; set; } = String.Empty;
         public string Author { get; set; } = String.Empty;
         public string DateOfPublished { get; set; } = String.Empty;
+        public AdminViewModel? AdminVM { get; set; } = null;
+        public WorkerViewModel? WorkerVM { get; set; } = null;
         #endregion
 
         #region Methods
-        public AddingBooksModel(AdminViewModel viewmodel) : base(viewmodel)
+        public AddingBooksModel(AdminViewModel viewmodel)
         {
             Title = "Test";
             Author = "Test";
             DateOfPublished = "01-01-2001";
             IsOne = true;
+
+            AdminVM = viewmodel;
         }
 
-        public AddingBooksModel(WorkerViewModel viewmodel) : base(viewmodel)
+        public AddingBooksModel(WorkerViewModel viewmodel)
         {
             Title = "Test";
             Author = "Test";
             DateOfPublished = "01-01-2001";
             IsOne = true;
+
+            WorkerVM = viewmodel;
         }
 
         public override async Task<bool> Add()
@@ -41,13 +48,27 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
             {
                 if (IsOne)
                 {
-                    await new BooksDataManager().Add(new Book()
+                    if (AdminVM != null)
                     {
-                        Title = this.Title,
-                        Author = this.Author,
-                        DateOfPublished = Convert.ToDateTime(this.DateOfPublished),
-                        LibraryId = BasicVM.Library.Id
-                    });
+                        await new BooksDataManager().Add(new Book()
+                        {
+                            Title = this.Title,
+                            Author = this.Author,
+                            DateOfPublished = Convert.ToDateTime(this.DateOfPublished),
+                            LibraryId = AdminVM.Library.Id
+                        });
+                    }
+
+                    if (WorkerVM != null)
+                    {
+                        await new BooksDataManager().Add(new Book()
+                        {
+                            Title = this.Title,
+                            Author = this.Author,
+                            DateOfPublished = Convert.ToDateTime(this.DateOfPublished),
+                            LibraryId = WorkerVM.Library.Id
+                        });
+                    }
                 }
 
                 else
@@ -64,9 +85,19 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
                     await new BooksDataManager().AddMany(books);
                 }
 
-                BasicVM.model.AllOfBooksChanged();
-                BasicVM.model.AllOfBorrowedBooksChanged();
-                BasicVM.OnPropertyChanged(nameof(BasicVM.Books));
+                if (AdminVM != null)
+                {
+                    AdminVM.OnPropertyChanged(nameof(AdminVM.Books));
+                    AdminVM.OnPropertyChanged(nameof(AdminVM.BorrowedBooks));
+                    AdminVM.OnPropertyChanged(nameof(AdminVM.AvailableBooks));
+                }
+
+                if (WorkerVM != null)
+                {
+                    WorkerVM.OnPropertyChanged(nameof(WorkerVM.Books));
+                    WorkerVM.OnPropertyChanged(nameof(WorkerVM.BorrowedBooks));
+                    WorkerVM.OnPropertyChanged(nameof(WorkerVM.AvailableBooks));
+                }
 
                 return true;
             }

@@ -66,7 +66,7 @@
                     <ListView ItemsSource="{Binding Loans}">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn DisplayMemberBinding="{Binding Id}" Header="Id" />
+                                <GridViewColumn  DisplayMemberBinding="{Binding Id}" Header="Id" />
                                 <GridViewColumn DisplayMemberBinding="{Binding DateOfLoan}" Header="Date of loan" />
                                 <GridViewColumn DisplayMemberBinding="{Binding MaxTerm}" Header="Max term" />
                                 <GridViewColumn DisplayMemberBinding="{Binding BookId}" Header="Book's id" />
@@ -95,11 +95,11 @@
                     <ListView ItemsSource="{Binding Books}">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn DisplayMemberBinding="{Binding Id}" />
-                                <GridViewColumn DisplayMemberBinding="{Binding Title}" />
-                                <GridViewColumn DisplayMemberBinding="{Binding Author}" />
-                                <GridViewColumn DisplayMemberBinding="{Binding DateOfPublished}" />
-                                <GridViewColumn DisplayMemberBinding="{Binding IsBorrowed}" />
+                                <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}" />
+                                <GridViewColumn Header="Title" DisplayMemberBinding="{Binding Title}" />
+                                <GridViewColumn Header="Author" DisplayMemberBinding="{Binding Author}" />
+                                <GridViewColumn Header="DateOfPublished" DisplayMemberBinding="{Binding DateOfPublished}" />
+                                <GridViewColumn Header="IsBorrowed" DisplayMemberBinding="{Binding IsBorrowed}" />
                             </GridView>
                         </ListView.View>
                     </ListView>
@@ -110,11 +110,11 @@
                     <ListView ItemsSource="{Binding AvailableBooks}">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn DisplayMemberBinding="{Binding Id}" />
-                                <GridViewColumn DisplayMemberBinding="{Binding Title}" />
-                                <GridViewColumn DisplayMemberBinding="{Binding Author}" />
-                                <GridViewColumn DisplayMemberBinding="{Binding DateOfPublished}" />
-                                <GridViewColumn DisplayMemberBinding="{Binding IsBorrowed}" />
+                                <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}" />
+                                <GridViewColumn Header="Title" DisplayMemberBinding="{Binding Title}" />
+                                <GridViewColumn Header="Author" DisplayMemberBinding="{Binding Author}" />
+                                <GridViewColumn Header="DateOfPublished" DisplayMemberBinding="{Binding DateOfPublished}" />
+                                <GridViewColumn Header="IsBorrowed" DisplayMemberBinding="{Binding IsBorrowed}" />
                             </GridView>
                         </ListView.View>
                     </ListView>
@@ -124,11 +124,11 @@
                     <ListView ItemsSource="{Binding BorrowedBooks}">
                         <ListView.View>
                             <GridView>
-                                <GridViewColumn DisplayMemberBinding="{Binding Id}" />
-                                <GridViewColumn DisplayMemberBinding="{Binding Title}" />
-                                <GridViewColumn DisplayMemberBinding="{Binding Author}" />
-                                <GridViewColumn DisplayMemberBinding="{Binding DateOfPublished}" />
-                                <GridViewColumn DisplayMemberBinding="{Binding IsBorrowed}" />
+                                <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}" />
+                                <GridViewColumn Header="Title" DisplayMemberBinding="{Binding Title}" />
+                                <GridViewColumn Header="Author" DisplayMemberBinding="{Binding Author}" />
+                                <GridViewColumn Header="DateOfPublished" DisplayMemberBinding="{Binding DateOfPublished}" />
+                                <GridViewColumn Header="IsBorrowed" DisplayMemberBinding="{Binding IsBorrowed}" />
                             </GridView>
                         </ListView.View>
                     </ListView>
