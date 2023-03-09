@@ -4,9 +4,71 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews"
+        xmlns:viewmodels="clr-namespace:LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels"
         mc:Ignorable="d"
-        Title="AddUsersWindow" Height="450" Width="800">
+        d:DataContext="{d:DesignInstance Type=viewmodels:AddingUsersViewModel}"
+        Title="Add Books" Height="800" Width="500" MinHeight="300" 
+        MinWidth="250" Background="#272537">
     <Grid>
+
+        <StackPanel Grid.Row="0">
+            <Label Content="Name" />
+            <TextBox Text="{Binding Path=Name, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="1">
+            <Label Content="Surname" />
+            <TextBox Text="{Binding Path=Surname, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="2">
+            <Label Content="Email" />
+            <TextBox Text="{Binding Path=Email, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="3">
+            <Label Content="PESEL" />
+            <TextBox Text="{Binding Path=Pesel, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+        </StackPanel>
+
+        <StackPanel Grid.Row="4">
+            <Label Content="Address" />
+            <TextBox Text="{Binding Path=Address, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+        </StackPanel>
+
+        <Button Grid.Row="5" Margin="170, 30" Background="Green" Cursor="Hand" Content="Add" FontSize="20"
+                Command="{Binding Add}"/>
+
+        <Grid.Resources>
+            <Style TargetType="StackPanel">
+                <Setter Property="VerticalAlignment" Value="Center" />
+            </Style>
+            <Style TargetType="RadioButton">
+                <Setter Property="FontSize" Value="14" />
+                <Setter Property="Margin" Value="10" />
+                <Setter Property="HorizontalAlignment" Value="Center" />
+                <Setter Property="Foreground" Value="White" />
+            </Style>
+            <Style TargetType="TextBox">
+                <Setter Property="Width" Value="200" />
+                <Setter Property="Height" Value="20" />
+                <Setter Property="HorizontalAlignment" Value="Center" />
+                <Setter Property="VerticalAlignment" Value="Bottom" />
+            </Style>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="15" />
+                <Setter Property="Foreground" Value="White" />
+                <Setter Property="HorizontalAlignment" Value="Center" />
+            </Style>
+        </Grid.Resources>
         
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
     </Grid>
 </Window>

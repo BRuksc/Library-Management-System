@@ -13,7 +13,13 @@ namespace LibraryManagementSystem.DataModels
         [Key]
         public int Id { get; set; }
         [Required]
+        public bool IsActive { get; set; }
+        [Required]
         public string Email { get; set; } = String.Empty;
+        [Required]
+        public string Name { get; set; } = String.Empty;
+        [Required]
+        public string Surname { get; set; } = String.Empty;
         [Required]
         public string Password { get; set; } = String.Empty;
         [Required]

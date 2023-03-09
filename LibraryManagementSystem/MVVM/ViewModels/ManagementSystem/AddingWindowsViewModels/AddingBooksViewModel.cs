@@ -51,23 +51,5 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindows
         {
             model = new AddingBooksModel(viewmodel);
         }
-
-        public override ICommand Add
-        {
-            get
-            {
-                add = new RelayCommand(
-                    async (object o) =>
-                    {
-                        await model.Add();
-                    },
-                    (object o) =>
-                    {
-                        return (add == null) || (add != null);
-                    });
-
-                return add;
-            }
-        }
     }
 }

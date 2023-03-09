@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryManagementSystem.Tools;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -51,6 +52,22 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindows
             }
         }
 
-        public abstract ICommand Add { get; }
+        public ICommand Add
+        {
+            get
+            {
+                add = new RelayCommand(
+                    async (object o) =>
+                    {
+                        await model.Add();
+                    },
+                    (object o) =>
+                    {
+                        return (add == null) || (add != null);
+                    });
+
+                return add;
+            }
+        }
     }
 }

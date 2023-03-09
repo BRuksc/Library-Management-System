@@ -36,6 +36,7 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
                     TabSelectedBeforeAdd = (string)tabSelected.Header;
             }
         }
+
         #region Collections
         public List<User> Users { get => usersDataManager.SelectAll(Library.Id); }
         public List<Loan> Loans { get => loanDataManager.SelectAll(Library.Id); }
