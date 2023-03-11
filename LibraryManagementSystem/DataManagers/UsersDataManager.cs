@@ -22,8 +22,16 @@ namespace LibraryManagementSystem.DataManagers
                 {
                     dataContext.Database.OpenConnection();
 
+                    dataContext.Database.ExecuteSqlRaw("SET IDENTITY_INSERT dbo.Users ON");
+
                     var users = dataContext.Users.ToList();
-                    users.Add(data);
+
+                    if (users.Count > 0)
+                        data.Id = users.Max(x => x.Id) + 1;
+
+                    else data.Id = 1;
+
+                    dataContext.Add(data);
 
                     await dataContext.SaveChangesAsync();
                     await dataContext.Database.CloseConnectionAsync();
@@ -203,8 +211,7 @@ namespace LibraryManagementSystem.DataManagers
                 {
                     dataContext.Database.OpenConnection();
 
-                    var allOfUsers = dataContext.Users.ToList();
-                    users = (List<User>)allOfUsers.Where(x => x.LibraryId == LibraryId);
+                    users = dataContext.Users.Where(x => x.LibraryId == LibraryId).ToList();
 
                     dataContext.Database.CloseConnection();
                 }

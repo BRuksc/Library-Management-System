@@ -1,4 +1,5 @@
 ﻿using LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsModels;
+using LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews;
 using LibraryManagementSystem.Tools;
 using System;
 using System.Collections.Generic;
@@ -74,14 +75,14 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindows
         #endregion
 
         #region Constructors
-        public AddingUsersViewModel(AdminViewModel viewmodel)
+        public AddingUsersViewModel(AdminViewModel viewmodel, AddUsersWindow view)
         {
-            model = new AddingUsersModel(viewmodel);
+            model = new AddingUsersModel(viewmodel, view);
         }
 
-        public AddingUsersViewModel(WorkerViewModel viewmodel)
+        public AddingUsersViewModel(WorkerViewModel viewmodel, AddUsersWindow view)
         {
-            model = new AddingUsersModel(viewmodel);
+            model = new AddingUsersModel(viewmodel, view);
         }
         #endregion
     }

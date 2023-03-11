@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net6.0-windows\
+C:\Private projects\LibraryManagementSystem\BRuksc\Library-Management-System\LibraryManagementSystem\obj\Debug\net6.0-windows\
 LibraryManagementSystem
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\App.xaml
+C:\Private projects\LibraryManagementSystem\BRuksc\Library-Management-System\LibraryManagementSystem\App.xaml
 8-1563683528
 
-62598324191
+632078651509
 347-60721643
 MVVM\Views\ManagementSystem\AddingViews\AddBooksWindow.xaml;MVVM\Views\ManagementSystem\AddingViews\AddLoansWindow.xaml;MVVM\Views\ManagementSystem\AddingViews\AddUsersWindow.xaml;MVVM\Views\ManagementSystem\AdminWorkerWindow.xaml;MVVM\Views\ManagementSystem\UserWindow.xaml;MVVM\Views\ValidationSystem\EmailCodeVerification.xaml;MVVM\Views\ValidationSystem\MainWindow.xaml;MVVM\Views\ValidationSystem\RegisterWindow.xaml;
 

@@ -27,10 +27,10 @@ namespace LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews
             InitializeComponent();
 
             if (adminVM != null)
-                DataContext = new AddingUsersViewModel(adminVM);
+                DataContext = new AddingUsersViewModel(adminVM, this);
 
             if (workerVM != null)
-                DataContext = new AddingUsersViewModel(workerVM);
+                DataContext = new AddingUsersViewModel(workerVM, this);
         }
     }
 }

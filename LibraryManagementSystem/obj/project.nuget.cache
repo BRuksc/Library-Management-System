@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9l54jrhuPRlNYAn9ldjDF1fKQelX7WiuBuB9K0ktjDijhqX1lowgaNP57d/v6rVnhzaOFB5R/b1iJmdXV3fvlg==",
+  "dgSpecHash": "8XP2DGh9OcqtjsfqX2X3v+S9n8ECG39hSOYCVgsq4izMVM/pA6X+WQCyDgFS2CgXUXsxpbdxdQs63eGtFjjPaQ==",
   "success": true,
-  "projectFilePath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+  "projectFilePath": "C:\\Private projects\\LibraryManagementSystem\\BRuksc\\Library-Management-System\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\fluentemail.core\\3.0.2\\fluentemail.core.3.0.2.nupkg.sha512",

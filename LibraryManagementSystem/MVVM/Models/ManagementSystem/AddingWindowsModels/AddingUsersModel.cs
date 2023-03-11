@@ -3,6 +3,9 @@ using LibraryManagementSystem.DataModels;
 using LibraryManagementSystem.Interfaces.Data;
 using LibraryManagementSystem.Models;
 using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
+using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels;
+using LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews;
+using LibraryManagementSystem.MVVM.Models.ValidationSystem;
 using LibraryManagementSystem.Tools;
 using Microsoft.AspNetCore.SignalR.Protocol;
 using System;
@@ -25,18 +28,20 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
         public string Address { get; set; } = String.Empty;
         public AdminViewModel? AdminVM { get; set; } = null;
         public WorkerViewModel? WorkerVM { get; set; } = null;
-
+        private readonly AddUsersWindow view;
         #endregion
 
         #region Constructors
-        public AddingUsersModel(AdminViewModel viewmodel)
+        public AddingUsersModel(AdminViewModel viewmodel, AddUsersWindow view)
         {
             AdminVM = viewmodel;
+            this.view = view;
         }
 
-        public AddingUsersModel(WorkerViewModel viewmodel)
+        public AddingUsersModel(WorkerViewModel viewmodel, AddUsersWindow view)
         {
             WorkerVM = viewmodel;
+            this.view = view;
         }
         #endregion
 
@@ -45,73 +50,97 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
         {
             try
             {
-                if (AdminVM != null)
+                var validator = new AddingUsersValidation(this);
+
+                if (validator.Validate.Count == 0)
                 {
-                    var userAddedAdmin = await new UsersDataManager().Add(new User()
+                    if ((AdminVM != null) || (WorkerVM != null))
                     {
-                        Email = this.Email,
-                        Name = this.Name,
-                        Surname = this.Surname,
-                        Password = this.Password,
-                        Address = this.Address,
-                        //IsActive = false,
-                        IsActive = true,
-                        LibraryId = AdminVM.Library.Id
-                    });
+                        if (AdminVM != null)
+                        {
+                            var userAddedAdmin = await new UsersDataManager().Add(new User()
+                            {
+                                Email = this.Email,
+                                Name = this.Name,
+                                Surname = this.Surname,
+                                Password = this.Password,
+                                Address = this.Address,
+                                //IsActive = false,
+                                IsActive = true,
+                                LibraryId = AdminVM.Library.Id
+                            });
 
-                    if (userAddedAdmin)
-                        EmailSender.Send("botlibrarysystemmanagement@gmail.com",
-                            Email,
-                            "Registration confirmation in library " + WorkerVM.Library.Name,
-                            "User",
-                            "Hi, If you confirm, that you want to be registered in the " + WorkerVM.Library.Name + " as " + Name + " " + Surname + " click in the link below... ",
-                            "SECRET-CODE");
+                            if (userAddedAdmin)
+                            {
+                                /*EmailSender.Send("botlibrarysystemmanagement@gmail.com",
+                                    Email,
+                                    "Registration confirmation in library " + WorkerVM.Library.Name,
+                                    "User",
+                                    "Hi, If you confirm, that you want to be registered in the " + WorkerVM.Library.Name + " as " + Name + " " + Surname + " click in the link below... ",
+                                    "SECRET-CODE");*/
+                                var result = MessageBox.Show("User is registered, and can loan books after confirmation on the email address.", "Confirmation",
+                                    MessageBoxButton.OK, MessageBoxImage.Information);
 
-                   AdminVM.OnPropertyChanged(nameof(AdminVM));
-                }
+                                if (result == MessageBoxResult.OK)
+                                    view.Close();
+                            }
 
-                if (WorkerVM != null)
-                {
-                    var userAddedWorker = await new UsersDataManager().Add(new User()
-                    {
-                        Email = this.Email,
-                        Name = this.Name,
-                        Surname = this.Surname,
-                        Password = this.Password,
-                        Address = this.Address,
-                        //IsActive = false,
-                        IsActive = true,
-                        LibraryId = WorkerVM.Library.Id
-                    });
+                            AdminVM.OnPropertyChanged(nameof(AdminVM.Users));
+                        }
 
-                    if (userAddedWorker)
-                    {
-                        /*EmailSender.Send("botlibrarysystemmanagement@gmail.com",
-                            Email,
-                            "Registration confirmation in library " + WorkerVM.Library.Name,
-                            "User",
-                            "Hi, If you confirm, that you want to be registered in the " + WorkerVM.Library.Name + " as " + Name + " " + Surname + " click in the link below... ",
-                            "SECRET-CODE");*/
+                        if (WorkerVM != null)
+                        {
+                            var userAddedWorker = await new UsersDataManager().Add(new User()
+                            {
+                                Email = this.Email,
+                                Name = this.Name,
+                                Surname = this.Surname,
+                                Password = this.Password,
+                                Address = this.Address,
+                                //IsActive = false,
+                                IsActive = true,
+                                LibraryId = WorkerVM.Library.Id
+                            });
 
-                        var result = MessageBox.Show("User is added to system, has accept validation email for getting loans.", "Adding", 
-                            MessageBoxButton.OK, MessageBoxImage.Information);
+                            if (userAddedWorker)
+                            {
+                                /*EmailSender.Send("botlibrarysystemmanagement@gmail.com",
+                                    Email,
+                                    "Registration confirmation in library " + WorkerVM.Library.Name,
+                                    "User",
+                                    "Hi, If you confirm, that you want to be registered in the " + WorkerVM.Library.Name + " as " + Name + " " + Surname + " click in the link below... ",
+                                    "SECRET-CODE");*/
 
-                        //if (result == MessageBoxResult.OK)
-                            
+                                var result = MessageBox.Show("User is added to system, has accept validation email for getting loans.", "Adding",
+                                    MessageBoxButton.OK, MessageBoxImage.Information);
+
+                                if (result == MessageBoxResult.OK)
+                                    view.Close();
+                            }
+
+                            WorkerVM.OnPropertyChanged(nameof(WorkerVM.Users));
+                        }
                     }
 
-                    WorkerVM.OnPropertyChanged(nameof(WorkerVM));
+                    else throw new Exception();
+
+                    return true;
                 }
 
-                else throw new Exception();
+                else
+                {
+                    foreach (var i in validator.Validate)
+                        MessageBox.Show(i, "System cannot register this user", MessageBoxButton.OK, MessageBoxImage.Error);
 
-                return true;
+                    throw new Exception();
+                }
             }
 
             catch (Exception ex)
             {
                 return false;
             }
+
         }
         #endregion
     }
