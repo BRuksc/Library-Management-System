@@ -1,4 +1,7 @@
-﻿using System;
+﻿using LibraryManagementSystem.DataModels;
+using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
+using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +22,15 @@ namespace LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews
     /// </summary>
     public partial class AddUsersWindow : Window
     {
-        public AddUsersWindow()
+        public AddUsersWindow(AdminViewModel adminVM, WorkerViewModel workerVM)
         {
             InitializeComponent();
+
+            if (adminVM != null)
+                DataContext = new AddingUsersViewModel(adminVM);
+
+            if (workerVM != null)
+                DataContext = new AddingUsersViewModel(workerVM);
         }
     }
 }

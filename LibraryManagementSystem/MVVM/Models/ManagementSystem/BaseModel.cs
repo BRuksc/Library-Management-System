@@ -54,14 +54,16 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
             this.Library = library;
         }
 
-        public async Task AddTab1()
+        /*public async Task AddTab1()
         {
             if (TabSelectedBeforeAdd == "Users")
                 new AddUsersWindow().Show();
 
             else new AddLoansWindow().Show();
-        }
+        }*/
 
+        public abstract Task AddTab1(dynamic viewmodel);
+         
         public abstract Task AddTab2(dynamic viewmodel);
     }
 }

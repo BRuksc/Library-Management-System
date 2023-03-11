@@ -25,7 +25,7 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
                     addTab1 = new RelayCommand(
                         async (object o) =>
                         {
-                            await model.AddTab1();
+                            await model.AddTab1(this);
                         },
                         (object o) =>
                         {

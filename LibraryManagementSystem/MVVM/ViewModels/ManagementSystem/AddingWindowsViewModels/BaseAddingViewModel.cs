@@ -1,4 +1,5 @@
-﻿using LibraryManagementSystem.Tools;
+﻿using LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsModels;
+using LibraryManagementSystem.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,7 +12,7 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindows
     internal abstract class BaseAddingViewModel : BasicViewModel
     {
         protected dynamic model;
-        protected ICommand? add;
+        protected ICommand? add = null;
         public bool IsOne
         {
             get => model.IsOne;
@@ -56,15 +57,18 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindows
         {
             get
             {
-                add = new RelayCommand(
-                    async (object o) =>
-                    {
-                        await model.Add();
-                    },
-                    (object o) =>
-                    {
-                        return (add == null) || (add != null);
-                    });
+                if (add == null)
+                {
+                    add = new RelayCommand(
+                        async (object o) =>
+                        {
+                            await model.Add();
+                        },
+                        (object o) =>
+                        {
+                            return (add == null) || (add != null);
+                        });
+                }
 
                 return add;
             }

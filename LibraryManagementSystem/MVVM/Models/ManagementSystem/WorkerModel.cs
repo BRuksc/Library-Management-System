@@ -15,9 +15,17 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
             WindowTitle = "Library Management System - worker panel";
         }
 
+        public override async Task AddTab1(dynamic viewmodel)
+        {
+            if (TabSelectedBeforeAdd == "Users")
+                new AddUsersWindow(null, viewmodel).Show();
+
+            else new AddLoansWindow().Show();
+        }
+
         public override async Task AddTab2(dynamic viewmodel)
         {
-            new AddBooksWindow(viewmodel).Show();
+            new AddBooksWindow(null, viewmodel).Show();
         }
     }
 }

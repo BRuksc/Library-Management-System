@@ -22,10 +22,15 @@ namespace LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews
     /// </summary>
     public partial class AddBooksWindow : Window
     {
-        public AddBooksWindow(AdminViewModel viewmodel)
+        public AddBooksWindow(AdminViewModel adminVM, WorkerViewModel workerVM)
         {
             InitializeComponent();
-            DataContext = new AddingBooksViewModel(viewmodel);
+
+            if (adminVM != null)
+                DataContext = new AddingBooksViewModel(adminVM);
+
+            if (workerVM != null) 
+                DataContext = new AddingBooksViewModel(workerVM);
         }
     }
 }

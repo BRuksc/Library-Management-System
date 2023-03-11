@@ -4,11 +4,13 @@ using LibraryManagementSystem.Interfaces.Data;
 using LibraryManagementSystem.Models;
 using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
 using LibraryManagementSystem.Tools;
+using Microsoft.AspNetCore.SignalR.Protocol;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsModels
 {
@@ -23,6 +25,7 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
         public string Address { get; set; } = String.Empty;
         public AdminViewModel? AdminVM { get; set; } = null;
         public WorkerViewModel? WorkerVM { get; set; } = null;
+
         #endregion
 
         #region Constructors
@@ -82,12 +85,20 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
                     });
 
                     if (userAddedWorker)
-                        EmailSender.Send("botlibrarysystemmanagement@gmail.com",
+                    {
+                        /*EmailSender.Send("botlibrarysystemmanagement@gmail.com",
                             Email,
                             "Registration confirmation in library " + WorkerVM.Library.Name,
                             "User",
                             "Hi, If you confirm, that you want to be registered in the " + WorkerVM.Library.Name + " as " + Name + " " + Surname + " click in the link below... ",
-                            "SECRET-CODE");
+                            "SECRET-CODE");*/
+
+                        var result = MessageBox.Show("User is added to system, has accept validation email for getting loans.", "Adding", 
+                            MessageBoxButton.OK, MessageBoxImage.Information);
+
+                        //if (result == MessageBoxResult.OK)
+                            
+                    }
 
                     WorkerVM.OnPropertyChanged(nameof(WorkerVM));
                 }
