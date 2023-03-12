@@ -6229,11 +6229,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Private projects\\LibraryManagementSystem\\BRuksc\\Library-Management-System\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+      "projectUniqueName": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
       "projectName": "LibraryManagementSystem",
-      "projectPath": "C:\\Private projects\\LibraryManagementSystem\\BRuksc\\Library-Management-System\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+      "projectPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
       "packagesPath": "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\",
-      "outputPath": "C:\\Private projects\\LibraryManagementSystem\\BRuksc\\Library-Management-System\\LibraryManagementSystem\\obj\\",
+      "outputPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

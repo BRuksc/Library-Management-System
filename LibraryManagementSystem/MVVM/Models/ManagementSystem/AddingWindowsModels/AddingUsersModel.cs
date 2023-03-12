@@ -64,6 +64,7 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
                                 Name = this.Name,
                                 Surname = this.Surname,
                                 Password = this.Password,
+                                Pesel = Convert.ToInt32(this.Pesel),
                                 Address = this.Address,
                                 //IsActive = false,
                                 IsActive = true,
