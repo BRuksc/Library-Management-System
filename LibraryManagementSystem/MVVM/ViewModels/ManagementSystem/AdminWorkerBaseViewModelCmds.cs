@@ -16,6 +16,8 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
         protected ICommand? addTab1 = null;
         protected ICommand? addTab2 = null;
 
+        protected ICommand? removeTab1 = null;
+
         public ICommand AddTab1
         {
             get
@@ -38,9 +40,29 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
             }
         }
 
-        public ICommand RemoveTab1 { get; }
+        public ICommand RemoveTab1
+        {
+            get
+            {
+                if (removeTab1 == null)
+                {
+                    removeTab1 = new RelayCommand(
+                        async (object o) =>
+                        {
+                            await model.RemoveTab1(this);
+                        },
+                        (object o) =>
+                        {
+                            return (Loans != null) || (Users != null)
+                                || (Loans == null) || (Users == null);
+                        });
+                }
+
+                return removeTab1;
+            }
+        }
 
         public abstract ICommand AddTab2 { get; }
-        public abstract ICommand RemoveTab2 { get; }
+        public ICommand RemoveTab2 { get; }
     }
 }

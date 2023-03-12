@@ -37,7 +37,5 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
                 return addTab2;
             }
         }
-
-        public override ICommand RemoveTab2 => throw new NotImplementedException();
     }
 }

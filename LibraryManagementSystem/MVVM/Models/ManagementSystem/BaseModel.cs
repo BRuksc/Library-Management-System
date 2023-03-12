@@ -13,14 +13,16 @@ using LibraryManagementSystem.Interfaces.Data;
 
 namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
 {
-    public abstract class BaseModel : IDataWinLibWorkers<List<Book>, List<Loan>, List<User>>
+    public abstract class BaseModel : IDataWinLibWorkers<List<Book>, List<Loan>, List<User>>, IAddRemove<Task>
     {
         public LibDataModel Library { get; protected set; }
 
         public string WindowTitle { get; set; } = String.Empty;
         protected string TabSelectedBeforeAdd { get; set; } = "Users";
+        protected string Tab2SelectedBeforeAdd { get; set; } = "Books";
 
         protected TabItem tabSelected = new TabItem() { Header = (object)"Users" };
+        protected TabItem tab2Selected = new TabItem() { Header = (object)"Books" };
 
         protected readonly BooksDataManager booksDataManager;
         protected readonly UsersDataManager usersDataManager;
@@ -32,8 +34,19 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
             set
             {
                 tabSelected = value;
-                if (tabSelected.Header.ToString() != "+")
+                if ((tabSelected.Header.ToString() != "+") && (tabSelected.Header.ToString() != "-"))
                     TabSelectedBeforeAdd = (string)tabSelected.Header;
+            }
+        }
+
+        public TabItem Tab2Selected
+        {
+            get => tab2Selected;
+            set
+            {
+                tab2Selected = value;
+                if ((tab2Selected.Header.ToString() != "+") && (tab2Selected.Header.ToString() != "-"))
+                    Tab2SelectedBeforeAdd = (string)tab2Selected.Header;
             }
         }
 
@@ -65,5 +78,15 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
         public abstract Task AddTab1(dynamic viewmodel);
          
         public abstract Task AddTab2(dynamic viewmodel);
+
+        public async Task RemoveTab1(dynamic viewmodel)
+        {
+
+        }
+
+        public async Task RemoveTab2(dynamic viewmodel)
+        {
+
+        }
     }
 }

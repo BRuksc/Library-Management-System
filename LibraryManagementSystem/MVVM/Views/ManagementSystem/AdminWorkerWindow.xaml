@@ -97,7 +97,8 @@
                 <TextBox BorderThickness="0" Height="25" Width="340"/>
             </Border>
 
-            <TabControl Grid.Column="1" Margin="40, 80, 40, 40">
+            <TabControl Grid.Column="1" Margin="40, 80, 40, 40"
+                        SelectedItem="{Binding Path=Tab2Selected, Mode=TwoWay}">
 
                 <TabItem Header="Books">
                     <ListView ItemsSource="{Binding Books}">

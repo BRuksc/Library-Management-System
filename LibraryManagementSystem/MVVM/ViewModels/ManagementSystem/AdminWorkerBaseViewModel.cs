@@ -45,6 +45,16 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
             }
         }
 
+        public TabItem Tab2Selected
+        {
+            get => model.Tab2Selected;
+            set
+            {
+                model.Tab2Selected = value;
+                OnPropertyChanged(nameof(Tab2Selected));
+            }
+        }
+
         public List<User> Users
         {
             get => model.Users;
