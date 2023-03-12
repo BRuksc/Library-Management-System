@@ -3,9 +3,11 @@ Complete system for management libraries
 Library management system v.1.0 – technical documentation
 
 1. Assumptions
+
 	This application is going to help managment libraries. This system will be allow user to save books available in library, library users, designate and monitor leasing process for many libraries.
 
 2. Technologies
+
 	This project will be create in WPF using C#, .NET, MVVM, MS SQL Server, and Entity Framework Core for mapping database’s objects.
 
 3. Start window
