@@ -103,5 +103,55 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
                 OnPropertyChanged(nameof(BorrowedBooks));
             }
         }
+
+        public User SelectedUsers
+        {
+            get => model.SelectedUsers;
+            set
+            {
+                model.SelectedUsers = value;
+                OnPropertyChanged(nameof(SelectedUsers));
+            }
+        }
+
+        public Loan SelectedLoans
+        {
+            get => model.SelectedLoans;
+            set
+            {
+                model.SelectedLoans = value;
+                OnPropertyChanged(nameof(SelectedLoans));
+            }
+        }
+
+        public Book SelectedBooks
+        {
+            get => model.SelectedBooks; 
+            set
+            {
+                model.SelectedBooks = value;
+                OnPropertyChanged(nameof(SelectedBooks));
+            }
+        }
+
+        public Book SelectedBorrowedBooks
+        {
+            get => model.SelectedBorrowedBooks; 
+            set
+            {
+                model.SelectedBorrowedBooks = value;
+                OnPropertyChanged(nameof(SelectedBorrowedBooks));
+            }
+        }
+
+        public Book SelectedAvailableBooks
+        {
+            get => model.SelectedAvailableBooks; 
+            set
+            {
+                model.SelectedAvailableBooks = value;
+                OnPropertyChanged(nameof(SelectedAvailableBooks));
+            }
+        }
     }
 }

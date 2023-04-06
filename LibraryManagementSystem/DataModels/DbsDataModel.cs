@@ -6,6 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore.Design;
 using LibraryManagementSystem.Models;
+using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Storage;
+using LibraryManagementSystem.Tools;
 
 namespace LibraryManagementSystem.DataModels
 {
@@ -28,6 +31,8 @@ namespace LibraryManagementSystem.DataModels
         #region Methods
         public DbsDataModel() : base()
         {
+            if (!(this.GetService<IDatabaseCreator>() as RelationalDatabaseCreator).Exists())
+                new DbCreator(this).CreateDb();
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)

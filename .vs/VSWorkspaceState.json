@@ -1,16 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\LibraryManagementSystem",
-    "\\LibraryManagementSystem\\DataModels",
-    "\\LibraryManagementSystem\\MVVM",
-    "\\LibraryManagementSystem\\MVVM\\ViewModels",
-    "\\LibraryManagementSystem\\MVVM\\ViewModels\\ManagementSystem",
-    "\\LibraryManagementSystem\\MVVM\\ViewModels\\ManagementSystem\\AddingWindowsViewModels",
-    "\\LibraryManagementSystem\\MVVM\\Views",
-    "\\LibraryManagementSystem\\MVVM\\Views\\ManagementSystem",
-    "\\LibraryManagementSystem\\Tools"
+    ""
   ],
-  "SelectedNode": "\\LibraryManagementSystem\\DataManagers\\UsersDataManager.cs",
+  "SelectedNode": "\\LibraryManagementSystem.sln",
   "PreviewInSolutionExplorer": false
 }

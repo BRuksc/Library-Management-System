@@ -10,6 +10,7 @@ using System.Windows.Controls;
 using LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews;
 using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
 using LibraryManagementSystem.Interfaces.Data;
+using System.Windows;
 
 namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
 {
@@ -27,6 +28,12 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
         protected readonly BooksDataManager booksDataManager;
         protected readonly UsersDataManager usersDataManager;
         protected readonly LoanDataManager loanDataManager;
+
+        public User SelectedUser { get; set; }
+        public Loan SelectedLoans { get; set; }
+        public Book SelectedBooks { get; set; }
+        public Book SelectedBorrowedBooks { get; set; }
+        public Book SelectedAvailableBooks { get; set; }
 
         public TabItem TabSelected
         {
@@ -81,12 +88,58 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
 
         public async Task RemoveTab1(dynamic viewmodel)
         {
+            try
+            {
+                if (tabSelected.Header.ToString() == "Users")
+                {
+                    if (SelectedUser != null)
+                        await usersDataManager.Remove(SelectedUser.Id);
+                }
 
+                else if (tabSelected.Header.ToString() == "Loans")
+                {
+                    if (SelectedLoans != null)
+                        await loanDataManager.Remove(SelectedLoans.Id);
+                }
+            }
+
+            catch (Exception ex) 
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public async Task RemoveTab2(dynamic viewmodel)
         {
+            try
+            {
+                if (tab2Selected.Header.ToString() == "Books")
+                {
+                    if (SelectedUser != null)
+                    {
+                        await booksDataManager.Remove(SelectedUser.Id);
+                        viewmodel.OnPropertyChanged(nameof(viewmodel.Tab2Selected));
+                        viewmodel.OnPropertyChanged(nameof(viewmodel.Books));
+                        viewmodel.OnPropertyChanged(nameof(viewmodel.AvailableBooks));
+                        viewmodel.OnPropertyChanged(nameof(viewmodel.BorrowedBooks));
+                    }
+                }
 
+                else if (tab2Selected.Header.ToString() == "Available books")
+                {
+
+                }
+
+                else if (tab2Selected.Header.ToString() == "Borrowed books")
+                {
+                    
+                }
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

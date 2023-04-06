@@ -45,11 +45,11 @@
                 <TextBox BorderThickness="0" Height="25" Width="340"/>
             </Border>
 
-            <TabControl Margin="40, 80, 40, 40" 
+            <TabControl Margin="40, 80, 40, 40"
                         SelectedItem="{Binding Path=TabSelected, Mode=TwoWay}">
 
                 <TabItem Header="Users">
-                    <ListView ItemsSource="{Binding Users}">
+                    <ListView ItemsSource="{Binding Users}" SelectedItem="{Binding Path=SelectedUsers, Mode=TwoWay}">
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn DisplayMemberBinding="{Binding Id}" Header="Id" />
@@ -63,7 +63,7 @@
                 </TabItem>
 
                 <TabItem Header="Loans">
-                    <ListView ItemsSource="{Binding Loans}">
+                    <ListView ItemsSource="{Binding Loans}" SelectedItem="{Binding Path=SelectedLoands, Mode=TwoWay}">
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn  DisplayMemberBinding="{Binding Id}" Header="Id" />
@@ -101,7 +101,7 @@
                         SelectedItem="{Binding Path=Tab2Selected, Mode=TwoWay}">
 
                 <TabItem Header="Books">
-                    <ListView ItemsSource="{Binding Books}">
+                    <ListView ItemsSource="{Binding Books}" SelectedItem="{Binding Path=SelectedBooks, Mode=TwoWay}">
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}" />
@@ -116,7 +116,7 @@
 
                 <TabItem Header="Available books">
 
-                    <ListView ItemsSource="{Binding AvailableBooks}">
+                    <ListView ItemsSource="{Binding AvailableBooks}" SelectedItem="{Binding Path=SelectedAvailableBooks, Mode=TwoWay}">
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}" />
@@ -130,7 +130,7 @@
                 </TabItem>
                 
                 <TabItem Header="Borrowed books">
-                    <ListView ItemsSource="{Binding BorrowedBooks}">
+                    <ListView ItemsSource="{Binding BorrowedBooks}" SelectedItem="{Binding Path=SelectedBorrowedBooks, Mode=TwoWay}">
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn Header="Id" DisplayMemberBinding="{Binding Id}" />

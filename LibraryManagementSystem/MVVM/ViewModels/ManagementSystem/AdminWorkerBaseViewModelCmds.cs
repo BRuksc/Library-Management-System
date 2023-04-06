@@ -63,6 +63,12 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
         }
 
         public abstract ICommand AddTab2 { get; }
-        public ICommand RemoveTab2 { get; }
+        public ICommand RemoveTab2
+        {
+            get
+            {
+
+            }
+        }
     }
 }
