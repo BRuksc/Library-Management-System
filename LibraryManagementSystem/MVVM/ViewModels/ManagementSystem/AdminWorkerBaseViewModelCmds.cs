@@ -17,6 +17,7 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
         protected ICommand? addTab2 = null;
 
         protected ICommand? removeTab1 = null;
+        protected ICommand? removeTab2 = null;
 
         public ICommand AddTab1
         {
@@ -67,7 +68,12 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
         {
             get
             {
+                if (removeTab2 == null)
+                {
 
+                }
+
+                return removeTab2;
             }
         }
     }

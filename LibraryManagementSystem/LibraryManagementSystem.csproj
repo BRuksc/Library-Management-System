@@ -20,4 +20,10 @@
     <PackageReference Include="TSL" Version="1.0.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="LibraryManagementSystem.Interfaces">
+      <HintPath>..\LibraryManagementSystem.Interfaces\bin\Debug\net6.0\LibraryManagementSystem.Interfaces.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
