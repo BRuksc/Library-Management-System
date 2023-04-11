@@ -329,6 +329,7 @@ C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\ne
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\FluentEmail.Core.dll
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\FluentEmail.Razor.dll
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\FluentEmail.Smtp.dll
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\LibraryManagementSystem.Interfaces.dll
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Razor.Language.dll
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll

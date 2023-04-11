@@ -26,7 +26,9 @@
           "net6.0-windows"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+          "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Interfaces\\bin\\Debug\\": {},
+          "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\bin\\Debug\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
@@ -55,6 +57,10 @@
             "FluentEmail.Smtp": {
               "target": "Package",
               "version": "[3.0.2, )"
+            },
+            "LibraryManagementSystem.Interfaces": {
+              "target": "Package",
+              "version": "[1.0.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",

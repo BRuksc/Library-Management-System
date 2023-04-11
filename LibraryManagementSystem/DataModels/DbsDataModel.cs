@@ -12,7 +12,7 @@ using LibraryManagementSystem.Tools;
 
 namespace LibraryManagementSystem.DataModels
 {
-    internal class DbsDataModel : DbContext
+    public class DbsDataModel : DbContext
     {
         #region ConnString
         private const string connectionString =

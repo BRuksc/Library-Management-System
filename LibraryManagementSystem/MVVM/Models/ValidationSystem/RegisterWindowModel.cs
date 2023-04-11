@@ -9,7 +9,7 @@ using System.Windows;
 
 namespace LibraryManagementSystem.MVVM.Models.ValidationSystem
 {
-    internal class RegisterWindowModel
+    public class RegisterWindowModel
     {
         public string Address { get; set; }
 

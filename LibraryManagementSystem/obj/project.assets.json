@@ -69,6 +69,15 @@
           "lib/netstandard2.0/FluentEmail.Smtp.dll": {}
         }
       },
+      "LibraryManagementSystem.Interfaces/1.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/net6.0/LibraryManagementSystem.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net6.0/LibraryManagementSystem.Interfaces.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Mvc.Razor.Extensions/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -2145,6 +2154,17 @@
         "fluentemail.smtp.nuspec",
         "fluentemail_logo_64x64.png",
         "lib/netstandard2.0/FluentEmail.Smtp.dll"
+      ]
+    },
+    "LibraryManagementSystem.Interfaces/1.0.0": {
+      "sha512": "BJmaiLfbxdfvpHKXYBY0jofsUTL+1LwteEYkGfaziQaXPdQV3MHUsMaxwnJd2i3UFt3Ds+vvnRpp501pDASV7A==",
+      "type": "package",
+      "path": "librarymanagementsystem.interfaces/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net6.0/LibraryManagementSystem.Interfaces.dll",
+        "librarymanagementsystem.interfaces.1.0.0.nupkg.sha512",
+        "librarymanagementsystem.interfaces.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Mvc.Razor.Extensions/5.0.0": {
@@ -6213,6 +6233,7 @@
       "EntityFramework >= 6.4.4",
       "FluentEmail.Razor >= 3.0.2",
       "FluentEmail.Smtp >= 3.0.2",
+      "LibraryManagementSystem.Interfaces >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 6.0.8",
       "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.5",
       "SmtpServer >= 9.0.1",
@@ -6248,7 +6269,9 @@
         "net6.0-windows"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {}
+        "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Interfaces\\bin\\Debug\\": {},
+        "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\bin\\Debug\\": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {
@@ -6277,6 +6300,10 @@
           "FluentEmail.Smtp": {
             "target": "Package",
             "version": "[3.0.2, )"
+          },
+          "LibraryManagementSystem.Interfaces": {
+            "target": "Package",
+            "version": "[1.0.0, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

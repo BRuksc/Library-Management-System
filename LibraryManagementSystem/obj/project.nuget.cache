@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zJWCD8v4eUByOy23wnDus5b0tUtnZz47DzTrD8DO87Wij5lEhIxyJNk+R240+33nATys9Lq06AmOSNljcJ6VLg==",
+  "dgSpecHash": "GHmDy391UVKoxDJXzxqH9yUegEvwaeKkWWMMXvCwog2+w7ztpugBpbGSahJ7vnQnltQsmnePwQ7U7hBLp7Y1IQ==",
   "success": true,
   "projectFilePath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\fluentemail.core\\3.0.2\\fluentemail.core.3.0.2.nupkg.sha512",
     "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\fluentemail.razor\\3.0.2\\fluentemail.razor.3.0.2.nupkg.sha512",
     "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\fluentemail.smtp\\3.0.2\\fluentemail.smtp.3.0.2.nupkg.sha512",
+    "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\librarymanagementsystem.interfaces\\1.0.0\\librarymanagementsystem.interfaces.1.0.0.nupkg.sha512",
     "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.0\\microsoft.aspnetcore.mvc.razor.extensions.5.0.0.nupkg.sha512",
     "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\5.0.0\\microsoft.aspnetcore.razor.language.5.0.0.nupkg.sha512",
     "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.0.0\\microsoft.codeanalysis.analyzers.3.0.0.nupkg.sha512",
@@ -86,7 +87,7 @@
     "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.io.filesystem\\4.3.0\\system.io.filesystem.4.3.0.nupkg.sha512",
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
+    "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\system.io.filesystem.primitives\\4.3.0\\system.io.filesystem.primitives.4.3.0.nupkg.sha512",
     "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\system.io.pipelines\\4.7.2\\system.io.pipelines.4.7.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\system.linq\\4.3.0\\system.linq.4.3.0.nupkg.sha512",
     "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",

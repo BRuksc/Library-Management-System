@@ -1,0 +1,12 @@
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystems.DbTools\bin\Debug\net6.0-windows\LibraryManagementSystems.DbTools.deps.json
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystems.DbTools\bin\Debug\net6.0-windows\LibraryManagementSystems.DbTools.dll
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystems.DbTools\bin\Debug\net6.0-windows\LibraryManagementSystems.DbTools.pdb
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystems.DbTools\obj\Debug\net6.0-windows\LibraryManagementSystems.DbTools.csproj.AssemblyReference.cache
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystems.DbTools\obj\Debug\net6.0-windows\LibraryManagementSystems.DbTools.GeneratedMSBuildEditorConfig.editorconfig
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystems.DbTools\obj\Debug\net6.0-windows\LibraryManagementSystems.DbTools.AssemblyInfoInputs.cache
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystems.DbTools\obj\Debug\net6.0-windows\LibraryManagementSystems.DbTools.AssemblyInfo.cs
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystems.DbTools\obj\Debug\net6.0-windows\LibraryManagementSystems.DbTools.csproj.CoreCompileInputs.cache
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystems.DbTools\obj\Debug\net6.0-windows\LibraryManagementSystems.DbTools.dll
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystems.DbTools\obj\Debug\net6.0-windows\refint\LibraryManagementSystems.DbTools.dll
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystems.DbTools\obj\Debug\net6.0-windows\LibraryManagementSystems.DbTools.pdb
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystems.DbTools\obj\Debug\net6.0-windows\ref\LibraryManagementSystems.DbTools.dll

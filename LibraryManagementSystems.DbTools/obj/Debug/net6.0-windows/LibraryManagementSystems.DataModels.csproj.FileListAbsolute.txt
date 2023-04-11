@@ -1,0 +1,5 @@
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystems.DbTools\obj\Debug\net6.0-windows\LibraryManagementSystems.DataModels.csproj.AssemblyReference.cache
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystems.DbTools\obj\Debug\net6.0-windows\LibraryManagementSystems.DataModels.GeneratedMSBuildEditorConfig.editorconfig
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystems.DbTools\obj\Debug\net6.0-windows\LibraryManagementSystems.DataModels.AssemblyInfoInputs.cache
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystems.DbTools\obj\Debug\net6.0-windows\LibraryManagementSystems.DataModels.AssemblyInfo.cs
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystems.DbTools\obj\Debug\net6.0-windows\LibraryManagementSystems.DataModels.csproj.CoreCompileInputs.cache
