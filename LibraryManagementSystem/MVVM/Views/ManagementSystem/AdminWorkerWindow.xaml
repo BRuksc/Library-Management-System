@@ -49,7 +49,7 @@
                         SelectedItem="{Binding Path=TabSelected, Mode=TwoWay}">
 
                 <TabItem Header="Users">
-                    <ListView ItemsSource="{Binding Users}" SelectedItem="{Binding Path=SelectedUsers, Mode=TwoWay}">
+                    <ListView ItemsSource="{Binding Users}" SelectedItem="{Binding Path=SelectedUsers, Mode=OneWayToSource}">
                         <ListView.View>
                             <GridView>
                                 <GridViewColumn DisplayMemberBinding="{Binding Id}" Header="Id" />

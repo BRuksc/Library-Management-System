@@ -92,9 +92,9 @@ namespace LibraryManagementSystem.DataManagers
                     var users = dataContext.Users.ToList();
                     var dataModel = users.Where(x => x.Id == Id).First();
 
-                    users.Remove(dataModel);
+                    dataContext.Users.Remove(dataModel);
 
-                    await dataContext.SaveChangesAsync();
+                    dataContext.SaveChanges();
                     await dataContext.Database.CloseConnectionAsync();
                 }
 
@@ -125,7 +125,7 @@ namespace LibraryManagementSystem.DataManagers
                             i.Id--;
                     }
 
-                    await dataContext.SaveChangesAsync();
+                    dataContext.SaveChanges();
                     await dataContext.Database.CloseConnectionAsync();
                 }
 
@@ -160,7 +160,7 @@ namespace LibraryManagementSystem.DataManagers
                         }
                     }
 
-                    await dataContext.SaveChangesAsync();
+                    dataContext.SaveChanges();
                     await dataContext.Database.CloseConnectionAsync();
                 }
 

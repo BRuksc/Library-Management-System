@@ -26,8 +26,7 @@
           "net6.0-windows"
         ],
         "sources": {
-          "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Interfaces\\bin\\Debug\\": {},
-          "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\bin\\Debug\\": {},
+          "C:\\Private projects\\WeatherAPI\\WeatherAPI\\Tools\\bin\\Debug\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -61,7 +60,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }

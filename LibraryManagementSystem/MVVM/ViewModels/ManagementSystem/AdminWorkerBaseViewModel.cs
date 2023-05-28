@@ -104,17 +104,18 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
             }
         }
 
-        public User SelectedUsers
+        public User? SelectedUsers
         {
             get => model.SelectedUsers;
+
             set
             {
-                model.SelectedUsers = value;
+                model.SelectedUser = value;
                 OnPropertyChanged(nameof(SelectedUsers));
             }
         }
 
-        public Loan SelectedLoans
+        public Loan? SelectedLoans
         {
             get => model.SelectedLoans;
             set
@@ -124,7 +125,7 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
             }
         }
 
-        public Book SelectedBooks
+        public Book? SelectedBooks
         {
             get => model.SelectedBooks; 
             set
@@ -134,7 +135,7 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
             }
         }
 
-        public Book SelectedBorrowedBooks
+        public Book? SelectedBorrowedBooks
         {
             get => model.SelectedBorrowedBooks; 
             set
@@ -144,7 +145,7 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
             }
         }
 
-        public Book SelectedAvailableBooks
+        public Book? SelectedAvailableBooks
         {
             get => model.SelectedAvailableBooks; 
             set
