@@ -8,34 +8,28 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Legion\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Interfaces\\LibraryManagementSystem.Interfaces.csproj",
+      "projectUniqueName": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Interfaces\\LibraryManagementSystem.Interfaces.csproj",
       "projectName": "LibraryManagementSystem.Interfaces",
-      "projectPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Interfaces\\LibraryManagementSystem.Interfaces.csproj",
-      "packagesPath": "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\",
-      "outputPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Interfaces\\obj\\",
+      "projectPath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Interfaces\\LibraryManagementSystem.Interfaces.csproj",
+      "packagesPath": "C:\\Users\\Legion\\.nuget\\packages\\",
+      "outputPath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Interfaces\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\bogumil.ruksc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
       ],
       "sources": {
-        "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Interfaces\\bin\\Debug\\": {},
-        "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\bin\\Debug\\": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Interfaces\\bin\\Debug\\": {},
+        "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Tools\\bin\\Debug\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -69,7 +63,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

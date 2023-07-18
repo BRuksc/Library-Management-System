@@ -439,13 +439,13 @@
       },
       "LibraryManagementSystem.Interfaces/1.0.0": {
         "runtime": {
-          "lib/net6.0/LibraryManagementSystem.Interfaces.dll": {
+          "lib/net6.0-windows7.0/LibraryManagementSystem.Interfaces.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         },
         "compile": {
-          "lib/net6.0/LibraryManagementSystem.Interfaces.dll": {}
+          "lib/net6.0-windows7.0/LibraryManagementSystem.Interfaces.dll": {}
         }
       },
       "Microsoft.AspNetCore.Mvc.Razor.Extensions/5.0.0": {
@@ -3468,7 +3468,7 @@
     "LibraryManagementSystem.Interfaces/1.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-BJmaiLfbxdfvpHKXYBY0jofsUTL+1LwteEYkGfaziQaXPdQV3MHUsMaxwnJd2i3UFt3Ds+vvnRpp501pDASV7A==",
+      "sha512": "sha512-yBRECMCYH6mYtAyjuD7Jx2KPK9NhoEMkEfr/H9HczBS99/0U2diu31v4I5FLaEsCM18L/vZVEW/9hPB3DWOxow==",
       "path": "librarymanagementsystem.interfaces/1.0.0",
       "hashPath": "librarymanagementsystem.interfaces.1.0.0.nupkg.sha512"
     },
