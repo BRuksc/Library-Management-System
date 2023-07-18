@@ -61,7 +61,7 @@ namespace LibraryManagementSystem.DataManagers
 
                     loans.Remove(dataModel);
 
-                    await dataContext.SaveChangesAsync();
+                    dataContext.SaveChanges();
                     await dataContext.Database.CloseConnectionAsync();
                 }
 

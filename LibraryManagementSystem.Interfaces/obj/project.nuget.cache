@@ -1,6 +1,10 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "SqekHSLUva4IGbjikGO7SlHADeb9EDgB9vwCbMznya+jWxN6xCt5c9nDtsLXGiOAuqEXxeZ76GAee4uSJNuV/g==",
+=======
+  "dgSpecHash": "A4RrVyfvx5NrhijzHK0Qdy9o211ejsVL+2aPaYdFDhsKJEr+j/3Duj9jvV0xIiV43k6tTkZivUUorH6qA4+VqQ==",
+>>>>>>> 0f8580a365fc2bbbb128d97e70691487d486eb47
   "success": true,
   "projectFilePath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Interfaces\\LibraryManagementSystem.Interfaces.csproj",
   "expectedPackageFiles": [],

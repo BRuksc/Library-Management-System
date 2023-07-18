@@ -44,7 +44,11 @@ namespace LibraryManagementSystem {
         /// InitializeComponent
         /// </summary>
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+<<<<<<< HEAD
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.7.0")]
+=======
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.5.0")]
+>>>>>>> 0f8580a365fc2bbbb128d97e70691487d486eb47
         public void InitializeComponent() {
             
             #line 4 "..\..\..\App.xaml"
@@ -59,7 +63,11 @@ namespace LibraryManagementSystem {
         /// </summary>
         [System.STAThreadAttribute()]
         [System.Diagnostics.DebuggerNonUserCodeAttribute()]
+<<<<<<< HEAD
         [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.7.0")]
+=======
+        [System.CodeDom.Compiler.GeneratedCodeAttribute("PresentationBuildTasks", "7.0.5.0")]
+>>>>>>> 0f8580a365fc2bbbb128d97e70691487d486eb47
         public static void Main() {
             LibraryManagementSystem.App app = new LibraryManagementSystem.App();
             app.InitializeComponent();

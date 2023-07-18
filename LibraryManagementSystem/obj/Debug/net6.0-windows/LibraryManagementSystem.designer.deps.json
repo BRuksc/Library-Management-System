@@ -61,7 +61,11 @@
       },
       "LibraryManagementSystem.Interfaces/1.0.0": {
         "runtime": {
+<<<<<<< HEAD
           "lib/net6.0-windows7.0/LibraryManagementSystem.Interfaces.dll": {
+=======
+          "lib/net6.0/LibraryManagementSystem.Interfaces.dll": {
+>>>>>>> 0f8580a365fc2bbbb128d97e70691487d486eb47
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1614,7 +1618,11 @@
     "LibraryManagementSystem.Interfaces/1.0.0": {
       "type": "package",
       "serviceable": true,
+<<<<<<< HEAD
       "sha512": "sha512-yBRECMCYH6mYtAyjuD7Jx2KPK9NhoEMkEfr/H9HczBS99/0U2diu31v4I5FLaEsCM18L/vZVEW/9hPB3DWOxow==",
+=======
+      "sha512": "sha512-BJmaiLfbxdfvpHKXYBY0jofsUTL+1LwteEYkGfaziQaXPdQV3MHUsMaxwnJd2i3UFt3Ds+vvnRpp501pDASV7A==",
+>>>>>>> 0f8580a365fc2bbbb128d97e70691487d486eb47
       "path": "librarymanagementsystem.interfaces/1.0.0",
       "hashPath": "librarymanagementsystem.interfaces.1.0.0.nupkg.sha512"
     },

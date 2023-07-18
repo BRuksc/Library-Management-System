@@ -29,11 +29,11 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
         protected readonly UsersDataManager usersDataManager;
         protected readonly LoanDataManager loanDataManager;
 
-        public User SelectedUser { get; set; }
-        public Loan SelectedLoans { get; set; }
-        public Book SelectedBooks { get; set; }
-        public Book SelectedBorrowedBooks { get; set; }
-        public Book SelectedAvailableBooks { get; set; }
+        public User? SelectedUser { get; set; }
+        public Loan? SelectedLoans { get; set; }
+        public Book? SelectedBooks { get; set; }
+        public Book? SelectedBorrowedBooks { get; set; }
+        public Book? SelectedAvailableBooks { get; set; }
 
         public TabItem TabSelected
         {
@@ -62,7 +62,7 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
         public List<Loan> Loans { get => loanDataManager.SelectAll(Library.Id); }
         public List<Book> Books { get => booksDataManager.SelectAll(Library.Id).ToList(); }
         public List<Book> AvailableBooks { get => booksDataManager.SelectAllOfAvailable(Library.Id).ToList(); }
-        public List<Book> BorrowedBooks { get => booksDataManager.SelectAllOfBorrowed(Library.Id).ToList();  }
+        public List<Book> BorrowedBooks { get => booksDataManager.SelectAllOfBorrowed(Library.Id).ToList(); }
         #endregion
 
         public BaseModel(LibDataModel library)
@@ -83,7 +83,7 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
         }*/
 
         public abstract Task AddTab1(dynamic viewmodel);
-         
+
         public abstract Task AddTab2(dynamic viewmodel);
 
         public async Task RemoveTab1(dynamic viewmodel)
@@ -93,17 +93,23 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
                 if (tabSelected.Header.ToString() == "Users")
                 {
                     if (SelectedUser != null)
+                    {
                         await usersDataManager.Remove(SelectedUser.Id);
+                        viewmodel.OnPropertyChanged(viewmodel.Users);
+                    }
                 }
 
                 else if (tabSelected.Header.ToString() == "Loans")
                 {
                     if (SelectedLoans != null)
+                    {
                         await loanDataManager.Remove(SelectedLoans.Id);
+                        SelectedLoans = null;
+                    }
                 }
             }
 
-            catch (Exception ex) 
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -127,12 +133,18 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
 
                 else if (tab2Selected.Header.ToString() == "Available books")
                 {
-
+                    var book = booksDataManager.SelectById(SelectedAvailableBooks.Id);
+                    book.IsBorrowed = false;
+                    await booksDataManager.Edit(booksDataManager.SelectById(SelectedAvailableBooks.Id), book);
+                    refreshTab2(viewmodel);
                 }
 
                 else if (tab2Selected.Header.ToString() == "Borrowed books")
                 {
-                    
+                    var book = booksDataManager.SelectById(SelectedBorrowedBooks.Id);
+                    book.IsBorrowed = false;
+                    await booksDataManager.Edit(booksDataManager.SelectById(SelectedBorrowedBooks.Id), book);
+                    refreshTab2(viewmodel);
                 }
             }
 
@@ -140,6 +152,14 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void refreshTab2(dynamic viewmodel)
+        {
+            viewmodel.OnPropertyChanged(nameof(viewmodel.Tab2Selected));
+            viewmodel.OnPropertyChanged(nameof(viewmodel.Books));
+            viewmodel.OnPropertyChanged(nameof(viewmodel.AvailableBooks));
+            viewmodel.OnPropertyChanged(nameof(viewmodel.BorrowedBooks));
         }
     }
 }

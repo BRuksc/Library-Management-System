@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
 {
-    internal class UserWindowModel
+    public class UserWindowModel
     {
     }
 }
