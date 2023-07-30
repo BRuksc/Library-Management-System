@@ -1,10 +1,6 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "nhx6TIkZcilMuA5n5POMaYOQvxOB0Ulazj55QF05D/koZ4rFPASmgnt8R+0gmOcpUOsDHtF1DLmVNeWrsVFHHg==",
-=======
-  "dgSpecHash": "VYTrnBNb+0vu/jQYdr0NoTQrV8Doqyz8q1Q/skf/iveuAGNBYneqHtpr7Yy3Z4fRIqdUOJZyapF1Ue1D/Cotzw==",
->>>>>>> 0f8580a365fc2bbbb128d97e70691487d486eb47
   "success": true,
   "projectFilePath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
   "expectedPackageFiles": [
@@ -130,5 +126,12 @@
     "C:\\Users\\Legion\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\tsl\\1.0.2\\tsl.1.0.2.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
