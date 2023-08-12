@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nhx6TIkZcilMuA5n5POMaYOQvxOB0Ulazj55QF05D/koZ4rFPASmgnt8R+0gmOcpUOsDHtF1DLmVNeWrsVFHHg==",
+  "dgSpecHash": "8d47EldwWB5zBE/L+hWz0a5OmONueHrD0JxyJs6ySJBfXs3N368FNjdj0cGV+FK/8fLq+Qj0BzEkmbRk4sm/Fg==",
   "success": true,
-  "projectFilePath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+  "projectFilePath": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Legion\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\fluentemail.core\\3.0.2\\fluentemail.core.3.0.2.nupkg.sha512",
@@ -126,12 +126,5 @@
     "C:\\Users\\Legion\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\tsl\\1.0.2\\tsl.1.0.2.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\obj\Release\net6.0-windows\
+D:\Bogumił\Library-Management-System\LibraryManagementSystem\obj\Release\net6.0-windows\
 LibraryManagementSystem
 none
 false
 TRACE;RELEASE;NET;NET6_0;NETCOREAPP
-D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\App.xaml
+D:\Bogumił\Library-Management-System\LibraryManagementSystem\App.xaml
 8-1563683528
 
-54-1359626057
+66-1857149661
 348151915669
 MVVM\Views\ManagementSystem\AddingViews\AddBooksWindow.xaml;MVVM\Views\ManagementSystem\AddingViews\AddLoansWindow.xaml;MVVM\Views\ManagementSystem\AddingViews\AddUsersWindow.xaml;MVVM\Views\ManagementSystem\AdminWorkerWindow.xaml;MVVM\Views\ManagementSystem\UserWindow.xaml;MVVM\Views\ValidationSystem\EmailCodeVerification.xaml;MVVM\Views\ValidationSystem\MainWindow.xaml;MVVM\Views\ValidationSystem\RegisterWindow.xaml;
 
-False
+True
 
