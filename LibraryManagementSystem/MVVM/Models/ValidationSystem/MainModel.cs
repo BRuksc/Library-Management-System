@@ -13,7 +13,7 @@ using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
 
 namespace LibraryManagementSystem.MVVM.Models.ValidationSystem
 {
-    internal class MainModel
+    public class MainModel
     {
         public string LibNip { get; set; } = string.Empty;
 

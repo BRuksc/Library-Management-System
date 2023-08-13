@@ -54,8 +54,8 @@ namespace LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/LibraryManagementSystem;V1.0.0.0;component/mvvm/views/managementsystem/addingvie" +
-                    "ws/adduserswindow.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/LibraryManagementSystem;component/mvvm/views/managementsystem/addingviews/adduse" +
+                    "rswindow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\..\MVVM\Views\ManagementSystem\AddingViews\AddUsersWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
