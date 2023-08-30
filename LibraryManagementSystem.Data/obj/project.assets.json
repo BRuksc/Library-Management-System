@@ -5666,7 +5666,6 @@
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.devexpress.com/Jh9O8igsjDadh6v6nbxX9BNEqm5jgxACUUHMWVSGWpWGTkwxYO/api": {},
         "https://pkgs.dev.azure.com/symfoniapl/_packaging/symfonia.desktop.test02%40Local/nuget/v3/index.json": {}
       },
       "frameworks": {

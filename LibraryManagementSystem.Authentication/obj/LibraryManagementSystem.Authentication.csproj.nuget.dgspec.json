@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj": {}
+    "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Authentication\\LibraryManagementSystem.Authentication.csproj": {}
   },
   "projects": {
-    "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj": {
+    "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Authentication\\LibraryManagementSystem.Authentication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj",
-        "projectName": "LibraryManagementSystem.Data",
-        "projectPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj",
+        "projectUniqueName": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Authentication\\LibraryManagementSystem.Authentication.csproj",
+        "projectName": "LibraryManagementSystem.Authentication",
+        "projectPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Authentication\\LibraryManagementSystem.Authentication.csproj",
         "packagesPath": "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\",
-        "outputPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\obj\\",
+        "outputPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Authentication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -44,40 +44,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "EntityFramework": {
-              "target": "Package",
-              "version": "[6.4.4, )"
-            },
-            "Extended.Wpf.Toolkit": {
-              "target": "Package",
-              "version": "[4.5.0, )"
-            },
-            "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[6.0.8, )"
-            },
-            "Microsoft.EntityFrameworkCore.SqlServer": {
-              "target": "Package",
-              "version": "[6.0.5, )"
-            },
-            "Microsoft.Extensions.DependencyModel": {
-              "target": "Package",
-              "version": "[7.0.0, )"
-            },
-            "PresentationFramework": {
-              "target": "Package",
-              "version": "[4.6.0, )"
-            },
-            "System.Data.SqlClient": {
-              "target": "Package",
-              "version": "[4.8.3, )"
-            },
-            "System.Net.Security": {
-              "target": "Package",
-              "version": "[4.3.2, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",

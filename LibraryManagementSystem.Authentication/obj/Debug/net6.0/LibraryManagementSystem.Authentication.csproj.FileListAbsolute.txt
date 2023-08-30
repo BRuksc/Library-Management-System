@@ -1,0 +1,11 @@
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Authentication\bin\Debug\net6.0\LibraryManagementSystem.Authentication.deps.json
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Authentication\bin\Debug\net6.0\LibraryManagementSystem.Authentication.dll
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Authentication\bin\Debug\net6.0\LibraryManagementSystem.Authentication.pdb
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Authentication\obj\Debug\net6.0\LibraryManagementSystem.Authentication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Authentication\obj\Debug\net6.0\LibraryManagementSystem.Authentication.AssemblyInfoInputs.cache
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Authentication\obj\Debug\net6.0\LibraryManagementSystem.Authentication.AssemblyInfo.cs
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Authentication\obj\Debug\net6.0\LibraryManagementSystem.Authentication.csproj.CoreCompileInputs.cache
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Authentication\obj\Debug\net6.0\LibraryManagementSystem.Authentication.dll
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Authentication\obj\Debug\net6.0\refint\LibraryManagementSystem.Authentication.dll
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Authentication\obj\Debug\net6.0\LibraryManagementSystem.Authentication.pdb
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Authentication\obj\Debug\net6.0\ref\LibraryManagementSystem.Authentication.dll

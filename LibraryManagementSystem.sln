@@ -5,7 +5,9 @@ VisualStudioVersion = 17.2.32519.379
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagementSystem", "LibraryManagementSystem\LibraryManagementSystem.csproj", "{2B21F3BE-885F-49F3-AF39-A753F134EAC3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.Data", "LibraryManagementSystem.Data\LibraryManagementSystem.Data.csproj", "{A6872E66-372E-41D7-833E-9CBE2F1AE428}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagementSystem.Data", "LibraryManagementSystem.Data\LibraryManagementSystem.Data.csproj", "{A6872E66-372E-41D7-833E-9CBE2F1AE428}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.Authentication", "LibraryManagementSystem.Authentication\LibraryManagementSystem.Authentication.csproj", "{3D53FEF7-28D0-44AC-8A82-B8C7C0B034F4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{A6872E66-372E-41D7-833E-9CBE2F1AE428}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A6872E66-372E-41D7-833E-9CBE2F1AE428}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A6872E66-372E-41D7-833E-9CBE2F1AE428}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D53FEF7-28D0-44AC-8A82-B8C7C0B034F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D53FEF7-28D0-44AC-8A82-B8C7C0B034F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D53FEF7-28D0-44AC-8A82-B8C7C0B034F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D53FEF7-28D0-44AC-8A82-B8C7C0B034F4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
