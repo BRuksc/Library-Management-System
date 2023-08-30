@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagementSystem.Dat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.Authentication", "LibraryManagementSystem.Authentication\LibraryManagementSystem.Authentication.csproj", "{3D53FEF7-28D0-44AC-8A82-B8C7C0B034F4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.Adapter", "LibraryManagementSystem.Adapter\LibraryManagementSystem.Adapter.csproj", "{2D13C140-1286-4366-87A7-1712D8C749C2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{3D53FEF7-28D0-44AC-8A82-B8C7C0B034F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D53FEF7-28D0-44AC-8A82-B8C7C0B034F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D53FEF7-28D0-44AC-8A82-B8C7C0B034F4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D13C140-1286-4366-87A7-1712D8C749C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D13C140-1286-4366-87A7-1712D8C749C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D13C140-1286-4366-87A7-1712D8C749C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D13C140-1286-4366-87A7-1712D8C749C2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

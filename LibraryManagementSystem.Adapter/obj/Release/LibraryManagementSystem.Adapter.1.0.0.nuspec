@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>LibraryManagementSystem.Adapter</id>
+    <version>1.0.0</version>
+    <title>LibraryManagementSystem.Adapter</title>
+    <authors>LibraryManagementSystem.Adapter</authors>
+    <description>Package Description</description>
+    <repository url="https://github.com/BRuksc/Library-Management-System" />
+    <dependencies>
+      <group targetFramework="net6.0">
+        <dependency id="EntityFramework" version="6.4.4" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore" version="6.0.8" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.EntityFrameworkCore.SqlServer" version="6.0.5" exclude="Build,Analyzers" />
+        <dependency id="System.Data.SqlClient" version="4.8.3" exclude="Build,Analyzers" />
+        <dependency id="System.Net.Security" version="4.3.2" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\bin\Release\net6.0\LibraryManagementSystem.Adapter.runtimeconfig.json" target="lib\net6.0\LibraryManagementSystem.Adapter.runtimeconfig.json" />
+    <file src="C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\bin\Release\net6.0\LibraryManagementSystem.Adapter.dll" target="lib\net6.0\LibraryManagementSystem.Adapter.dll" />
+  </files>
+</package>

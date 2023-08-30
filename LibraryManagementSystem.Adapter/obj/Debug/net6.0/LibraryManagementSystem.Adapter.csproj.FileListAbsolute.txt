@@ -1,0 +1,14 @@
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\bin\Debug\net6.0\LibraryManagementSystem.Adapter.deps.json
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\bin\Debug\net6.0\LibraryManagementSystem.Adapter.runtimeconfig.json
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\bin\Debug\net6.0\LibraryManagementSystem.Adapter.dll
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\bin\Debug\net6.0\LibraryManagementSystem.Adapter.pdb
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.csproj.AssemblyReference.cache
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.GeneratedMSBuildEditorConfig.editorconfig
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.AssemblyInfoInputs.cache
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.AssemblyInfo.cs
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.csproj.CoreCompileInputs.cache
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.dll
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\refint\LibraryManagementSystem.Adapter.dll
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.pdb
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.genruntimeconfig.cache
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\ref\LibraryManagementSystem.Adapter.dll

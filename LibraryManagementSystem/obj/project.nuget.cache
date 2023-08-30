@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iOMaBrzHOHpMQVrt/nt2q+2zfFyj1b6oooYPhgmQZ5sXrB7xAB9DhMxnXhSszT2Mpfhd3pa26UCH/YLR+XMOmg==",
+  "dgSpecHash": "Fba+iy+LdaSW6KK5MjL/clLKGv/TbN0EzDoPM6benKwss/1RL+OHCUusWTQ1NijXVeIc/t7BtIZcwVa6CtIZUg==",
   "success": true,
   "projectFilePath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
   "expectedPackageFiles": [
@@ -9,6 +9,7 @@
     "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\fluentemail.core\\3.0.2\\fluentemail.core.3.0.2.nupkg.sha512",
     "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\fluentemail.razor\\3.0.2\\fluentemail.razor.3.0.2.nupkg.sha512",
     "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\fluentemail.smtp\\3.0.2\\fluentemail.smtp.3.0.2.nupkg.sha512",
+    "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\librarymanagementsystem.adapter\\1.0.0\\librarymanagementsystem.adapter.1.0.0.nupkg.sha512",
     "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\microsoft.aspnetcore.mvc.razor.extensions\\5.0.0\\microsoft.aspnetcore.mvc.razor.extensions.5.0.0.nupkg.sha512",
     "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\5.0.0\\microsoft.aspnetcore.razor.language.5.0.0.nupkg.sha512",
     "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\3.0.0\\microsoft.codeanalysis.analyzers.3.0.0.nupkg.sha512",

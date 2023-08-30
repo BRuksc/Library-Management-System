@@ -26,8 +26,8 @@
           "net6.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {},
-          "https://pkgs.dev.azure.com/symfoniapl/_packaging/symfonia.desktop.test02%40Local/nuget/v3/index.json": {}
+          "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Adapter\\bin\\Release": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {

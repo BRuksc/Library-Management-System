@@ -87,6 +87,26 @@
           }
         }
       },
+      "LibraryManagementSystem.Adapter/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5",
+          "System.Data.SqlClient": "4.8.3",
+          "System.Net.Security": "4.3.2"
+        },
+        "compile": {
+          "lib/net6.0/LibraryManagementSystem.Adapter.dll": {
+            "related": ".runtimeconfig.json"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/LibraryManagementSystem.Adapter.dll": {
+            "related": ".runtimeconfig.json"
+          }
+        }
+      },
       "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
@@ -1921,6 +1941,18 @@
         "lib/net5.0/sv/Xceed.Wpf.AvalonDock.NET5.resources.dll",
         "lib/net5.0/zh-Hans/Xceed.Wpf.AvalonDock.NET5.resources.dll",
         "tools/install.ps1"
+      ]
+    },
+    "LibraryManagementSystem.Adapter/1.0.0": {
+      "sha512": "pZc276XK7W2W+2GVx1Il6dQa/Ek7qjYSr6GmEle9MZIoQ63MhiGVEd6gxE4A6eaFJwHIECDDYH2qBh7A5YltOw==",
+      "type": "package",
+      "path": "librarymanagementsystem.adapter/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net6.0/LibraryManagementSystem.Adapter.dll",
+        "lib/net6.0/LibraryManagementSystem.Adapter.runtimeconfig.json",
+        "librarymanagementsystem.adapter.1.0.0.nupkg.sha512",
+        "librarymanagementsystem.adapter.nuspec"
       ]
     },
     "Microsoft.CSharp/4.7.0": {
@@ -5628,14 +5660,10 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "EntityFramework >= 6.4.4",
       "Extended.Wpf.Toolkit >= 4.5.0",
-      "Microsoft.EntityFrameworkCore >= 6.0.8",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.5",
+      "LibraryManagementSystem.Adapter >= 1.0.0",
       "Microsoft.Extensions.DependencyModel >= 7.0.0",
-      "PresentationFramework >= 4.6.0",
-      "System.Data.SqlClient >= 4.8.3",
-      "System.Net.Security >= 4.3.2"
+      "PresentationFramework >= 4.6.0"
     ]
   },
   "packageFolders": {
@@ -5665,8 +5693,8 @@
         "net6.0"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {},
-        "https://pkgs.dev.azure.com/symfoniapl/_packaging/symfonia.desktop.test02%40Local/nuget/v3/index.json": {}
+        "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Adapter\\bin\\Release": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
@@ -5684,21 +5712,13 @@
       "net6.0": {
         "targetAlias": "net6.0",
         "dependencies": {
-          "EntityFramework": {
-            "target": "Package",
-            "version": "[6.4.4, )"
-          },
           "Extended.Wpf.Toolkit": {
             "target": "Package",
             "version": "[4.5.0, )"
           },
-          "Microsoft.EntityFrameworkCore": {
+          "LibraryManagementSystem.Adapter": {
             "target": "Package",
-            "version": "[6.0.8, )"
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "[6.0.5, )"
+            "version": "[1.0.0, )"
           },
           "Microsoft.Extensions.DependencyModel": {
             "target": "Package",
@@ -5707,14 +5727,6 @@
           "PresentationFramework": {
             "target": "Package",
             "version": "[4.6.0, )"
-          },
-          "System.Data.SqlClient": {
-            "target": "Package",
-            "version": "[4.8.3, )"
-          },
-          "System.Net.Security": {
-            "target": "Package",
-            "version": "[4.3.2, )"
           }
         },
         "imports": [

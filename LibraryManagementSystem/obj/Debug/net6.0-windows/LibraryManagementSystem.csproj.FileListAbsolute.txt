@@ -1295,3 +1295,4 @@ C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\ne
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net6.0-windows\LibraryManagementSystem.pdb
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net6.0-windows\LibraryManagementSystem.genruntimeconfig.cache
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net6.0-windows\ref\LibraryManagementSystem.dll
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\LibraryManagementSystem.Adapter.dll

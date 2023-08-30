@@ -124,6 +124,26 @@
           "lib/netstandard2.0/FluentEmail.Smtp.dll": {}
         }
       },
+      "LibraryManagementSystem.Adapter/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "EntityFramework": "6.4.4",
+          "Microsoft.EntityFrameworkCore": "6.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5",
+          "System.Data.SqlClient": "4.8.3",
+          "System.Net.Security": "4.3.2"
+        },
+        "compile": {
+          "lib/net6.0/LibraryManagementSystem.Adapter.dll": {
+            "related": ".runtimeconfig.json"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/LibraryManagementSystem.Adapter.dll": {
+            "related": ".runtimeconfig.json"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Mvc.Razor.Extensions/5.0.0": {
         "type": "package",
         "dependencies": {
@@ -2168,14 +2188,10 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
-          "EntityFramework": "6.4.4",
           "Extended.Wpf.Toolkit": "4.5.0",
-          "Microsoft.EntityFrameworkCore": "6.0.8",
-          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.5",
+          "LibraryManagementSystem.Adapter": "1.0.0",
           "Microsoft.Extensions.DependencyModel": "7.0.0",
-          "PresentationFramework": "4.6.0",
-          "System.Data.SqlClient": "4.8.3",
-          "System.Net.Security": "4.3.2"
+          "PresentationFramework": "4.6.0"
         },
         "compile": {
           "bin/placeholder/LibraryManagementSystem.Data.dll": {}
@@ -2331,6 +2347,18 @@
         "fluentemail.smtp.nuspec",
         "fluentemail_logo_64x64.png",
         "lib/netstandard2.0/FluentEmail.Smtp.dll"
+      ]
+    },
+    "LibraryManagementSystem.Adapter/1.0.0": {
+      "sha512": "pZc276XK7W2W+2GVx1Il6dQa/Ek7qjYSr6GmEle9MZIoQ63MhiGVEd6gxE4A6eaFJwHIECDDYH2qBh7A5YltOw==",
+      "type": "package",
+      "path": "librarymanagementsystem.adapter/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net6.0/LibraryManagementSystem.Adapter.dll",
+        "lib/net6.0/LibraryManagementSystem.Adapter.runtimeconfig.json",
+        "librarymanagementsystem.adapter.1.0.0.nupkg.sha512",
+        "librarymanagementsystem.adapter.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Mvc.Razor.Extensions/5.0.0": {
@@ -6557,15 +6585,11 @@
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
-      "EntityFramework >= 6.4.4",
       "FluentEmail.Razor >= 3.0.2",
       "FluentEmail.Smtp >= 3.0.2",
+      "LibraryManagementSystem.Adapter >= 1.0.0",
       "LibraryManagementSystem.Data >= 1.0.0",
-      "Microsoft.EntityFrameworkCore >= 6.0.8",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 6.0.5",
       "SmtpServer >= 9.0.1",
-      "System.Data.SqlClient >= 4.8.3",
-      "System.Net.Security >= 4.3.2",
       "TSL >= 1.0.2"
     ]
   },
@@ -6596,8 +6620,8 @@
         "net6.0-windows"
       ],
       "sources": {
-        "https://api.nuget.org/v3/index.json": {},
-        "https://pkgs.dev.azure.com/symfoniapl/_packaging/symfonia.desktop.test02%40Local/nuget/v3/index.json": {}
+        "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Adapter\\bin\\Release": {},
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {
@@ -6619,10 +6643,6 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
-          "EntityFramework": {
-            "target": "Package",
-            "version": "[6.4.4, )"
-          },
           "FluentEmail.Razor": {
             "target": "Package",
             "version": "[3.0.2, )"
@@ -6631,25 +6651,13 @@
             "target": "Package",
             "version": "[3.0.2, )"
           },
-          "Microsoft.EntityFrameworkCore": {
+          "LibraryManagementSystem.Adapter": {
             "target": "Package",
-            "version": "[6.0.8, )"
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
-            "target": "Package",
-            "version": "[6.0.5, )"
+            "version": "[1.0.0, )"
           },
           "SmtpServer": {
             "target": "Package",
             "version": "[9.0.1, )"
-          },
-          "System.Data.SqlClient": {
-            "target": "Package",
-            "version": "[4.8.3, )"
-          },
-          "System.Net.Security": {
-            "target": "Package",
-            "version": "[4.3.2, )"
           },
           "TSL": {
             "target": "Package",
