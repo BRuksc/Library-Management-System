@@ -18,7 +18,6 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
         public string Author { get; set; } = String.Empty;
         public string DateOfPublished { get; set; } = String.Empty;
         public AdminViewModel? AdminVM { get; set; } = null;
-        public WorkerViewModel? WorkerVM { get; set; } = null;
         #endregion
 
         #region Methods
@@ -30,16 +29,6 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
             IsOne = true;
 
             AdminVM = viewmodel;
-        }
-
-        public AddingBooksModel(WorkerViewModel viewmodel)
-        {
-            Title = "Test";
-            Author = "Test";
-            DateOfPublished = "01-01-2001";
-            IsOne = true;
-
-            WorkerVM = viewmodel;
         }
 
         public override async Task<bool> Add()
@@ -59,16 +48,7 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
                         });
                     }
 
-                    if (WorkerVM != null)
-                    {
-                        await new BooksDataManager().Add(new Book()
-                        {
-                            Title = this.Title,
-                            Author = this.Author,
-                            DateOfPublished = Convert.ToDateTime(this.DateOfPublished),
-                            LibraryId = WorkerVM.Library.Id
-                        });
-                    }
+               
                 }
 
                 else
@@ -90,13 +70,6 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
                     AdminVM.OnPropertyChanged(nameof(AdminVM.Books));
                     AdminVM.OnPropertyChanged(nameof(AdminVM.BorrowedBooks));
                     AdminVM.OnPropertyChanged(nameof(AdminVM.AvailableBooks));
-                }
-
-                if (WorkerVM != null)
-                {
-                    WorkerVM.OnPropertyChanged(nameof(WorkerVM.Books));
-                    WorkerVM.OnPropertyChanged(nameof(WorkerVM.BorrowedBooks));
-                    WorkerVM.OnPropertyChanged(nameof(WorkerVM.AvailableBooks));
                 }
 
                 return true;

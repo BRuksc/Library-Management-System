@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\App.xaml
 8-1563683528
 
-45399720840
+441182207015
 3541881692099
 MVVM\Views\ManagementSystem\AddingViews\AddBooksWindow.xaml;MVVM\Views\ManagementSystem\AddingViews\AddLoansWindow.xaml;MVVM\Views\ManagementSystem\AddingViews\AddUsersWindow.xaml;MVVM\Views\ManagementSystem\AdminWorkerWindow.xaml;MVVM\Views\ManagementSystem\UserWindow.xaml;MVVM\Views\ValidationSystem\EmailCodeVerification.xaml;MVVM\Views\ValidationSystem\MainWindow.xaml;MVVM\Views\ValidationSystem\RegisterWindow.xaml;
 
-True
+False
 

@@ -1,4 +1,5 @@
-﻿using LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsModels;
+﻿using LibraryManagementSystem.Interfaces;
+using LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsModels;
 using LibraryManagementSystem.Tools;
 using System;
 using System.Collections.Generic;
@@ -9,69 +10,15 @@ using System.Windows.Input;
 
 namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels
 {
-    internal abstract class BaseAddingViewModel : BasicViewModel
+    internal abstract class BaseAddingViewModel<T> : BasicViewModel, IAddingViewModel where T : class
     {
-        protected dynamic model;
+        public abstract bool IsOne { get; set; }
+        public abstract bool IsMany { get; set; }
+        public abstract string ManyValue { get; set; }
+        public abstract bool ManyValueActive { get; set; }
+        public abstract ICommand Add { get; }
+
+        protected T model;
         protected ICommand? add = null;
-        public bool IsOne
-        {
-            get => model.IsOne;
-            set
-            {
-                model.IsOne = value;
-                OnPropertyChanged(nameof(IsOne));
-            }
-        }
-
-        public bool IsMany
-        {
-            get => model.IsMany;
-            set
-            {
-                model.IsMany = value;
-                OnPropertyChanged(nameof(IsMany));
-            }
-        }
-
-        public string ManyValue
-        {
-            get => model.ManyValue;
-            set
-            {
-                model.ManyValue = value;
-                OnPropertyChanged(nameof(ManyValue));
-            }
-        }
-
-        public bool ManyValueActive
-        {
-            get => model.ManyValueActive;
-            set
-            {
-                model.ManyValueActive = value;
-                OnPropertyChanged(nameof(ManyValueActive));
-            }
-        }
-
-        public ICommand Add
-        {
-            get
-            {
-                if (add == null)
-                {
-                    add = new RelayCommand(
-                        async (object o) =>
-                        {
-                            await model.Add();
-                        },
-                        (object o) =>
-                        {
-                            return (add == null) || (add != null);
-                        });
-                }
-
-                return add;
-            }
-        }
     }
 }

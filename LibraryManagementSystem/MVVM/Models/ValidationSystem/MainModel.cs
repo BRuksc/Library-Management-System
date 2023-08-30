@@ -123,20 +123,6 @@ namespace LibraryManagementSystem.MVVM.Models.ValidationSystem
                         win.Show();
                     }
 
-                    else if (worker != null)
-                    {
-                        ViewModelLocator.ViewModelManagementWindow = new WorkerViewModel();
-                        var win = new AdminWorkerWindow();
-
-                        win.Show();
-                    }
-
-                    else if (user != null)
-                    {
-                        var win = new UserWindow();
-                        win.Show();
-                    }
-
                     else MessageBox.Show("I cannot find user with that login data!");
                 }
 

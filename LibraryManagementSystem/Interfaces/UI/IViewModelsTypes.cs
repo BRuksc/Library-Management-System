@@ -10,6 +10,5 @@ namespace LibraryManagementSystem.Interfaces.Data
     public interface IViewModelsTypes
     {
         public AdminViewModel? AdminVM { get; set; }
-        public WorkerViewModel? WorkerVM { get; set; }
     }
 }

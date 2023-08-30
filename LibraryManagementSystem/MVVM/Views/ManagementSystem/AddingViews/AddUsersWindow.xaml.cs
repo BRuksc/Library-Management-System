@@ -22,15 +22,12 @@ namespace LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews
     /// </summary>
     public partial class AddUsersWindow : Window
     {
-        public AddUsersWindow(AdminViewModel adminVM, WorkerViewModel workerVM)
+        public AddUsersWindow(AdminViewModel adminVM)
         {
             InitializeComponent();
 
             if (adminVM != null)
                 DataContext = new AddingUsersViewModel(adminVM, this);
-
-            if (workerVM != null)
-                DataContext = new AddingUsersViewModel(workerVM, this);
         }
     }
 }

@@ -5,12 +5,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using LibraryManagementSystem.Interfaces;
 using LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsModels;
 using LibraryManagementSystem.Tools;
 
 namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels
 {
-    internal class AddingBooksViewModel : BaseAddingViewModel
+    internal class AddingBooksViewModel : BaseAddingViewModel<AddingBooksModel>
     {
         public string Title
         {
@@ -42,12 +43,51 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindows
             }
         }
 
-        public AddingBooksViewModel(AdminViewModel viewmodel)
+        public override bool IsOne
         {
-            model = new AddingBooksModel(viewmodel);
+            get => model.IsOne;
+            set
+            {
+                model.IsOne = value;
+                OnPropertyChanged(nameof(model.IsOne));
+            }
+        }
+        public override bool IsMany
+        {
+            get => model.IsMany;
+            set
+            {
+                model.IsMany = value;
+                OnPropertyChanged(nameof(IsMany));
+            }
+        }
+        public override string ManyValue
+        {
+            get => model.ManyValue;
+            set
+            {
+                model.ManyValue = value;
+                OnPropertyChanged(nameof(ManyValue));
+            }
+        }
+        public override bool ManyValueActive
+        {
+            get => model.ManyValueActive;
+            set
+            {
+                model.ManyValueActive = value;
+                OnPropertyChanged(nameof(ManyValueActive));
+            }
+        }
+        public override ICommand Add
+        {
+            get
+            {
+                return add;
+            }
         }
 
-        public AddingBooksViewModel(WorkerViewModel viewmodel)
+        public AddingBooksViewModel(AdminViewModel viewmodel)
         {
             model = new AddingBooksModel(viewmodel);
         }

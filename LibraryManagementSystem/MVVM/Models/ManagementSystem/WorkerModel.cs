@@ -18,14 +18,14 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
         public override async Task AddTab1(dynamic viewmodel)
         {
             if (TabSelectedBeforeAdd == "Users")
-                new AddUsersWindow(null, viewmodel).Show();
+                new AddUsersWindow(viewmodel).Show();
 
             else new AddLoansWindow().Show();
         }
 
         public override async Task AddTab2(dynamic viewmodel)
         {
-            new AddBooksWindow(null, viewmodel).Show();
+            new AddBooksWindow(viewmodel).Show();
         }
     }
 }

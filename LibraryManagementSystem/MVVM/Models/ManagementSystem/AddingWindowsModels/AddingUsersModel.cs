@@ -27,7 +27,6 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
         public string Pesel { get; set; } = String.Empty;
         public string Address { get; set; } = String.Empty;
         public AdminViewModel? AdminVM { get; set; } = null;
-        public WorkerViewModel? WorkerVM { get; set; } = null;
         private readonly AddUsersWindow view;
         #endregion
 
@@ -35,12 +34,6 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
         public AddingUsersModel(AdminViewModel viewmodel, AddUsersWindow view)
         {
             AdminVM = viewmodel;
-            this.view = view;
-        }
-
-        public AddingUsersModel(WorkerViewModel viewmodel, AddUsersWindow view)
-        {
-            WorkerVM = viewmodel;
             this.view = view;
         }
         #endregion
@@ -54,7 +47,7 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
 
                 if (validator.Validate.Count == 0)
                 {
-                    if ((AdminVM != null) || (WorkerVM != null))
+                    if (AdminVM != null)
                     {
                         if (AdminVM != null)
                         {
@@ -87,39 +80,6 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
                             }
 
                             AdminVM.OnPropertyChanged(nameof(AdminVM.Users));
-                        }
-
-                        if (WorkerVM != null)
-                        {
-                            var userAddedWorker = await new UsersDataManager().Add(new User()
-                            {
-                                Email = this.Email,
-                                Name = this.Name,
-                                Surname = this.Surname,
-                                Password = this.Password,
-                                Address = this.Address,
-                                //IsActive = false,
-                                IsActive = true,
-                                LibraryId = WorkerVM.Library.Id
-                            });
-
-                            if (userAddedWorker)
-                            {
-                                /*EmailSender.Send("botlibrarysystemmanagement@gmail.com",
-                                    Email,
-                                    "Registration confirmation in library " + WorkerVM.Library.Name,
-                                    "User",
-                                    "Hi, If you confirm, that you want to be registered in the " + WorkerVM.Library.Name + " as " + Name + " " + Surname + " click in the link below... ",
-                                    "SECRET-CODE");*/
-
-                                var result = MessageBox.Show("User is added to system, has accept validation email for getting loans.", "Adding",
-                                    MessageBoxButton.OK, MessageBoxImage.Information);
-
-                                if (result == MessageBoxResult.OK)
-                                    view.Close();
-                            }
-
-                            WorkerVM.OnPropertyChanged(nameof(WorkerVM.Users));
                         }
                     }
 
