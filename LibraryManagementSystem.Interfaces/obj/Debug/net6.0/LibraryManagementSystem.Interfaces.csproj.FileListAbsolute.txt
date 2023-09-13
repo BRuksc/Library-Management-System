@@ -1,5 +1,0 @@
-C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Interfaces\obj\Debug\net6.0\LibraryManagementSystem.Interfaces.csproj.AssemblyReference.cache
-C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Interfaces\obj\Debug\net6.0\LibraryManagementSystem.Interfaces.GeneratedMSBuildEditorConfig.editorconfig
-C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Interfaces\obj\Debug\net6.0\LibraryManagementSystem.Interfaces.AssemblyInfoInputs.cache
-C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Interfaces\obj\Debug\net6.0\LibraryManagementSystem.Interfaces.AssemblyInfo.cs
-C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Interfaces\obj\Debug\net6.0\LibraryManagementSystem.Interfaces.csproj.CoreCompileInputs.cache

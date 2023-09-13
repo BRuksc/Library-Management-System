@@ -1,8 +1,0 @@
-# Use an official Redis base image from Docker Hub
-FROM redis:latest
-
-# Expose the default Redis port
-EXPOSE 6379
-
-# Start the Redis server when the container starts
-CMD ["redis-server"]

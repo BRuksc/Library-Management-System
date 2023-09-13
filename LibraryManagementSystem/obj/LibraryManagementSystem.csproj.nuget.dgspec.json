@@ -1,32 +1,29 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj": {}
+    "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem\\LibraryManagementSystem.csproj": {}
   },
   "projects": {
-    "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj": {
+    "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj",
+        "projectUniqueName": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj",
         "projectName": "LibraryManagementSystem.Data",
-        "projectPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj",
-        "packagesPath": "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\",
-        "outputPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\obj\\",
+        "projectPath": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj",
+        "packagesPath": "C:\\Users\\Legion\\.nuget\\packages\\",
+        "outputPath": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Data\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\bogumil.ruksc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Adapter\\bin\\Release": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Interfaces\\bin\\Debug\\": {},
+          "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Tools\\bin\\Debug\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -78,41 +75,38 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj": {
+    "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem\\LibraryManagementSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+        "projectUniqueName": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
         "projectName": "LibraryManagementSystem",
-        "projectPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
-        "packagesPath": "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\",
-        "outputPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\obj\\",
+        "projectPath": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+        "packagesPath": "C:\\Users\\Legion\\.nuget\\packages\\",
+        "outputPath": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\bogumil.ruksc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0-windows"
         ],
         "sources": {
-          "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Adapter\\bin\\Release": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Interfaces\\bin\\Debug\\": {},
+          "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Tools\\bin\\Debug\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
             "targetAlias": "net6.0-windows",
             "projectReferences": {
-              "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj": {
-                "projectPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj"
+              "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj": {
+                "projectPath": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj"
               }
             }
           }
@@ -167,7 +161,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
