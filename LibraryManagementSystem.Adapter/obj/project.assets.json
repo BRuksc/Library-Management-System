@@ -5335,8 +5335,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Interfaces\\bin\\Debug\\": {},
-        "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Tools\\bin\\Debug\\": {},
+        "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Adapter\\bin\\Debug\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

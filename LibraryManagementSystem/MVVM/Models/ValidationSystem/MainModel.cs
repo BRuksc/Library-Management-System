@@ -1,7 +1,6 @@
 ﻿using LibraryManagementSystem.DataManagers;
 using LibraryManagementSystem.DataModels;
 using LibraryManagementSystem.Tools;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using LibraryManagementSystem.MVVM.Views.ManagementSystem;
 using System;
 using System.Collections.Generic;

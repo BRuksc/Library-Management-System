@@ -16,15 +16,8 @@
       }
     ],
     "additionalProbingPaths": [
-<<<<<<< HEAD
       "C:\\Users\\Legion\\.dotnet\\store\\|arch|\\|tfm|",
       "C:\\Users\\Legion\\.nuget\\packages"
-=======
-      "C:\\Users\\bogumil.ruksc\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\bogumil.ruksc\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
->>>>>>> 0f8580a365fc2bbbb128d97e70691487d486eb47
     ],
     "configProperties": {
       "System.Reflection.NullabilityInfoContext.IsSupported": true,

@@ -7,7 +7,6 @@ using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindowsView
 using LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews;
 using LibraryManagementSystem.MVVM.Models.ValidationSystem;
 using LibraryManagementSystem.Tools;
-using Microsoft.AspNetCore.SignalR.Protocol;
 using System;
 using System.Collections.Generic;
 using System.Linq;

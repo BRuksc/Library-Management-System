@@ -1,7 +1,12 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\LibraryManagementSystem",
+    "\\LibraryManagementSystem\\Interfaces",
+    "\\LibraryManagementSystem\\MVVM",
+    "\\LibraryManagementSystem\\MVVM\\ViewModels",
+    "\\LibraryManagementSystem\\MVVM\\ViewModels\\ManagementSystem"
   ],
-  "SelectedNode": "\\LibraryManagementSystem.sln",
+  "SelectedNode": "\\LibraryManagementSystem\\MVVM\\ViewModels\\ManagementSystem\\AdminWorkerBaseViewModel.cs",
   "PreviewInSolutionExplorer": false
 }

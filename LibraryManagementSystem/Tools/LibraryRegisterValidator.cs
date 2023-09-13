@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.Tools
 {
-    internal class LibraryRegisterValidator
+    public class LibraryRegisterValidator
     {
         private readonly RegisterWindowModel model;
 

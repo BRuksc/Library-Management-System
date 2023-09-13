@@ -19,6 +19,9 @@
     <Compile Update="MVVM\Views\ManagementSystem\AdminWorkerWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="MVVM\Views\ManagementSystem\LibrariesManagementWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="MVVM\Views\ValidationSystem\RegisterWindow.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -40,6 +43,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\Views\ManagementSystem\AdminWorkerWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MVVM\Views\ManagementSystem\LibrariesManagementWindow.xaml">
       <SubType>Designer</SubType>
     </Page>
     <Page Update="MVVM\Views\ValidationSystem\MainWindow.xaml">
