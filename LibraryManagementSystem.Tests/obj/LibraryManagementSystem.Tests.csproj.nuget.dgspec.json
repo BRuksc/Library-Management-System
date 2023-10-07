@@ -1,28 +1,32 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Tests\\LibraryManagementSystem.Tests.csproj": {}
+    "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Tests\\LibraryManagementSystem.Tests.csproj": {}
   },
   "projects": {
-    "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Tests\\LibraryManagementSystem.Tests.csproj": {
+    "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Tests\\LibraryManagementSystem.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Tests\\LibraryManagementSystem.Tests.csproj",
+        "projectUniqueName": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Tests\\LibraryManagementSystem.Tests.csproj",
         "projectName": "LibraryManagementSystem.Tests",
-        "projectPath": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Tests\\LibraryManagementSystem.Tests.csproj",
-        "packagesPath": "C:\\Users\\Legion\\.nuget\\packages\\",
-        "outputPath": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Tests\\obj\\",
+        "projectPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Tests\\LibraryManagementSystem.Tests.csproj",
+        "packagesPath": "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\",
+        "outputPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Tests\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\bogumil.ruksc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Adapter\\bin\\Debug\\": {},
+          "c:\\private projects\\librarymanagementsystem\\librarymanagementsystem.adapter\\bin\\release\\net6.0\\publish": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -82,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
         }
       }
     }

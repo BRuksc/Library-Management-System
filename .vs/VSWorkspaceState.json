@@ -2,11 +2,9 @@
   "ExpandedNodes": [
     "",
     "\\LibraryManagementSystem",
-    "\\LibraryManagementSystem\\Interfaces",
-    "\\LibraryManagementSystem\\MVVM",
-    "\\LibraryManagementSystem\\MVVM\\ViewModels",
-    "\\LibraryManagementSystem\\MVVM\\ViewModels\\ManagementSystem"
+    "\\LibraryManagementSystem.Authentication",
+    "\\LibraryManagementSystem.Tests"
   ],
-  "SelectedNode": "\\LibraryManagementSystem\\MVVM\\ViewModels\\ManagementSystem\\AdminWorkerBaseViewModel.cs",
+  "SelectedNode": "\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
   "PreviewInSolutionExplorer": false
 }

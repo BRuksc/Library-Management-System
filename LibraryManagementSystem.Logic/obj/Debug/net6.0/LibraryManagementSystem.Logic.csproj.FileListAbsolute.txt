@@ -1,0 +1,5 @@
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\LibraryManagementSystem.Logic.csproj.AssemblyReference.cache
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\LibraryManagementSystem.Logic.GeneratedMSBuildEditorConfig.editorconfig
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\LibraryManagementSystem.Logic.AssemblyInfoInputs.cache
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\LibraryManagementSystem.Logic.AssemblyInfo.cs
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\LibraryManagementSystem.Logic.csproj.CoreCompileInputs.cache

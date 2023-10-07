@@ -1318,3 +1318,5 @@ D:\Bogumił\Library-Management-System\LibraryManagementSystem\obj\Debug\net6.0-w
 D:\Bogumił\Library-Management-System\LibraryManagementSystem\obj\Debug\net6.0-windows\ref\LibraryManagementSystem.dll
 D:\Bogumił\Library-Management-System\LibraryManagementSystem\obj\Debug\net6.0-windows\MVVM\Views\ManagementSystem\LibrariesManagementWindow.g.cs
 D:\Bogumił\Library-Management-System\LibraryManagementSystem\obj\Debug\net6.0-windows\MVVM\Views\ManagementSystem\LibrariesManagementWindow.baml
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net6.0-windows\MVVM\Views\ManagementSystem\LibrariesManagementWindow.g.cs
+C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net6.0-windows\MVVM\Views\ManagementSystem\LibrariesManagementWindow.baml
