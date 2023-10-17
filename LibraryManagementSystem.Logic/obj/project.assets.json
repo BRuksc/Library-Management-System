@@ -107,6 +107,25 @@
           }
         }
       },
+      "LibraryManagementSystem.Data/1.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Extended.Wpf.Toolkit": "4.5.0",
+          "LibraryManagementSystem.Adapter": "1.0.0",
+          "Microsoft.Extensions.DependencyModel": "7.0.0",
+          "PresentationFramework": "4.6.0"
+        },
+        "compile": {
+          "lib/net6.0/LibraryManagementSystem.Data.dll": {
+            "related": ".runtimeconfig.json"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/LibraryManagementSystem.Data.dll": {
+            "related": ".runtimeconfig.json"
+          }
+        }
+      },
       "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
@@ -1833,20 +1852,14 @@
           }
         }
       },
-      "LibraryManagementSystem.Data/1.0.0": {
+      "LibraryManagementSystem.AddingViewsAdapter/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Extended.Wpf.Toolkit": "4.5.0",
-          "LibraryManagementSystem.Adapter": "1.0.0",
-          "Microsoft.Extensions.DependencyModel": "7.0.0",
-          "PresentationFramework": "4.6.0"
-        },
         "compile": {
-          "bin/placeholder/LibraryManagementSystem.Data.dll": {}
+          "bin/placeholder/LibraryManagementSystem.AddingViewsAdapter.dll": {}
         },
         "runtime": {
-          "bin/placeholder/LibraryManagementSystem.Data.dll": {}
+          "bin/placeholder/LibraryManagementSystem.AddingViewsAdapter.dll": {}
         }
       }
     }
@@ -1960,7 +1973,7 @@
       ]
     },
     "LibraryManagementSystem.Adapter/1.0.0": {
-      "sha512": "pZc276XK7W2W+2GVx1Il6dQa/Ek7qjYSr6GmEle9MZIoQ63MhiGVEd6gxE4A6eaFJwHIECDDYH2qBh7A5YltOw==",
+      "sha512": "JUO41qHuBrG3J4yT5DH5m5oz1jKuhmmRvdE+q3sdLeqvLMupQ0nOVcKFF1RB/PO+vappQCkhOgeGEehzqp6juQ==",
       "type": "package",
       "path": "librarymanagementsystem.adapter/1.0.0",
       "files": [
@@ -1969,6 +1982,18 @@
         "lib/net6.0/LibraryManagementSystem.Adapter.runtimeconfig.json",
         "librarymanagementsystem.adapter.1.0.0.nupkg.sha512",
         "librarymanagementsystem.adapter.nuspec"
+      ]
+    },
+    "LibraryManagementSystem.Data/1.0.0": {
+      "sha512": "ccUKPvbst6Nmd3sI/4vdIWrwgQkLkP/sL36f3UUR49C5izUC5h7Y9FPhfjlF7vcynDxD2ih90n61rL3zO8gzAw==",
+      "type": "package",
+      "path": "librarymanagementsystem.data/1.0.0",
+      "files": [
+        ".nupkg.metadata",
+        "lib/net6.0/LibraryManagementSystem.Data.dll",
+        "lib/net6.0/LibraryManagementSystem.Data.runtimeconfig.json",
+        "librarymanagementsystem.data.1.0.0.nupkg.sha512",
+        "librarymanagementsystem.data.nuspec"
       ]
     },
     "Microsoft.CSharp/4.7.0": {
@@ -5673,54 +5698,47 @@
         "version.txt"
       ]
     },
-    "LibraryManagementSystem.Data/1.0.0": {
+    "LibraryManagementSystem.AddingViewsAdapter/1.0.0": {
       "type": "project",
-      "path": "../LibraryManagementSystem.Data/LibraryManagementSystem.Data.csproj",
-      "msbuildProject": "../LibraryManagementSystem.Data/LibraryManagementSystem.Data.csproj"
+      "path": "../LibraryManagementSystem.AddingViewsAdapter/LibraryManagementSystem.AddingViewsAdapter.csproj",
+      "msbuildProject": "../LibraryManagementSystem.AddingViewsAdapter/LibraryManagementSystem.AddingViewsAdapter.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "LibraryManagementSystem.Adapter >= 1.0.0",
+      "LibraryManagementSystem.AddingViewsAdapter >= 1.0.0",
       "LibraryManagementSystem.Data >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Legion\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Logic\\LibraryManagementSystem.Logic.csproj",
+      "projectUniqueName": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Logic\\LibraryManagementSystem.Logic.csproj",
       "projectName": "LibraryManagementSystem.Logic",
-      "projectPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Logic\\LibraryManagementSystem.Logic.csproj",
-      "packagesPath": "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\",
-      "outputPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Logic\\obj\\",
+      "projectPath": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Logic\\LibraryManagementSystem.Logic.csproj",
+      "packagesPath": "C:\\Users\\Legion\\.nuget\\packages\\",
+      "outputPath": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Logic\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\bogumil.ruksc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "c:\\private projects\\librarymanagementsystem\\librarymanagementsystem.adapter\\bin\\release\\net6.0\\publish": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem\\bin\\Debug\\": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj": {
-              "projectPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj"
+            "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.AddingViewsAdapter\\LibraryManagementSystem.AddingViewsAdapter.csproj": {
+              "projectPath": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.AddingViewsAdapter\\LibraryManagementSystem.AddingViewsAdapter.csproj"
             }
           }
         }
@@ -5736,6 +5754,10 @@
         "targetAlias": "net6.0",
         "dependencies": {
           "LibraryManagementSystem.Adapter": {
+            "target": "Package",
+            "version": "[1.0.0, )"
+          },
+          "LibraryManagementSystem.Data": {
             "target": "Package",
             "version": "[1.0.0, )"
           }
@@ -5756,7 +5778,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   },
