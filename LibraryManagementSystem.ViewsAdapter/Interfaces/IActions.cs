@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.ViewsAdapter.Interfaces
 {
-    public interface IActions
+    public interface IActions<T>
     {
+        public T View { get; }
         public void Show();
         public void Hide();
     }

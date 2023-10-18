@@ -9,10 +9,6 @@
 	</PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Adapters\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="LibraryManagementSystem" Version="1.0.0" />
     <PackageReference Include="LibraryManagementSystem.Adapter" Version="1.0.0" />
   </ItemGroup>
