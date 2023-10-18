@@ -1,0 +1,5 @@
+D:\Bogumił\Library-Management-System\LibraryManagementSystem.ViewsAdapter\obj\Debug\net6.0-windows\LibraryManagementSystem.ViewsAdapter.csproj.AssemblyReference.cache
+D:\Bogumił\Library-Management-System\LibraryManagementSystem.ViewsAdapter\obj\Debug\net6.0-windows\LibraryManagementSystem.ViewsAdapter.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bogumił\Library-Management-System\LibraryManagementSystem.ViewsAdapter\obj\Debug\net6.0-windows\LibraryManagementSystem.ViewsAdapter.AssemblyInfoInputs.cache
+D:\Bogumił\Library-Management-System\LibraryManagementSystem.ViewsAdapter\obj\Debug\net6.0-windows\LibraryManagementSystem.ViewsAdapter.AssemblyInfo.cs
+D:\Bogumił\Library-Management-System\LibraryManagementSystem.ViewsAdapter\obj\Debug\net6.0-windows\LibraryManagementSystem.ViewsAdapter.csproj.CoreCompileInputs.cache

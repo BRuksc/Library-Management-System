@@ -1,0 +1,75 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.ViewsAdapter\\LibraryManagementSystem.ViewsAdapter.csproj": {}
+  },
+  "projects": {
+    "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.ViewsAdapter\\LibraryManagementSystem.ViewsAdapter.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.ViewsAdapter\\LibraryManagementSystem.ViewsAdapter.csproj",
+        "projectName": "LibraryManagementSystem.ViewsAdapter",
+        "projectPath": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.ViewsAdapter\\LibraryManagementSystem.ViewsAdapter.csproj",
+        "packagesPath": "C:\\Users\\Legion\\.nuget\\packages\\",
+        "outputPath": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.ViewsAdapter\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0-windows"
+        ],
+        "sources": {
+          "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Adapter\\bin\\Debug\\": {}
+        },
+        "frameworks": {
+          "net6.0-windows7.0": {
+            "targetAlias": "net6.0-windows",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0-windows7.0": {
+          "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "LibraryManagementSystem": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            },
+            "LibraryManagementSystem.Adapter": {
+              "target": "Package",
+              "version": "[1.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

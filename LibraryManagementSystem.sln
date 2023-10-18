@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagementSystem.Ada
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagementSystem.Tests", "LibraryManagementSystem.Tests\LibraryManagementSystem.Tests.csproj", "{1204807A-561B-4BF8-B0CD-F444AE14252E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.ViewsAdapter", "LibraryManagementSystem.ViewsAdapter\LibraryManagementSystem.ViewsAdapter.csproj", "{973309F1-7426-4267-8E33-24EAFC482FFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{1204807A-561B-4BF8-B0CD-F444AE14252E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1204807A-561B-4BF8-B0CD-F444AE14252E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1204807A-561B-4BF8-B0CD-F444AE14252E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{973309F1-7426-4267-8E33-24EAFC482FFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{973309F1-7426-4267-8E33-24EAFC482FFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{973309F1-7426-4267-8E33-24EAFC482FFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{973309F1-7426-4267-8E33-24EAFC482FFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
