@@ -124,30 +124,6 @@
           "lib/netstandard2.0/FluentEmail.Smtp.dll": {}
         }
       },
-      "LibraryManagementSystem/1.0.0": {
-        "type": "package",
-        "dependencies": {
-          "FluentEmail.Razor": "3.0.2",
-          "FluentEmail.Smtp": "3.0.2",
-          "LibraryManagementSystem.Adapter": "1.0.0",
-          "LibraryManagementSystem.Data": "1.0.0",
-          "SmtpServer": "9.0.1",
-          "TSL": "1.0.2"
-        },
-        "compile": {
-          "lib/net6.0-windows7.0/LibraryManagementSystem.dll": {
-            "related": ".runtimeconfig.json"
-          }
-        },
-        "runtime": {
-          "lib/net6.0-windows7.0/LibraryManagementSystem.dll": {
-            "related": ".runtimeconfig.json"
-          }
-        },
-        "frameworkReferences": [
-          "Microsoft.WindowsDesktop.App.WPF"
-        ]
-      },
       "LibraryManagementSystem.Adapter/1.0.0": {
         "type": "package",
         "dependencies": {
@@ -164,25 +140,6 @@
         },
         "runtime": {
           "lib/net6.0/LibraryManagementSystem.Adapter.dll": {
-            "related": ".runtimeconfig.json"
-          }
-        }
-      },
-      "LibraryManagementSystem.Data/1.0.0": {
-        "type": "package",
-        "dependencies": {
-          "Extended.Wpf.Toolkit": "4.5.0",
-          "LibraryManagementSystem.Adapter": "1.0.0",
-          "Microsoft.Extensions.DependencyModel": "7.0.0",
-          "PresentationFramework": "4.6.0"
-        },
-        "compile": {
-          "lib/net6.0/LibraryManagementSystem.Data.dll": {
-            "related": ".runtimeconfig.json"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/LibraryManagementSystem.Data.dll": {
             "related": ".runtimeconfig.json"
           }
         }
@@ -2226,6 +2183,43 @@
         "runtime": {
           "lib/netstandard2.1/TSL.dll": {}
         }
+      },
+      "LibraryManagementSystem/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FluentEmail.Razor": "3.0.2",
+          "FluentEmail.Smtp": "3.0.2",
+          "LibraryManagementSystem.Adapter": "1.0.0",
+          "LibraryManagementSystem.Data": "1.0.0",
+          "SmtpServer": "9.0.1",
+          "TSL": "1.0.2"
+        },
+        "compile": {
+          "bin/placeholder/LibraryManagementSystem.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryManagementSystem.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.WindowsDesktop.App.WPF"
+        ]
+      },
+      "LibraryManagementSystem.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Extended.Wpf.Toolkit": "4.5.0",
+          "LibraryManagementSystem.Adapter": "1.0.0",
+          "Microsoft.Extensions.DependencyModel": "7.0.0",
+          "PresentationFramework": "4.6.0"
+        },
+        "compile": {
+          "bin/placeholder/LibraryManagementSystem.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryManagementSystem.Data.dll": {}
+        }
       }
     }
   },
@@ -2376,20 +2370,8 @@
         "lib/netstandard2.0/FluentEmail.Smtp.dll"
       ]
     },
-    "LibraryManagementSystem/1.0.0": {
-      "sha512": "fYal2MGAMnVZtm2n27tpy+gKqF5+rYtWUeEq6VBN22khVHjsadFW2QsS0zY9OMe3SkNLUh0KcyIUKJSE0MClUg==",
-      "type": "package",
-      "path": "librarymanagementsystem/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        "lib/net6.0-windows7.0/LibraryManagementSystem.dll",
-        "lib/net6.0-windows7.0/LibraryManagementSystem.runtimeconfig.json",
-        "librarymanagementsystem.1.0.0.nupkg.sha512",
-        "librarymanagementsystem.nuspec"
-      ]
-    },
     "LibraryManagementSystem.Adapter/1.0.0": {
-      "sha512": "JUO41qHuBrG3J4yT5DH5m5oz1jKuhmmRvdE+q3sdLeqvLMupQ0nOVcKFF1RB/PO+vappQCkhOgeGEehzqp6juQ==",
+      "sha512": "pZc276XK7W2W+2GVx1Il6dQa/Ek7qjYSr6GmEle9MZIoQ63MhiGVEd6gxE4A6eaFJwHIECDDYH2qBh7A5YltOw==",
       "type": "package",
       "path": "librarymanagementsystem.adapter/1.0.0",
       "files": [
@@ -2398,18 +2380,6 @@
         "lib/net6.0/LibraryManagementSystem.Adapter.runtimeconfig.json",
         "librarymanagementsystem.adapter.1.0.0.nupkg.sha512",
         "librarymanagementsystem.adapter.nuspec"
-      ]
-    },
-    "LibraryManagementSystem.Data/1.0.0": {
-      "sha512": "ccUKPvbst6Nmd3sI/4vdIWrwgQkLkP/sL36f3UUR49C5izUC5h7Y9FPhfjlF7vcynDxD2ih90n61rL3zO8gzAw==",
-      "type": "package",
-      "path": "librarymanagementsystem.data/1.0.0",
-      "files": [
-        ".nupkg.metadata",
-        "lib/net6.0/LibraryManagementSystem.Data.dll",
-        "lib/net6.0/LibraryManagementSystem.Data.runtimeconfig.json",
-        "librarymanagementsystem.data.1.0.0.nupkg.sha512",
-        "librarymanagementsystem.data.nuspec"
       ]
     },
     "Microsoft.AspNetCore.Mvc.Razor.Extensions/5.0.0": {
@@ -6627,6 +6597,16 @@
         "tsl.1.0.2.nupkg.sha512",
         "tsl.nuspec"
       ]
+    },
+    "LibraryManagementSystem/1.0.0": {
+      "type": "project",
+      "path": "../LibraryManagementSystem/LibraryManagementSystem.csproj",
+      "msbuildProject": "../LibraryManagementSystem/LibraryManagementSystem.csproj"
+    },
+    "LibraryManagementSystem.Data/1.0.0": {
+      "type": "project",
+      "path": "../LibraryManagementSystem.Data/LibraryManagementSystem.Data.csproj",
+      "msbuildProject": "../LibraryManagementSystem.Data/LibraryManagementSystem.Data.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -6636,31 +6616,42 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Legion\\.nuget\\packages\\": {}
+    "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.ViewsAdapter\\LibraryManagementSystem.ViewsAdapter.csproj",
+      "projectUniqueName": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.ViewsAdapter\\LibraryManagementSystem.ViewsAdapter.csproj",
       "projectName": "LibraryManagementSystem.ViewsAdapter",
-      "projectPath": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.ViewsAdapter\\LibraryManagementSystem.ViewsAdapter.csproj",
-      "packagesPath": "C:\\Users\\Legion\\.nuget\\packages\\",
-      "outputPath": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.ViewsAdapter\\obj\\",
+      "projectPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.ViewsAdapter\\LibraryManagementSystem.ViewsAdapter.csproj",
+      "packagesPath": "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\",
+      "outputPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.ViewsAdapter\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bogumil.ruksc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
       ],
       "sources": {
-        "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Adapter\\bin\\Debug\\": {}
+        "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\bin\\Debug\\": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj": {
+              "projectPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -6673,10 +6664,6 @@
       "net6.0-windows7.0": {
         "targetAlias": "net6.0-windows",
         "dependencies": {
-          "LibraryManagementSystem": {
-            "target": "Package",
-            "version": "[1.0.0, )"
-          },
           "LibraryManagementSystem.Adapter": {
             "target": "Package",
             "version": "[1.0.0, )"
@@ -6701,7 +6688,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   },

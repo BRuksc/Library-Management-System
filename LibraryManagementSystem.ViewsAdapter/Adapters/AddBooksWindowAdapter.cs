@@ -9,10 +9,10 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.ViewsAdapter.Adapters
 {
-    public class AddBooksWindowAdapter : IActions<AddBooksWindow>
+    public class AddBooksWindowAdapter : IActions<AddBooksWindow>, IDisposable
     {
         private readonly AddBooksWindow _view;
-        public AddBooksWindow View => throw new NotImplementedException();
+        public AddBooksWindow View => _view;
 
         public AddBooksWindowAdapter(AdminViewModel adminVM)
         {
@@ -27,6 +27,11 @@ namespace LibraryManagementSystem.ViewsAdapter.Adapters
         public void Show()
         {
             View.Show();
+        }
+
+        public void Dispose()
+        {
+            _view.Close();
         }
     }
 }

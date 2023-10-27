@@ -8,26 +8,33 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Legion\\.nuget\\packages\\": {}
+    "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Authentication\\LibraryManagementSystem.Authentication.csproj",
+      "projectUniqueName": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Authentication\\LibraryManagementSystem.Authentication.csproj",
       "projectName": "LibraryManagementSystem.Authentication",
-      "projectPath": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Authentication\\LibraryManagementSystem.Authentication.csproj",
-      "packagesPath": "C:\\Users\\Legion\\.nuget\\packages\\",
-      "outputPath": "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Authentication\\obj\\",
+      "projectPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Authentication\\LibraryManagementSystem.Authentication.csproj",
+      "packagesPath": "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\",
+      "outputPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Authentication\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bogumil.ruksc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Adapter\\bin\\Debug\\": {}
+        "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\bin\\Debug\\": {}
       },
       "frameworks": {
         "net6.0": {
@@ -60,7 +67,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }
