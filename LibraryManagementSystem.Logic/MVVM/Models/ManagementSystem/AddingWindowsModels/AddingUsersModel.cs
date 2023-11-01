@@ -2,8 +2,8 @@
 using LibraryManagementSystem.DataModels;
 using LibraryManagementSystem.Interfaces.Data;
 using LibraryManagementSystem.Models;
-using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
-using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels;
+using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
+using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels;
 using LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews;
 using LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem;
 using LibraryManagementSystem.Tools;
@@ -26,6 +26,8 @@ namespace LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindo
         public string Pesel { get; set; } = String.Empty;
         public string Address { get; set; } = String.Empty;
         public AdminViewModel? AdminVM { get; set; } = null;
+        LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AdminViewModel? IViewModelsTypes.AdminVM { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         private readonly AddUsersWindow view;
         #endregion
 

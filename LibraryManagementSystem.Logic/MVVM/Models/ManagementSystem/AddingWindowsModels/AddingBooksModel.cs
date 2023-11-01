@@ -7,17 +7,18 @@ using LibraryManagementSystem.DataManagers;
 using LibraryManagementSystem.DataModels;
 using LibraryManagementSystem.Interfaces.Data;
 using LibraryManagementSystem.Models;
-using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
+using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
 
 namespace LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindowsModels
 {
-    public class AddingBooksModel : LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsModels.BaseAddingModel, IViewModelsTypes
+    public class AddingBooksModel : BaseAddingModel, IViewModelsTypes
     {
         #region Properties
         public string Title { get; set; } = String.Empty;
         public string Author { get; set; } = String.Empty;
         public string DateOfPublished { get; set; } = String.Empty;
         public AdminViewModel? AdminVM { get; set; } = null;
+        LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AdminViewModel? IViewModelsTypes.AdminVM { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         #endregion
 
         #region Methods

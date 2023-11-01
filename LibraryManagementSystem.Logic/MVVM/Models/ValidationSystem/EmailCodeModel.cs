@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.MVVM.Models.ValidationSystem
+namespace LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem
 {
-    internal class EmailCodeModel
+    public class EmailCodeModel
     {
         public readonly RegisterWindowModel RegisterData;
         public readonly string VerifyingCode;

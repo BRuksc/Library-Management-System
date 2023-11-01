@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
 
-namespace LibraryManagementSystem.MVVM.Models.ValidationSystem
+namespace LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem
 {
     public class MainModel
     {

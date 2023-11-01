@@ -285,8 +285,6 @@ D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-win
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\refs\System.Text.Encoding.CodePages.dll
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\refs\System.Text.Encoding.dll
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\refs\System.Text.Encoding.Extensions.dll
-D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\refs\System.Text.Encodings.Web.dll
-D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\refs\System.Text.Json.dll
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\refs\System.Text.RegularExpressions.dll
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\refs\System.Threading.AccessControl.dll
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\refs\System.Threading.Channels.dll
@@ -329,7 +327,6 @@ D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-win
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\FluentEmail.Core.dll
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\FluentEmail.Razor.dll
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\FluentEmail.Smtp.dll
-D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\LibraryManagementSystem.Interfaces.dll
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Mvc.Razor.Extensions.dll
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\Microsoft.AspNetCore.Razor.Language.dll
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\Microsoft.CodeAnalysis.dll
@@ -1320,3 +1317,28 @@ D:\Bogumił\Library-Management-System\LibraryManagementSystem\obj\Debug\net6.0-w
 D:\Bogumił\Library-Management-System\LibraryManagementSystem\obj\Debug\net6.0-windows\MVVM\Views\ManagementSystem\LibrariesManagementWindow.baml
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net6.0-windows\MVVM\Views\ManagementSystem\LibrariesManagementWindow.g.cs
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net6.0-windows\MVVM\Views\ManagementSystem\LibrariesManagementWindow.baml
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.NET5.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\Xceed.Wpf.Toolkit.NET5.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\LibraryManagementSystem.Adapter.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\System.Text.Encodings.Web.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\System.Text.Json.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\cs-CZ\Xceed.Wpf.AvalonDock.NET5.resources.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\de\Xceed.Wpf.AvalonDock.NET5.resources.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\es\Xceed.Wpf.AvalonDock.NET5.resources.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\fr\Xceed.Wpf.AvalonDock.NET5.resources.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\hu\Xceed.Wpf.AvalonDock.NET5.resources.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\it\Xceed.Wpf.AvalonDock.NET5.resources.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\ja-JP\Xceed.Wpf.AvalonDock.NET5.resources.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\pt-BR\Xceed.Wpf.AvalonDock.NET5.resources.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\ro\Xceed.Wpf.AvalonDock.NET5.resources.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\ru\Xceed.Wpf.AvalonDock.NET5.resources.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\sv\Xceed.Wpf.AvalonDock.NET5.resources.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.NET5.resources.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\runtimes\browser\lib\net6.0\System.Text.Encodings.Web.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\LibraryManagementSystem.Data.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\LibraryManagementSystem.Data.pdb
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net6.0-windows\MVVM\Views\ManagementSystem\LibrariesManagementWindow.g.cs
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net6.0-windows\MVVM\Views\ManagementSystem\LibrariesManagementWindow.baml

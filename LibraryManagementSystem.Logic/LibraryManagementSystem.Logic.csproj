@@ -13,8 +13,4 @@
     <ProjectReference Include="..\LibraryManagementSystem\LibraryManagementSystem.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="MVVM\ViewModels\" />
-  </ItemGroup>
-
 </Project>

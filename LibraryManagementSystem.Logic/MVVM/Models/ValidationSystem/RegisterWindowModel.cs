@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace LibraryManagementSystem.MVVM.Models.ValidationSystem
+namespace LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem
 {
     public class RegisterWindowModel
     {

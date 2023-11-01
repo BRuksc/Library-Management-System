@@ -14,7 +14,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0-windows\LibraryManagementSystem.Logic.runtimeconfig.json" target="lib\net6.0-windows7.0\LibraryManagementSystem.Logic.runtimeconfig.json" />
-    <file src="C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0-windows\LibraryManagementSystem.Logic.dll" target="lib\net6.0-windows7.0\LibraryManagementSystem.Logic.dll" />
+    <file src="D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0-windows\LibraryManagementSystem.Logic.runtimeconfig.json" target="lib\net6.0-windows7.0\LibraryManagementSystem.Logic.runtimeconfig.json" />
+    <file src="D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0-windows\LibraryManagementSystem.Logic.dll" target="lib\net6.0-windows7.0\LibraryManagementSystem.Logic.dll" />
   </files>
 </package>

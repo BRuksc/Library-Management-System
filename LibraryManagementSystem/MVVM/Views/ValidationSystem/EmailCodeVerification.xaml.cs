@@ -22,7 +22,7 @@ namespace LibraryManagementSystem.MVVM.Views.ValidationSystem
     /// </summary>
     public partial class EmailCodeVerification : Window
     {
-        internal EmailCodeVerification
+        public EmailCodeVerification
             (RegisterWindowModel registerData, string verifyingCode, string whatDoYouWantToVerify)
         {
             InitializeComponent();
