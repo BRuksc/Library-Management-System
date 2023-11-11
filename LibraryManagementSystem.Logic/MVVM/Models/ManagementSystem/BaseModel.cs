@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
-using LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews;
-using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
+using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
 using LibraryManagementSystem.Interfaces.Data;
 using System.Windows;
 

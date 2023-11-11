@@ -1,14 +1,14 @@
-﻿using LibraryManagementSystem.DataManagers;
-using LibraryManagementSystem.DataModels;
-using LibraryManagementSystem.Tools;
-using LibraryManagementSystem.MVVM.Views.ManagementSystem;
+﻿using LibraryManagementSystem.Logic.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
+using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
+using LibraryManagementSystem.DataManagers;
+using LibraryManagementSystem.DataModels;
+using LibraryManagementSystem.ViewsAdapter.Adapters;
 
 namespace LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem
 {
@@ -118,7 +118,7 @@ namespace LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem
                     if (admin != null)
                     {
                         ViewModelLocator.ViewModelManagementWindow = new AdminViewModel(lib);
-                        var win = new AdminWorkerWindow();
+                        var win = new AdminWorkerWindowAdapter();
                         win.Show();
                     }
 

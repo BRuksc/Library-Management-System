@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using LibraryManagementSystem.DataManagers;
 using LibraryManagementSystem.DataModels;
-using LibraryManagementSystem.Interfaces.Data;
+using LibraryManagementSystem.Logic.Interfaces;
 using LibraryManagementSystem.Models;
 using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
+using LibraryManagementSystem.Logic.Interfaces.UI;
 
 namespace LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindowsModels
 {
@@ -18,7 +19,6 @@ namespace LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindo
         public string Author { get; set; } = String.Empty;
         public string DateOfPublished { get; set; } = String.Empty;
         public AdminViewModel? AdminVM { get; set; } = null;
-        LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AdminViewModel? IViewModelsTypes.AdminVM { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         #endregion
 
         #region Methods

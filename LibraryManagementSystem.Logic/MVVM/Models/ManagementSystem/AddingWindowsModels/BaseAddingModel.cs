@@ -1,4 +1,4 @@
-﻿using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
+﻿using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
 using System;
 using System.Collections.Generic;
 using System.Linq;

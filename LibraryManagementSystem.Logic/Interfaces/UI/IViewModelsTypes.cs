@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.Logic.Interfaces.Data
+namespace LibraryManagementSystem.Logic.Interfaces.UI
 {
     public interface IViewModelsTypes
     {

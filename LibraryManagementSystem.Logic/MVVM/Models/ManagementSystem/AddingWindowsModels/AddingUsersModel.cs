@@ -4,15 +4,15 @@ using LibraryManagementSystem.Interfaces.Data;
 using LibraryManagementSystem.Models;
 using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
 using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels;
-using LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews;
 using LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem;
-using LibraryManagementSystem.Tools;
+using LibraryManagementSystem.Logic.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using LibraryManagementSystem.ViewsAdapter.Adapters;
 
 namespace LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindowsModels
 {
@@ -28,11 +28,11 @@ namespace LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindo
         public AdminViewModel? AdminVM { get; set; } = null;
         LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AdminViewModel? IViewModelsTypes.AdminVM { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
-        private readonly AddUsersWindow view;
+        private readonly AddUsersWindowAdapter view;
         #endregion
 
         #region Constructors
-        public AddingUsersModel(AdminViewModel viewmodel, AddUsersWindow view)
+        public AddingUsersModel(AdminViewModel viewmodel, AddUsersWindowAdapter view)
         {
             AdminVM = viewmodel;
             this.view = view;

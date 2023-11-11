@@ -26,3 +26,17 @@ D:\Bogumił\Library-Management-System\LibraryManagementSystem.Adapter\obj\Debug\
 D:\Bogumił\Library-Management-System\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.pdb
 D:\Bogumił\Library-Management-System\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.genruntimeconfig.cache
 D:\Bogumił\Library-Management-System\LibraryManagementSystem.Adapter\obj\Debug\net6.0\ref\LibraryManagementSystem.Adapter.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Adapter\bin\Debug\net6.0\LibraryManagementSystem.Adapter.deps.json
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Adapter\bin\Debug\net6.0\LibraryManagementSystem.Adapter.runtimeconfig.json
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Adapter\bin\Debug\net6.0\LibraryManagementSystem.Adapter.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Adapter\bin\Debug\net6.0\LibraryManagementSystem.Adapter.pdb
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.csproj.AssemblyReference.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.AssemblyInfoInputs.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.AssemblyInfo.cs
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.csproj.CoreCompileInputs.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\refint\LibraryManagementSystem.Adapter.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.pdb
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\LibraryManagementSystem.Adapter.genruntimeconfig.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Adapter\obj\Debug\net6.0\ref\LibraryManagementSystem.Adapter.dll
