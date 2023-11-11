@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.ViewsAdapter.Adapters
 {
-    public class AddLoansWindowAdapter : IActions<AddLoansWindow>
+    public class AddLoansWindowAdapter : IActions<AddLoansWindow>, IDisposable
     {
         private readonly AddLoansWindow _view;
         public AddLoansWindow View => _view;
@@ -18,14 +18,19 @@ namespace LibraryManagementSystem.ViewsAdapter.Adapters
             _view = new AddLoansWindow();
         }
 
-        public void Hide()
+        public void Close()
         {
-            View.Hide();
+            View.Close();
         }
 
         public void Show()
         {
             View.Show();
+        }
+
+        public void Dispose()
+        {
+            View.Close();
         }
     }
 }

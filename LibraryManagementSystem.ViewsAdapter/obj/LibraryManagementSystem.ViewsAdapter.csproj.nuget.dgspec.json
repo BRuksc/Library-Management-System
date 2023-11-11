@@ -21,7 +21,9 @@
           "net6.0"
         ],
         "sources": {
-          "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Adapter\\bin\\Debug\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Adapter\\bin\\Debug\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -93,7 +95,9 @@
           "net6.0-windows"
         ],
         "sources": {
-          "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Adapter\\bin\\Debug\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Adapter\\bin\\Debug\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {
@@ -160,7 +164,9 @@
           "net6.0-windows"
         ],
         "sources": {
-          "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Adapter\\bin\\Debug\\": {}
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Adapter\\bin\\Debug\\": {},
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0-windows7.0": {

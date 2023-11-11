@@ -42,3 +42,5 @@ D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\LibraryManagementSystem.Logic.pdb
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\LibraryManagementSystem.Logic.genruntimeconfig.cache
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\ref\LibraryManagementSystem.Logic.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0-windows\LibraryManagementSystem.ViewsAdapter.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0-windows\LibraryManagementSystem.ViewsAdapter.pdb

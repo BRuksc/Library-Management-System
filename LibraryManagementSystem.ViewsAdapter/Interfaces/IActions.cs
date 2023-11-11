@@ -10,6 +10,6 @@ namespace LibraryManagementSystem.ViewsAdapter.Interfaces
     {
         public T View { get; }
         public void Show();
-        public void Hide();
+        public void Close();
     }
 }

@@ -1,11 +1,11 @@
-﻿using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
+﻿using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.Interfaces.Data
+namespace LibraryManagementSystem.Logic.Interfaces.Data
 {
     public interface IViewModelsTypes
     {

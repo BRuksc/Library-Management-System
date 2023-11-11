@@ -5,12 +5,13 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Title>LibraryManagementSystem.Adapter</Title>
+    <Title>LibraryManagementSystem.Logic</Title>
     <RepositoryUrl>https://github.com/BRuksc/Library-Management-System</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\LibraryManagementSystem\LibraryManagementSystem.csproj" />
+    <ProjectReference Include="..\LibraryManagementSystem.Data\LibraryManagementSystem.Data.csproj" />
+    <ProjectReference Include="..\LibraryManagementSystem.ViewsAdapter\LibraryManagementSystem.ViewsAdapter.csproj" />
   </ItemGroup>
 
 </Project>

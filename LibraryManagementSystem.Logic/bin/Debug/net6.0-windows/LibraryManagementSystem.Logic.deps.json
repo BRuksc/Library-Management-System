@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v6.0": {
       "LibraryManagementSystem.Logic/1.0.0": {
         "dependencies": {
-          "LibraryManagementSystem": "1.0.0"
+          "LibraryManagementSystem.Data": "1.0.0",
+          "LibraryManagementSystem.ViewsAdapter": "1.0.0"
         },
         "runtime": {
           "LibraryManagementSystem.Logic.dll": {}
@@ -1195,6 +1196,15 @@
         "runtime": {
           "LibraryManagementSystem.Data.dll": {}
         }
+      },
+      "LibraryManagementSystem.ViewsAdapter/1.0.0": {
+        "dependencies": {
+          "LibraryManagementSystem": "1.0.0",
+          "LibraryManagementSystem.Adapter": "1.0.0"
+        },
+        "runtime": {
+          "LibraryManagementSystem.ViewsAdapter.dll": {}
+        }
       }
     }
   },
@@ -2085,6 +2095,11 @@
       "sha512": ""
     },
     "LibraryManagementSystem.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LibraryManagementSystem.ViewsAdapter/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

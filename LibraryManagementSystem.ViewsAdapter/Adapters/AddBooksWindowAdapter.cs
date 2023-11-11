@@ -19,9 +19,9 @@ namespace LibraryManagementSystem.ViewsAdapter.Adapters
             _view = new AddBooksWindow(adminVM);
         }
 
-        public void Hide()
+        public void Close()
         {
-            View.Hide();
+            View.Close();
         }
 
         public void Show()
@@ -31,7 +31,7 @@ namespace LibraryManagementSystem.ViewsAdapter.Adapters
 
         public void Dispose()
         {
-            _view.Close();
+            Close();
         }
     }
 }

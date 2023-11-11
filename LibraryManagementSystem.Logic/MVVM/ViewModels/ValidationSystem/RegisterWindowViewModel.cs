@@ -12,15 +12,16 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 using LibraryManagementSystem.MVVM.Views.ValidationSystem;
+using LibraryManagementSystem.ViewsAdapter.Adapters;
 
 namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ValidationSystem
 {
     public class RegisterWindowViewModel : BasicViewModel
     {
         private RegisterWindowModel model;
-        private RegisterWindow view;
+        private RegisterWindowAdapter view;
 
-        public RegisterWindowViewModel(RegisterWindow view)
+        public RegisterWindowViewModel(RegisterWindowAdapter view)
         {
             model = new RegisterWindowModel();
             this.view = view;

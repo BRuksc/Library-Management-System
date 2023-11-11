@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.ViewsAdapter.Adapters
 {
-    public class AddUsersWindowAdapter : IActions<AddUsersWindow>
+    public class AddUsersWindowAdapter : IActions<AddUsersWindow>, IDisposable
     {
         private readonly AddUsersWindow _view;
         public AddUsersWindow View => _view;
@@ -19,14 +19,19 @@ namespace LibraryManagementSystem.ViewsAdapter.Adapters
             _view = new AddUsersWindow(adminVM);
         }
 
-        public void Hide()
+        public void Close()
         {
-            View.Hide();
+            View.Close();
         }
 
         public void Show()
         {
             View.Show();
+        }
+
+        public void Dispose()
+        {
+            View.Close();
         }
     }
 }

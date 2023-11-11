@@ -1,5 +1,6 @@
 ﻿using LibraryManagementSystem.DataModels;
 using LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem;
+using LibraryManagementSystem.Logic.Tools;
 using LibraryManagementSystem.Models;
 using LibraryManagementSystem.Tools;
 using System;
@@ -170,7 +171,7 @@ namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem
             {
                 if (addTab2 == null)
                 {
-                    addTab2 = new RelayCommand(
+                    addTab2 = new Tools.RelayCommand(
                         async (object o) =>
                         {
                             await model.AddTab2(this);
