@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace LibraryManagementSystem.Interfaces
+namespace LibraryManagementSystem.Logic.UI.Interfaces
 {
     internal interface ISettings
     {
