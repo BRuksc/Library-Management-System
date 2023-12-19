@@ -10,7 +10,8 @@ namespace LibraryManagementSystem.WindowsPointing.Interfaces
     {
         public IEnumerable<T> WindowPointers { get; }
         public IEnumerator<T> GetEnumerator();
-        public Task AddAsync(Guid guid);
+        public void Add(Guid guid, Func<Task> run, Func<Task> close);
+        public Task AddAsync(Guid guid, Func<Task> run, Func<Task> close);
         public void Remove(Guid guid);
         public Task RemoveAsync(Guid guid);
     }

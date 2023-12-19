@@ -13,15 +13,16 @@ namespace LibraryManagementSystem.WindowsPointing
         private readonly IList<WindowPointer> windowPointers;
         public IEnumerable<WindowPointer> WindowPointers => windowPointers;
 
-        public WindowPointersCollection() 
+        private readonly IWindowGuidContainer windowGuidContainer;
+
+        public WindowPointersCollection(IWindowGuidContainer windowGuidContainer)
         { 
             windowPointers = new List<WindowPointer>();
+            this.windowGuidContainer = windowGuidContainer;
         }
 
-        public Task AddAsync(Guid guid)
-        {
-            throw new NotImplementedException();
-        }
+        public async Task AddAsync(Guid guid, Func<Task> run, Func<Task> close) => 
+            Add(guid, run, close);
 
         public IEnumerator<WindowPointer> GetEnumerator()
         {
@@ -38,6 +39,24 @@ namespace LibraryManagementSystem.WindowsPointing
         IEnumerator IEnumerable.GetEnumerator()
         {
             return GetEnumerator();
+        }
+
+        public void Add(Guid guid, Func<Task> run, Func<Task> close)
+        {
+            try
+            {
+                if (guid == windowGuidContainer.LibraryManagementWindow)
+                {
+                    throw new Exception("LibrariesManagementWindow can be initialize only once!");
+                }
+
+                var windowPointer = new WindowPointer(run.Invoke(), close.Invoke(), guid);
+            }
+
+            catch (Exception ex) 
+            { 
+                
+            }
         }
     }
 }

@@ -1,7 +1,6 @@
 ﻿using Autofac;
 using Autofac.Core;
 using LibraryManagementSystem.Interfaces;
-using LibraryManagementSystem.Interfaces.UI;
 using LibraryManagementSystem.Tools;
 using System;
 using System.Collections.Generic;
@@ -9,25 +8,39 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LibraryManagementSystem.WindowsPointing;
+using LibraryManagementSystem.WindowsPointing.Interfaces;
 
 namespace LibraryManagementSystem
 {
     public static class Bootstrapper
     {
-        public static Autofac.IContainer Container { get; }
-
-        public static void Run(Autofac.IContainer container)
+        private static Autofac.IContainer? container;
+        public static Autofac.IContainer Container
         {
-            var builder = new ContainerBuilder();
-            builder.RegisterType<WindowGuidContainer>().SingleInstance();
-            container = builder.Build();
+            get
+            {
+                if (container == null)
+                {
+                    Run();
+                }
 
-            ResolveSingletons(container);
+                return container;
+            }
         }
 
-        private static void ResolveSingletons(Autofac.IContainer container)
+        public static void Run()
         {
-            container.Resolve<WindowGuidContainer>();
+            if (container == null)
+            {
+                var builder = new ContainerBuilder();
+
+                builder.RegisterType<WindowGuidContainer>().As<IWindowGuidContainer>().
+                    SingleInstance();
+                builder.RegisterType<WindowPointersCollection>().SingleInstance();
+
+                container = builder.Build();
+            }
         }
     }
 }

@@ -2209,6 +2209,7 @@
           "FluentEmail.Smtp": "3.0.2",
           "LibraryManagementSystem.Adapter": "1.0.0",
           "LibraryManagementSystem.Data": "1.0.0",
+          "LibraryManagementSystem.WindowsPointing": "1.0.0",
           "SmtpServer": "9.0.1",
           "TSL": "1.0.2"
         },
@@ -2236,6 +2237,16 @@
         },
         "runtime": {
           "bin/placeholder/LibraryManagementSystem.Data.dll": {}
+        }
+      },
+      "LibraryManagementSystem.WindowsPointing/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/LibraryManagementSystem.WindowsPointing.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryManagementSystem.WindowsPointing.dll": {}
         }
       }
     }
@@ -6645,6 +6656,11 @@
       "type": "project",
       "path": "../LibraryManagementSystem.Data/LibraryManagementSystem.Data.csproj",
       "msbuildProject": "../LibraryManagementSystem.Data/LibraryManagementSystem.Data.csproj"
+    },
+    "LibraryManagementSystem.WindowsPointing/1.0.0": {
+      "type": "project",
+      "path": "../LibraryManagementSystem.WindowsPointing/LibraryManagementSystem.WindowsPointing.csproj",
+      "msbuildProject": "../LibraryManagementSystem.WindowsPointing/LibraryManagementSystem.WindowsPointing.csproj"
     }
   },
   "projectFileDependencyGroups": {

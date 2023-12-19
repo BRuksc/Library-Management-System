@@ -12,8 +12,8 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\App.xaml
 91957246875
 
-46-593087458
-355-1324612524
+42-1748741400
+356-863916563
 MVVM\Views\ManagementSystem\AddingViews\AddBooksWindow.xaml;MVVM\Views\ManagementSystem\AddingViews\AddLoansWindow.xaml;MVVM\Views\ManagementSystem\AddingViews\AddUsersWindow.xaml;MVVM\Views\ManagementSystem\AdminWorkerWindow.xaml;MVVM\Views\ManagementSystem\LibrariesManagementWindow.xaml;MVVM\Views\ManagementSystem\UserWindow.xaml;MVVM\Views\ValidationSystem\EmailCodeVerification.xaml;MVVM\Views\ValidationSystem\MainWindow.xaml;MVVM\Views\ValidationSystem\RegisterWindow.xaml;
 
 False
