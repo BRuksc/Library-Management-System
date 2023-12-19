@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,6 +12,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Autofac;
 
 namespace LibraryManagementSystem.MVVM.Views.ManagementSystem
 {
@@ -21,6 +23,7 @@ namespace LibraryManagementSystem.MVVM.Views.ManagementSystem
     {
         public LibrariesManagementWindow()
         {
+            Bootstrapper.Run();
             InitializeComponent();
         }
     }

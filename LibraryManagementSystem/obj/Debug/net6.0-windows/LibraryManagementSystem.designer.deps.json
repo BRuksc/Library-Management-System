@@ -6,6 +6,17 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
+      "Autofac/7.1.0": {
+        "dependencies": {
+          "System.Diagnostics.DiagnosticSource": "6.0.0"
+        },
+        "runtime": {
+          "lib/net6.0/Autofac.dll": {
+            "assemblyVersion": "7.1.0.0",
+            "fileVersion": "7.1.0.0"
+          }
+        }
+      },
       "EntityFramework/6.4.4": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -1695,6 +1706,13 @@
     }
   },
   "libraries": {
+    "Autofac/7.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XCXmpxhOnuztTTRkzG+8B8KU8SR8WjBYwSntndjlsFR5lM3K/g43r9hUwewIPDBJwDrmZU3TjmNdH6s8IF3VFQ==",
+      "path": "autofac/7.1.0",
+      "hashPath": "autofac.7.1.0.nupkg.sha512"
+    },
     "EntityFramework/6.4.4": {
       "type": "package",
       "serviceable": true,
@@ -1733,7 +1751,7 @@
     "LibraryManagementSystem.Adapter/1.0.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-pZc276XK7W2W+2GVx1Il6dQa/Ek7qjYSr6GmEle9MZIoQ63MhiGVEd6gxE4A6eaFJwHIECDDYH2qBh7A5YltOw==",
+      "sha512": "sha512-JUO41qHuBrG3J4yT5DH5m5oz1jKuhmmRvdE+q3sdLeqvLMupQ0nOVcKFF1RB/PO+vappQCkhOgeGEehzqp6juQ==",
       "path": "librarymanagementsystem.adapter/1.0.0",
       "hashPath": "librarymanagementsystem.adapter.1.0.0.nupkg.sha512"
     },

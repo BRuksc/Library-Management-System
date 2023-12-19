@@ -1342,3 +1342,4 @@ D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-win
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\LibraryManagementSystem.Data.pdb
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net6.0-windows\MVVM\Views\ManagementSystem\LibrariesManagementWindow.g.cs
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\obj\Debug\net6.0-windows\MVVM\Views\ManagementSystem\LibrariesManagementWindow.baml
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\bin\Debug\net6.0-windows\Autofac.dll

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "HhLC+9c4eW+j9YJSNyqXF3jKwSbjikqYTFRvD0uebUihsTjgFbewAB2pMZbioeie4DhRdHcRPsdWUADBzEVUow==",
+  "dgSpecHash": "YexK+UKvbPxohocMJcg5/91o/J4WO/6TLzx2VK6ycQ8pUD0ONqGRkD3sqPmb3ug3AfVHnUPmtqtMtto9SQHsnQ==",
   "success": true,
   "projectFilePath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Logic\\LibraryManagementSystem.Logic.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Legion\\.nuget\\packages\\autofac\\7.1.0\\autofac.7.1.0.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\extended.wpf.toolkit\\4.5.0\\extended.wpf.toolkit.4.5.0.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\fluentemail.core\\3.0.2\\fluentemail.core.3.0.2.nupkg.sha512",

@@ -122,7 +122,7 @@ namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem.AddingW
         #region Constructors
         public AddingUsersViewModel(AdminViewModel viewmodel, AddUsersWindow view)
         {
-            model = new AddingUsersModel(viewmodel, view);
+            //model = new AddingUsersModel(viewmodel, view);
         }
         #endregion
     }

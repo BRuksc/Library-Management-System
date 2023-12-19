@@ -14,6 +14,7 @@
         "outputPath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
+          "D:\\Bogumił\\LibraryManagementSystem\\NuGet.Config",
           "C:\\Users\\Legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -21,8 +22,6 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Adapter\\bin\\Debug\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
