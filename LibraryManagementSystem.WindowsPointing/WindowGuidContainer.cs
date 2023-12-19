@@ -1,11 +1,11 @@
-﻿using LibraryManagementSystem.Interfaces;
+﻿using LibraryManagementSystem.WindowsPointing.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.Tools
+namespace LibraryManagementSystem.WindowsPointing
 {
     public class WindowGuidContainer : IWindowGuidContainer
     {

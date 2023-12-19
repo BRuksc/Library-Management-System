@@ -48,61 +48,6 @@
           "buildTransitive/netcoreapp3.0/EntityFramework.targets": {}
         }
       },
-      "Extended.Wpf.Toolkit/4.5.0": {
-        "type": "package",
-        "compile": {
-          "lib/net5.0/Xceed.Wpf.AvalonDock.NET5.dll": {},
-          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll": {},
-          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll": {},
-          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll": {},
-          "lib/net5.0/Xceed.Wpf.Toolkit.NET5.dll": {}
-        },
-        "runtime": {
-          "lib/net5.0/Xceed.Wpf.AvalonDock.NET5.dll": {},
-          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll": {},
-          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll": {},
-          "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll": {},
-          "lib/net5.0/Xceed.Wpf.Toolkit.NET5.dll": {}
-        },
-        "resource": {
-          "lib/net5.0/cs-CZ/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
-            "locale": "cs-CZ"
-          },
-          "lib/net5.0/de/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
-            "locale": "de"
-          },
-          "lib/net5.0/es/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
-            "locale": "es"
-          },
-          "lib/net5.0/fr/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
-            "locale": "fr"
-          },
-          "lib/net5.0/hu/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
-            "locale": "hu"
-          },
-          "lib/net5.0/it/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
-            "locale": "it"
-          },
-          "lib/net5.0/ja-JP/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
-            "locale": "ja-JP"
-          },
-          "lib/net5.0/pt-BR/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
-            "locale": "pt-BR"
-          },
-          "lib/net5.0/ro/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
-            "locale": "ro"
-          },
-          "lib/net5.0/ru/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
-            "locale": "ru"
-          },
-          "lib/net5.0/sv/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
-            "locale": "sv"
-          },
-          "lib/net5.0/zh-Hans/Xceed.Wpf.AvalonDock.NET5.resources.dll": {
-            "locale": "zh-Hans"
-          }
-        }
-      },
       "FluentEmail.Core/3.0.2": {
         "type": "package",
         "dependencies": {
@@ -556,24 +501,17 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
-      "Microsoft.Extensions.DependencyModel/7.0.0": {
+      "Microsoft.Extensions.DependencyModel/5.0.0": {
         "type": "package",
-        "dependencies": {
-          "System.Text.Encodings.Web": "7.0.0",
-          "System.Text.Json": "7.0.0"
-        },
         "compile": {
-          "lib/net6.0/Microsoft.Extensions.DependencyModel.dll": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/Microsoft.Extensions.DependencyModel.dll": {
+          "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll": {
             "related": ".xml"
           }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
         }
       },
       "Microsoft.Extensions.FileProviders.Abstractions/5.0.0": {
@@ -867,15 +805,6 @@
             "assetType": "runtime",
             "rid": "win"
           }
-        }
-      },
-      "PresentationFramework/4.6.0": {
-        "type": "package",
-        "compile": {
-          "lib/PresentationFramework.dll": {}
-        },
-        "runtime": {
-          "lib/PresentationFramework.dll": {}
         }
       },
       "RazorLight/2.0.0-rc.3": {
@@ -2072,51 +2001,6 @@
           }
         }
       },
-      "System.Text.Encodings.Web/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
-        },
-        "compile": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/System.Text.Encodings.Web.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/_._": {}
-        },
-        "runtimeTargets": {
-          "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll": {
-            "assetType": "runtime",
-            "rid": "browser"
-          }
-        }
-      },
-      "System.Text.Json/7.0.0": {
-        "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0",
-          "System.Text.Encodings.Web": "7.0.0"
-        },
-        "compile": {
-          "lib/net6.0/System.Text.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net6.0/System.Text.Json.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/net6.0/System.Text.Json.targets": {}
-        }
-      },
       "System.Threading/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -2200,20 +2084,14 @@
           "lib/netstandard2.1/TSL.dll": {}
         }
       },
-      "LibraryManagementSystem.Data/1.0.0": {
+      "LibraryManagementSystem.WindowsPointing/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
-        "dependencies": {
-          "Extended.Wpf.Toolkit": "4.5.0",
-          "LibraryManagementSystem.Adapter": "1.0.0",
-          "Microsoft.Extensions.DependencyModel": "7.0.0",
-          "PresentationFramework": "4.6.0"
-        },
         "compile": {
-          "bin/placeholder/LibraryManagementSystem.Data.dll": {}
+          "bin/placeholder/LibraryManagementSystem.WindowsPointing.dll": {}
         },
         "runtime": {
-          "bin/placeholder/LibraryManagementSystem.Data.dll": {}
+          "bin/placeholder/LibraryManagementSystem.WindowsPointing.dll": {}
         }
       }
     }
@@ -2297,56 +2175,6 @@
         "tools/netcoreapp3.0/any/ef6.runtimeconfig.json"
       ]
     },
-    "Extended.Wpf.Toolkit/4.5.0": {
-      "sha512": "oQP6Qyuz+3kETAC/s+cBEfb8Vzbju6pB7Q5czW4KdkAOpFJTA/SCox8caH6HLQxQ6Lwq2jCeSQOPJKlnpqpFOg==",
-      "type": "package",
-      "path": "extended.wpf.toolkit/4.5.0",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE.txt",
-        "Xceed_Logo_Retina-400x400.png",
-        "extended.wpf.toolkit.4.5.0.nupkg.sha512",
-        "extended.wpf.toolkit.nuspec",
-        "lib/net40/Xceed.Wpf.AvalonDock.Themes.Aero.dll",
-        "lib/net40/Xceed.Wpf.AvalonDock.Themes.Metro.dll",
-        "lib/net40/Xceed.Wpf.AvalonDock.Themes.VS2010.dll",
-        "lib/net40/Xceed.Wpf.AvalonDock.dll",
-        "lib/net40/Xceed.Wpf.Toolkit.dll",
-        "lib/net40/cs-CZ/Xceed.Wpf.AvalonDock.resources.dll",
-        "lib/net40/de/Xceed.Wpf.AvalonDock.resources.dll",
-        "lib/net40/es/Xceed.Wpf.AvalonDock.resources.dll",
-        "lib/net40/fr/Xceed.Wpf.AvalonDock.resources.dll",
-        "lib/net40/hu/Xceed.Wpf.AvalonDock.resources.dll",
-        "lib/net40/it/Xceed.Wpf.AvalonDock.resources.dll",
-        "lib/net40/ja-JP/Xceed.Wpf.AvalonDock.resources.dll",
-        "lib/net40/nl-BE/Xceed.Wpf.AvalonDock.resources.dll",
-        "lib/net40/pt-BR/Xceed.Wpf.AvalonDock.resources.dll",
-        "lib/net40/ro/Xceed.Wpf.AvalonDock.resources.dll",
-        "lib/net40/ru/Xceed.Wpf.AvalonDock.resources.dll",
-        "lib/net40/sv/Xceed.Wpf.AvalonDock.resources.dll",
-        "lib/net40/zh-Hans/Xceed.Wpf.AvalonDock.resources.dll",
-        "lib/net5.0/Xceed.Wpf.AvalonDock.NET5.dll",
-        "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Aero.NET5.dll",
-        "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.Metro.NET5.dll",
-        "lib/net5.0/Xceed.Wpf.AvalonDock.Themes.VS2010.NET5.dll",
-        "lib/net5.0/Xceed.Wpf.Toolkit.NET5.dll",
-        "lib/net5.0/cs-CZ/Xceed.Wpf.AvalonDock.NET5.resources.dll",
-        "lib/net5.0/de/Xceed.Wpf.AvalonDock.NET5.resources.dll",
-        "lib/net5.0/es/Xceed.Wpf.AvalonDock.NET5.resources.dll",
-        "lib/net5.0/fr/Xceed.Wpf.AvalonDock.NET5.resources.dll",
-        "lib/net5.0/hu/Xceed.Wpf.AvalonDock.NET5.resources.dll",
-        "lib/net5.0/it/Xceed.Wpf.AvalonDock.NET5.resources.dll",
-        "lib/net5.0/ja-JP/Xceed.Wpf.AvalonDock.NET5.resources.dll",
-        "lib/net5.0/pt-BR/Xceed.Wpf.AvalonDock.NET5.resources.dll",
-        "lib/net5.0/ro/Xceed.Wpf.AvalonDock.NET5.resources.dll",
-        "lib/net5.0/ru/Xceed.Wpf.AvalonDock.NET5.resources.dll",
-        "lib/net5.0/sv/Xceed.Wpf.AvalonDock.NET5.resources.dll",
-        "lib/net5.0/zh-Hans/Xceed.Wpf.AvalonDock.NET5.resources.dll",
-        "tools/install.ps1"
-      ]
-    },
     "FluentEmail.Core/3.0.2": {
       "sha512": "uQFFbJgMhhCFUti7pfMi429fMNi7fLGMj+7uDtD7POlQzLxlhXJ6tmt4Y1SI51sZsA36GO5b7+o29eY/dKiICQ==",
       "type": "package",
@@ -2387,7 +2215,7 @@
       ]
     },
     "LibraryManagementSystem.Adapter/1.0.0": {
-      "sha512": "JUO41qHuBrG3J4yT5DH5m5oz1jKuhmmRvdE+q3sdLeqvLMupQ0nOVcKFF1RB/PO+vappQCkhOgeGEehzqp6juQ==",
+      "sha512": "pZc276XK7W2W+2GVx1Il6dQa/Ek7qjYSr6GmEle9MZIoQ63MhiGVEd6gxE4A6eaFJwHIECDDYH2qBh7A5YltOw==",
       "type": "package",
       "path": "librarymanagementsystem.adapter/1.0.0",
       "files": [
@@ -2965,32 +2793,30 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "Microsoft.Extensions.DependencyModel/7.0.0": {
-      "sha512": "oONNYd71J3LzkWc4fUHl3SvMfiQMYUCo/mDHDEu76hYYxdhdrPYv6fvGv9nnKVyhE9P0h20AU8RZB5OOWQcAXg==",
+    "Microsoft.Extensions.DependencyModel/5.0.0": {
+      "sha512": "umBECCoMC+sOUgm083yFr8SxTobUOcPFH4AXigdO2xJiszCHAnmeDl4qPphJt+oaJ/XIfV1wOjIts2nRnki61Q==",
       "type": "package",
-      "path": "microsoft.extensions.dependencymodel/7.0.0",
+      "path": "microsoft.extensions.dependencymodel/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
-        "README.md",
         "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/Microsoft.Extensions.DependencyModel.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/Microsoft.Extensions.DependencyModel.targets",
-        "lib/net462/Microsoft.Extensions.DependencyModel.dll",
-        "lib/net462/Microsoft.Extensions.DependencyModel.xml",
-        "lib/net6.0/Microsoft.Extensions.DependencyModel.dll",
-        "lib/net6.0/Microsoft.Extensions.DependencyModel.xml",
-        "lib/net7.0/Microsoft.Extensions.DependencyModel.dll",
-        "lib/net7.0/Microsoft.Extensions.DependencyModel.xml",
+        "lib/net451/Microsoft.Extensions.DependencyModel.dll",
+        "lib/net451/Microsoft.Extensions.DependencyModel.xml",
+        "lib/net461/Microsoft.Extensions.DependencyModel.dll",
+        "lib/net461/Microsoft.Extensions.DependencyModel.xml",
+        "lib/netstandard1.3/Microsoft.Extensions.DependencyModel.dll",
+        "lib/netstandard1.3/Microsoft.Extensions.DependencyModel.xml",
+        "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.dll",
+        "lib/netstandard1.6/Microsoft.Extensions.DependencyModel.xml",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.dll",
         "lib/netstandard2.0/Microsoft.Extensions.DependencyModel.xml",
-        "microsoft.extensions.dependencymodel.7.0.0.nupkg.sha512",
+        "microsoft.extensions.dependencymodel.5.0.0.nupkg.sha512",
         "microsoft.extensions.dependencymodel.nuspec",
-        "useSharedDesignerContext.txt"
+        "useSharedDesignerContext.txt",
+        "version.txt"
       ]
     },
     "Microsoft.Extensions.FileProviders.Abstractions/5.0.0": {
@@ -3449,18 +3275,6 @@
         "runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.xml",
         "useSharedDesignerContext.txt",
         "version.txt"
-      ]
-    },
-    "PresentationFramework/4.6.0": {
-      "sha512": "37FpU6XcB1Hgr5X03MgUOxvzWLJYKJP72J3g5hnZHi/DXsTxpJEu4brCGW+TmplVWfntuysO/uRcZcPS9YK0Bw==",
-      "type": "package",
-      "path": "presentationframework/4.6.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "lib/PresentationFramework.dll",
-        "presentationframework.4.6.0.nupkg.sha512",
-        "presentationframework.nuspec"
       ]
     },
     "RazorLight/2.0.0-rc.3": {
@@ -6265,108 +6079,6 @@
         "version.txt"
       ]
     },
-    "System.Text.Encodings.Web/7.0.0": {
-      "sha512": "OP6umVGxc0Z0MvZQBVigj4/U31Pw72ITihDWP9WiWDm+q5aoe0GaJivsfYGq53o6dxH7DcXWiCTl7+0o2CGdmg==",
-      "type": "package",
-      "path": "system.text.encodings.web/7.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "THIRD-PARTY-NOTICES.TXT",
-        "buildTransitive/net461/System.Text.Encodings.Web.targets",
-        "buildTransitive/net462/_._",
-        "buildTransitive/net6.0/_._",
-        "buildTransitive/netcoreapp2.0/System.Text.Encodings.Web.targets",
-        "lib/net462/System.Text.Encodings.Web.dll",
-        "lib/net462/System.Text.Encodings.Web.xml",
-        "lib/net6.0/System.Text.Encodings.Web.dll",
-        "lib/net6.0/System.Text.Encodings.Web.xml",
-        "lib/net7.0/System.Text.Encodings.Web.dll",
-        "lib/net7.0/System.Text.Encodings.Web.xml",
-        "lib/netstandard2.0/System.Text.Encodings.Web.dll",
-        "lib/netstandard2.0/System.Text.Encodings.Web.xml",
-        "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.dll",
-        "runtimes/browser/lib/net6.0/System.Text.Encodings.Web.xml",
-        "runtimes/browser/lib/net7.0/System.Text.Encodings.Web.dll",
-        "runtimes/browser/lib/net7.0/System.Text.Encodings.Web.xml",
-        "system.text.encodings.web.7.0.0.nupkg.sha512",
-        "system.text.encodings.web.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
-    "System.Text.Json/7.0.0": {
-      "sha512": "DaGSsVqKsn/ia6RG8frjwmJonfos0srquhw09TlT8KRw5I43E+4gs+/bZj4K0vShJ5H9imCuXupb4RmS+dBy3w==",
-      "type": "package",
-      "path": "system.text.json/7.0.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Icon.png",
-        "LICENSE.TXT",
-        "README.md",
-        "THIRD-PARTY-NOTICES.TXT",
-        "analyzers/dotnet/roslyn3.11/cs/System.Text.Json.SourceGeneration.dll",
-        "analyzers/dotnet/roslyn3.11/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/de/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/es/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/it/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn3.11/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/System.Text.Json.SourceGeneration.dll",
-        "analyzers/dotnet/roslyn4.0/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/de/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/es/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/it/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.0/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/System.Text.Json.SourceGeneration.dll",
-        "analyzers/dotnet/roslyn4.4/cs/cs/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/de/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/es/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/fr/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/it/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/ja/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/ko/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/pl/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/pt-BR/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/ru/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/tr/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/zh-Hans/System.Text.Json.SourceGeneration.resources.dll",
-        "analyzers/dotnet/roslyn4.4/cs/zh-Hant/System.Text.Json.SourceGeneration.resources.dll",
-        "buildTransitive/net461/System.Text.Json.targets",
-        "buildTransitive/net462/System.Text.Json.targets",
-        "buildTransitive/net6.0/System.Text.Json.targets",
-        "buildTransitive/netcoreapp2.0/System.Text.Json.targets",
-        "buildTransitive/netstandard2.0/System.Text.Json.targets",
-        "lib/net462/System.Text.Json.dll",
-        "lib/net462/System.Text.Json.xml",
-        "lib/net6.0/System.Text.Json.dll",
-        "lib/net6.0/System.Text.Json.xml",
-        "lib/net7.0/System.Text.Json.dll",
-        "lib/net7.0/System.Text.Json.xml",
-        "lib/netstandard2.0/System.Text.Json.dll",
-        "lib/netstandard2.0/System.Text.Json.xml",
-        "system.text.json.7.0.0.nupkg.sha512",
-        "system.text.json.nuspec",
-        "useSharedDesignerContext.txt"
-      ]
-    },
     "System.Threading/4.3.0": {
       "sha512": "VkUS0kOBcUf3Wwm0TSbrevDDZ6BlM+b/HRiapRFWjM5O0NS0LviG0glKmFK+hhPDd1XFeSdU1GmlLhb2CoVpIw==",
       "type": "package",
@@ -6614,52 +6326,64 @@
         "tsl.nuspec"
       ]
     },
-    "LibraryManagementSystem.Data/1.0.0": {
+    "LibraryManagementSystem.WindowsPointing/1.0.0": {
       "type": "project",
-      "path": "../LibraryManagementSystem.Data/LibraryManagementSystem.Data.csproj",
-      "msbuildProject": "../LibraryManagementSystem.Data/LibraryManagementSystem.Data.csproj"
+      "path": "../LibraryManagementSystem.WindowsPointing/LibraryManagementSystem.WindowsPointing.csproj",
+      "msbuildProject": "../LibraryManagementSystem.WindowsPointing/LibraryManagementSystem.WindowsPointing.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "Autofac >= 7.1.0",
+      "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj",
       "FluentEmail.Razor >= 3.0.2",
       "FluentEmail.Smtp >= 3.0.2",
       "LibraryManagementSystem.Adapter >= 1.0.0",
-      "LibraryManagementSystem.Data >= 1.0.0",
+      "LibraryManagementSystem.WindowsPointing >= 1.0.0",
       "SmtpServer >= 9.0.1",
       "TSL >= 1.0.2"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Legion\\.nuget\\packages\\": {}
+    "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+      "projectUniqueName": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
       "projectName": "LibraryManagementSystem",
-      "projectPath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
-      "packagesPath": "C:\\Users\\Legion\\.nuget\\packages\\",
-      "outputPath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem\\obj\\",
+      "projectPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+      "packagesPath": "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\",
+      "outputPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "D:\\Bogumił\\LibraryManagementSystem\\NuGet.Config",
-        "C:\\Users\\Legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Private projects\\LibraryManagementSystem\\NuGet.Config",
+        "C:\\Users\\bogumil.ruksc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0-windows"
       ],
       "sources": {
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj": {
-              "projectPath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj"
+            "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj": {
+              "projectPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj"
+            },
+            "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.WindowsPointing\\LibraryManagementSystem.WindowsPointing.csproj": {
+              "projectPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.WindowsPointing\\LibraryManagementSystem.WindowsPointing.csproj"
             }
           }
         }
@@ -6718,17 +6442,16 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
       }
     }
   },
   "logs": [
     {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'PresentationFramework 4.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "PresentationFramework",
+      "code": "NU1105",
+      "level": "Error",
+      "message": "Unable to find project information for 'C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj'. If you are using Visual Studio, this may be because the project is unloaded or not part of the current solution so run a restore from the command-line. Otherwise, the project file may be invalid or missing targets required for restore.",
+      "libraryId": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj",
       "targetGraphs": [
         "net6.0-windows7.0"
       ]

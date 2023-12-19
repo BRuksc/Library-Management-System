@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace LibraryManagementSystem.Interfaces.UI
+namespace LibraryManagementSystem.WindowsPointing.Interfaces
 {
     public interface IWindowPointing
     {
         public Func<Task> Run { get; }
         public Func<Task> Close { get; }
+        public Guid WindowGuid { get; }
     }
 }

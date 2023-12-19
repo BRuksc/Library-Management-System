@@ -1,26 +1,28 @@
-﻿using LibraryManagementSystem.Interfaces;
-using LibraryManagementSystem.Interfaces.UI;
+﻿using LibraryManagementSystem.WindowsPointing.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Automation.Peers;
 
-namespace LibraryManagementSystem.Logic.Tools
+namespace LibraryManagementSystem.WindowsPointing
 {
     public class WindowPointer : IWindowPointing
     {
         private readonly Func<Task> close;
         private readonly Func<Task> run;
 
-        public Func<Task> Close => close.Invoke;
+        public Func<Task> Close => () => close();
+        public Func<Task> Run => () => close();
 
-        public Func<Task> Run => close.Invoke;
+        private readonly Guid windowGuid;
+        public Guid WindowGuid => windowGuid;
 
-        public WindowPointer(Task run, Task close)
+        public WindowPointer(Task run, Task close, Guid windowGuid)
         {
+            this.windowGuid = windowGuid;
+
             this.run = () => 
             {
                 run.Start();
