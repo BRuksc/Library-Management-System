@@ -171,16 +171,16 @@ namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem
             {
                 if (addTab2 == null)
                 {
-                    addTab2 = new Tools.RelayCommand(
-                        async (object o) =>
-                        {
-                            await model.AddTab2(this);
-                        },
-                        (object o) =>
-                        {
-                            return (Books != null) || (AvailableBooks != null) || (BorrowedBooks != null)
-                            || (Books == null) || (AvailableBooks == null) || (BorrowedBooks == null);
-                        });
+                    //addTab2 = new Tools.RelayCommand(
+                    //    async (object o) =>
+                    //    {
+                    //        await model.AddTab2(this);
+                    //    },
+                    //    (object o) =>
+                    //    {
+                    //        return (Books != null) || (AvailableBooks != null) || (BorrowedBooks != null)
+                    //        || (Books == null) || (AvailableBooks == null) || (BorrowedBooks == null);
+                    //    });
                 }
 
                 return addTab2;

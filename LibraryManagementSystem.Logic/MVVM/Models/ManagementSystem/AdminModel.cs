@@ -1,6 +1,5 @@
 ﻿using LibraryManagementSystem.DataManagers;
 using LibraryManagementSystem.DataModels;
-using LibraryManagementSystem.ViewsAdapter.Adapters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,15 +17,17 @@ namespace LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem
 
         public override async Task AddTab1(dynamic viewmodel)
         {
-            if (TabSelectedBeforeAdd == "Users")
-                new AddUsersWindowAdapter(viewmodel).Show();
+            //TODO
+            //if (TabSelectedBeforeAdd == "Users")
+            //    new AddUsersWindowAdapter(viewmodel).Show();
 
-            else new AddLoansWindowAdapter().Show();
+            //else new AddLoansWindowAdapter().Show();
         }
 
         public override async Task AddTab2(dynamic viewmodel)
         {
-            new AddBooksWindowAdapter(viewmodel).Show();
+            //TODO
+            //new AddBooksWindowAdapter(viewmodel).Show();
         }
     }
 }

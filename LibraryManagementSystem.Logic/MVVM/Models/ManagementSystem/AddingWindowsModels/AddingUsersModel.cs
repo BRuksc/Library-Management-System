@@ -12,11 +12,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using LibraryManagementSystem.ViewsAdapter.Adapters;
+using LibraryManagementSystem.Interfaces.UI;
 
 namespace LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindowsModels
 {
-    public class AddingUsersModel : BaseAddingModel, IViewModelsTypes
+    public class AddingUsersModel : BaseAddingModel
     {
         #region Properties
         public string Email { get; set; } = String.Empty;
@@ -26,16 +26,15 @@ namespace LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindo
         public string Pesel { get; set; } = String.Empty;
         public string Address { get; set; } = String.Empty;
         public AdminViewModel? AdminVM { get; set; } = null;
-        LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AdminViewModel? IViewModelsTypes.AdminVM { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        private IWindowPointing windowPointer;
 
-        private readonly AddUsersWindowAdapter view;
         #endregion
 
         #region Constructors
-        public AddingUsersModel(AdminViewModel viewmodel, AddUsersWindowAdapter view)
+        public AddingUsersModel(AdminViewModel viewmodel, IWindowPointing windowPointer)
         {
             AdminVM = viewmodel;
-            this.view = view;
+            this.windowPointer = windowPointer;
         }
         #endregion
 
@@ -77,7 +76,7 @@ namespace LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindo
                                     MessageBoxButton.OK, MessageBoxImage.Information);
 
                                 if (result == MessageBoxResult.OK)
-                                    view.Close();
+                                    windowPointer.Close();
                             }
 
                             AdminVM.OnPropertyChanged(nameof(AdminVM.Users));

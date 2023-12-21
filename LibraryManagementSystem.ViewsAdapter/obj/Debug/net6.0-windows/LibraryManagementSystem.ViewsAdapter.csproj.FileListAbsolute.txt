@@ -685,3 +685,5 @@ D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.ViewsAdapter\obj\Deb
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.ViewsAdapter\obj\Debug\net6.0-windows\LibraryManagementSystem.ViewsAdapter.pdb
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.ViewsAdapter\obj\Debug\net6.0-windows\LibraryManagementSystem.ViewsAdapter.genruntimeconfig.cache
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.ViewsAdapter\obj\Debug\net6.0-windows\ref\LibraryManagementSystem.ViewsAdapter.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.ViewsAdapter\bin\Debug\net6.0-windows\LibraryManagementSystem.WindowsPointing.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.ViewsAdapter\bin\Debug\net6.0-windows\LibraryManagementSystem.WindowsPointing.pdb

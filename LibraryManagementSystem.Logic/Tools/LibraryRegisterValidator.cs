@@ -1,6 +1,5 @@
 ﻿using LibraryManagementSystem.DataManagers;
 using LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem;
-using LibraryManagementSystem.MVVM.Views.ValidationSystem;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;

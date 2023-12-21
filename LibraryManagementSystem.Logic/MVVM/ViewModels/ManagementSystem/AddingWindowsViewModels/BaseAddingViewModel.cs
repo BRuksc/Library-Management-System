@@ -10,7 +10,7 @@ using System.Windows.Input;
 
 namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels
 {
-    public abstract class BaseAddingViewModel<T> : BasicViewModel, IAddingViewModel where T : class
+    public abstract class BaseAddingViewModel<T> : BasicViewModel where T : class
     {
         public abstract bool IsOne { get; set; }
         public abstract bool IsMany { get; set; }

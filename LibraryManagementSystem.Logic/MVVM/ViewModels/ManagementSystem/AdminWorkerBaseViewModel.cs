@@ -1,7 +1,6 @@
 ﻿using LibraryManagementSystem.DataModels;
 using LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem;
 using LibraryManagementSystem.Models;
-using LibraryManagementSystem.MVVM.Views.ManagementSystem;
 using System;
 using System.Collections.Generic;
 using System.Linq;

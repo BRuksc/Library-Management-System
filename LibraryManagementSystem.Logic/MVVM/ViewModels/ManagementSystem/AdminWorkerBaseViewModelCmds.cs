@@ -1,5 +1,5 @@
-﻿using LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews;
-using LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem;
+﻿using LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem;
+using LibraryManagementSystem.Logic.Tools;
 using LibraryManagementSystem.Tools;
 using System;
 using System.Collections.Generic;
@@ -25,16 +25,16 @@ namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem
             {
                 if (addTab1 == null)
                 {
-                    addTab1 = new RelayCommand(
-                        async (object o) =>
-                        {
-                            await model.AddTab1(this);
-                        },
-                        (object o) =>
-                        {
-                            return (Loans != null) || (Users != null)
-                            || (Loans == null) || (Users == null);
-                        });
+                    //addTab1 = new RelayCommand(
+                    //    async (object o) =>
+                    //    {
+                    //        await model.AddTab1(this);
+                    //    },
+                    //    (object o) =>
+                    //    {
+                    //        return (Loans != null) || (Users != null)
+                    //        || (Loans == null) || (Users == null);
+                    //    });
                 }
 
                 return addTab1;
@@ -47,16 +47,16 @@ namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem
             {
                 if (removeTab1 == null)
                 {
-                    removeTab1 = new RelayCommand(
-                        async (object o) =>
-                        {
-                            await model.RemoveTab1(this);
-                        },
-                        (object o) =>
-                        {
-                            return (Loans != null) || (Users != null)
-                                || (Loans == null) || (Users == null);
-                        });
+                    //removeTab1 = new RelayCommand(
+                    //    async (object o) =>
+                    //    {
+                    //        await model.RemoveTab1(this);
+                    //    },
+                    //    (object o) =>
+                    //    {
+                    //        return (Loans != null) || (Users != null)
+                    //            || (Loans == null) || (Users == null);
+                    //    });
                 }
 
                 return removeTab1;

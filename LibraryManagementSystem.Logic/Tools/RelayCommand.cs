@@ -1,37 +1,47 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Input;
+using System.ComponentModel;
 
-namespace LibraryManagementSystem.Logic.Tools
+namespace MVVMBoostUniversalWindowsApp
 {
-    public class RelayCommand : ICommand
+    public static class RelayCommand
     {
-        readonly Action<object> _execute;
-        readonly Func<object, bool> _canExecute;
+        private static List<Action> _raiseCanExecuteChangedActions = new List<Action>();
 
-        public RelayCommand(Action<object> execute, Func<object, bool> canExecute)
+        public static void AddRaiseCanExecuteChangedAction(ref Action raiseCanExecuteChangedAction)
         {
-            _execute = execute ?? throw new ArgumentNullException("execute");
-            _canExecute = canExecute;
+            _raiseCanExecuteChangedActions.Add(raiseCanExecuteChangedAction);
         }
 
-        public bool CanExecute(object parameter)
+        public static void RemoveRaiseCanExecuteChangedAction(Action raiseCanExecuteChangedAction)
         {
-            return _canExecute == null || _canExecute(parameter);
+            _raiseCanExecuteChangedActions.Remove(raiseCanExecuteChangedAction);
         }
 
-        public event EventHandler CanExecuteChanged
+        public static void AssignOnPropertyChanged(ref PropertyChangedEventHandler propertyEventHandler)
         {
-            add { CommandManager.RequerySuggested += value; }
-            remove { CommandManager.RequerySuggested -= value; }
+            propertyEventHandler += OnPropertyChanged;
         }
 
-        public void Execute(object parameter)
+        private static void OnPropertyChanged(object sender, PropertyChangedEventArgs e)
         {
-            _execute(parameter);
+            // this if clause is to prevent an infinity loop
+            if (e.PropertyName != "CanExecute")
+            {
+                RefreshCommandStates();
+            }
+        }
+
+        public static void RefreshCommandStates()
+        {
+            for (var i = 0; i < _raiseCanExecuteChangedActions.Count; i++)
+            {
+                var raiseCanExecuteChangedAction = _raiseCanExecuteChangedActions[i];
+                if (raiseCanExecuteChangedAction != null)
+                {
+                    raiseCanExecuteChangedAction.Invoke();
+                }
+            }
         }
     }
 }

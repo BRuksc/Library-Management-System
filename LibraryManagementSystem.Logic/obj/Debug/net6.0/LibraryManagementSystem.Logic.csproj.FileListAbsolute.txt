@@ -9,3 +9,20 @@ C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\De
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\refint\LibraryManagementSystem.Logic.dll
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\LibraryManagementSystem.Logic.pdb
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\ref\LibraryManagementSystem.Logic.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\LibraryManagementSystem.Logic.csproj.AssemblyReference.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\LibraryManagementSystem.Logic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\LibraryManagementSystem.Logic.AssemblyInfoInputs.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\LibraryManagementSystem.Logic.AssemblyInfo.cs
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\LibraryManagementSystem.Logic.csproj.CoreCompileInputs.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0\LibraryManagementSystem.Logic.deps.json
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0\LibraryManagementSystem.Logic.runtimeconfig.json
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0\LibraryManagementSystem.Logic.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0\LibraryManagementSystem.Logic.pdb
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0\LibraryManagementSystem.Data.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0\LibraryManagementSystem.Data.pdb
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\LibraryManagementSystem.Logic.csproj.CopyComplete
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\LibraryManagementSystem.Logic.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\refint\LibraryManagementSystem.Logic.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\LibraryManagementSystem.Logic.pdb
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\LibraryManagementSystem.Logic.genruntimeconfig.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0\ref\LibraryManagementSystem.Logic.dll
