@@ -1,7 +1,7 @@
-﻿using LibraryManagementSystem.Interfaces.UI;
-using LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem;
+﻿using LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem;
 using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
 using LibraryManagementSystem.Logic.Tools;
+using LibraryManagementSystem.WindowsPointing.Interfaces;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;

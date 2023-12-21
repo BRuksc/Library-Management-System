@@ -20,6 +20,11 @@ C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\De
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\LibraryManagementSystem.Logic.pdb
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\LibraryManagementSystem.Logic.genruntimeconfig.cache
 C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\ref\LibraryManagementSystem.Logic.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\LibraryManagementSystem.Logic.csproj.AssemblyReference.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\LibraryManagementSystem.Logic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\LibraryManagementSystem.Logic.AssemblyInfoInputs.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\LibraryManagementSystem.Logic.AssemblyInfo.cs
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\LibraryManagementSystem.Logic.csproj.CoreCompileInputs.cache
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0-windows\LibraryManagementSystem.Logic.deps.json
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0-windows\LibraryManagementSystem.Logic.runtimeconfig.json
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0-windows\LibraryManagementSystem.Logic.dll
@@ -217,12 +222,9 @@ D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0-windows\refs\UIAutomationTypes.dll
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0-windows\refs\WindowsBase.dll
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0-windows\LibraryManagementSystem.Data.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0-windows\LibraryManagementSystem.WindowsPointing.dll
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0-windows\LibraryManagementSystem.Data.pdb
-D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\LibraryManagementSystem.Logic.csproj.AssemblyReference.cache
-D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\LibraryManagementSystem.Logic.GeneratedMSBuildEditorConfig.editorconfig
-D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\LibraryManagementSystem.Logic.AssemblyInfoInputs.cache
-D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\LibraryManagementSystem.Logic.AssemblyInfo.cs
-D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\LibraryManagementSystem.Logic.csproj.CoreCompileInputs.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\bin\Debug\net6.0-windows\LibraryManagementSystem.WindowsPointing.pdb
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\LibraryManagementSystem.Logic.csproj.CopyComplete
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\LibraryManagementSystem.Logic.dll
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Logic\obj\Debug\net6.0-windows\refint\LibraryManagementSystem.Logic.dll

@@ -1,7 +1,7 @@
 ﻿using LibraryManagementSystem.Interfaces;
-using LibraryManagementSystem.Interfaces.UI;
 using LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindowsModels;
 using LibraryManagementSystem.Tools;
+using LibraryManagementSystem.WindowsPointing.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;

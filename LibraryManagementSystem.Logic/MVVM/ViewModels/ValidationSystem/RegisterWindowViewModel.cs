@@ -11,7 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
-using LibraryManagementSystem.Interfaces.UI;
+using LibraryManagementSystem.WindowsPointing.Interfaces;
 
 namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ValidationSystem
 {

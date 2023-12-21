@@ -1,4 +1,4 @@
-﻿using LibraryManagementSystem.Interfaces.UI;
+﻿using LibraryManagementSystem.WindowsPointing.Interfaces;
 using LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem;
 using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
 using LibraryManagementSystem.Logic.Tools;

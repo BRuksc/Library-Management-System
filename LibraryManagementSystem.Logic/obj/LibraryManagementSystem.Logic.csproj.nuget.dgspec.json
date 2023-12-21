@@ -103,6 +103,9 @@
             "projectReferences": {
               "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj": {
                 "projectPath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj"
+              },
+              "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.WindowsPointing\\LibraryManagementSystem.WindowsPointing.csproj": {
+                "projectPath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.WindowsPointing\\LibraryManagementSystem.WindowsPointing.csproj"
               }
             }
           }
@@ -139,6 +142,61 @@
             },
             "Microsoft.WindowsDesktop.App.WPF": {
               "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.WindowsPointing\\LibraryManagementSystem.WindowsPointing.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.WindowsPointing\\LibraryManagementSystem.WindowsPointing.csproj",
+        "projectName": "LibraryManagementSystem.WindowsPointing",
+        "projectPath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.WindowsPointing\\LibraryManagementSystem.WindowsPointing.csproj",
+        "packagesPath": "C:\\Users\\Legion\\.nuget\\packages\\",
+        "outputPath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.WindowsPointing\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "D:\\Bogumił\\LibraryManagementSystem\\NuGet.Config",
+          "C:\\Users\\Legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
             }
           },
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"

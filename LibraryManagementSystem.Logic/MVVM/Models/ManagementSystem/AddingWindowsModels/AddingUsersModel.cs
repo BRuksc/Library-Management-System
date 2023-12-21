@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using LibraryManagementSystem.Interfaces.UI;
+using LibraryManagementSystem.WindowsPointing.Interfaces;
 
 namespace LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindowsModels
 {

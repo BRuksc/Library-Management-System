@@ -1864,6 +1864,16 @@
         "runtime": {
           "bin/placeholder/LibraryManagementSystem.Data.dll": {}
         }
+      },
+      "LibraryManagementSystem.WindowsPointing/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/LibraryManagementSystem.WindowsPointing.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryManagementSystem.WindowsPointing.dll": {}
+        }
       }
     }
   },
@@ -5753,12 +5763,18 @@
       "type": "project",
       "path": "../LibraryManagementSystem.Data/LibraryManagementSystem.Data.csproj",
       "msbuildProject": "../LibraryManagementSystem.Data/LibraryManagementSystem.Data.csproj"
+    },
+    "LibraryManagementSystem.WindowsPointing/1.0.0": {
+      "type": "project",
+      "path": "../LibraryManagementSystem.WindowsPointing/LibraryManagementSystem.WindowsPointing.csproj",
+      "msbuildProject": "../LibraryManagementSystem.WindowsPointing/LibraryManagementSystem.WindowsPointing.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0-windows7.0": [
       "Autofac >= 7.1.0",
-      "LibraryManagementSystem.Data >= 1.0.0"
+      "LibraryManagementSystem.Data >= 1.0.0",
+      "LibraryManagementSystem.WindowsPointing >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5790,6 +5806,9 @@
           "projectReferences": {
             "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj": {
               "projectPath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Data\\LibraryManagementSystem.Data.csproj"
+            },
+            "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.WindowsPointing\\LibraryManagementSystem.WindowsPointing.csproj": {
+              "projectPath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.WindowsPointing\\LibraryManagementSystem.WindowsPointing.csproj"
             }
           }
         }

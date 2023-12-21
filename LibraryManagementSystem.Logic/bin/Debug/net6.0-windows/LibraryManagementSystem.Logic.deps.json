@@ -34,6 +34,7 @@
         "dependencies": {
           "Autofac": "7.1.0",
           "LibraryManagementSystem.Data": "1.0.0",
+          "LibraryManagementSystem.WindowsPointing": "1.0.0",
           "Accessibility": "4.0.0.0",
           "Microsoft.CSharp.Reference": "6.0.0.0",
           "Microsoft.VisualBasic.Core": "11.0.0.0",
@@ -1320,6 +1321,14 @@
         },
         "compile": {
           "LibraryManagementSystem.Data.dll": {}
+        }
+      },
+      "LibraryManagementSystem.WindowsPointing/1.0.0": {
+        "runtime": {
+          "LibraryManagementSystem.WindowsPointing.dll": {}
+        },
+        "compile": {
+          "LibraryManagementSystem.WindowsPointing.dll": {}
         }
       },
       "Accessibility/4.0.0.0": {
@@ -3225,6 +3234,11 @@
       "hashPath": "system.windows.extensions.4.7.0.nupkg.sha512"
     },
     "LibraryManagementSystem.Data/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "LibraryManagementSystem.WindowsPointing/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
