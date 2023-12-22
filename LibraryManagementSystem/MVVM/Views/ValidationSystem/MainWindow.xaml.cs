@@ -1,6 +1,4 @@
-﻿using LibraryManagementSystem.MVVM.ViewModels;
-using LibraryManagementSystem.MVVM.ViewModels.ValidationSystem;
-using LibraryManagementSystem.Tools;
+﻿using LibraryManagementSystem.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +14,9 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Autofac;
+using LibraryManagementSystem.WindowsPointing;
+using LibraryManagementSystem.Logic.MVVM.ViewModels.ValidationSystem;
+using LibraryManagementSystem.WindowsPointing.Interfaces;
 
 namespace LibraryManagementSystem.MVVM.Views.ValidationSystem
 {
@@ -24,10 +25,15 @@ namespace LibraryManagementSystem.MVVM.Views.ValidationSystem
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(IWindowGuidContainer windowGuidContainer)
         {
             InitializeComponent();
-            this.DataContext = new MainViewModel(this);
+
+            var run = new Task(new Action(() => this.Show()));
+            var close = new Task(new Action(() => this.Close()));
+            var windowsPointer = new WindowPointer(run, close, windowGuidContainer.LibraryManagementWindow);
+
+            this.DataContext = new MainViewModel(windowsPointer);
         }
     }
 }

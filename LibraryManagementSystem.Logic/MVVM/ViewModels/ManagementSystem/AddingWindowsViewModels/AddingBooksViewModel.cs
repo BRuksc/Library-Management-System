@@ -11,7 +11,7 @@ using LibraryManagementSystem.Tools;
 
 namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels
 {
-    internal class AddingBooksViewModel : BaseAddingViewModel<AddingBooksModel>
+    public class AddingBooksViewModel : BaseAddingViewModel<AddingBooksModel>
     {
         public string Title
         {

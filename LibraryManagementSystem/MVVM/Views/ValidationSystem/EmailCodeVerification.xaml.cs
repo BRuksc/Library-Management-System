@@ -1,5 +1,4 @@
-﻿using LibraryManagementSystem.MVVM.ViewModels;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,8 +11,10 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using LibraryManagementSystem.MVVM.Models.ValidationSystem;
-using LibraryManagementSystem.MVVM.ViewModels.ValidationSystem;
+using LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem;
+using LibraryManagementSystem.Logic.MVVM.ViewModels.ValidationSystem;
+using LibraryManagementSystem.WindowsPointing;
+using LibraryManagementSystem.WindowsPointing.Interfaces;
 
 namespace LibraryManagementSystem.MVVM.Views.ValidationSystem
 {
@@ -23,11 +24,16 @@ namespace LibraryManagementSystem.MVVM.Views.ValidationSystem
     public partial class EmailCodeVerification : Window
     {
         public EmailCodeVerification
-            (RegisterWindowModel registerData, string verifyingCode, string whatDoYouWantToVerify)
+            (RegisterWindowModel registerData, string verifyingCode, string whatDoYouWantToVerify,
+            IWindowGuidContainer windowGuidContainer)
         {
             InitializeComponent();
 
-            this.DataContext = new EmailCodeViewModel(this, registerData, verifyingCode, whatDoYouWantToVerify);
+            var run = new Task(new Action(() => this.Show()));
+            var close = new Task(new Action(() => this.Close()));
+            var windowsPointer = new WindowPointer(run, close, windowGuidContainer.LibraryManagementWindow);
+
+            this.DataContext = new EmailCodeViewModel(windowsPointer, registerData, verifyingCode, whatDoYouWantToVerify);
         }
     }
 }

@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LibraryManagementSystem.Data\LibraryManagementSystem.Data.csproj" />
+    <ProjectReference Include="..\LibraryManagementSystem.Logic\LibraryManagementSystem.Logic.csproj" />
     <ProjectReference Include="..\LibraryManagementSystem.WindowsPointing\LibraryManagementSystem.WindowsPointing.csproj" />
   </ItemGroup>
 
