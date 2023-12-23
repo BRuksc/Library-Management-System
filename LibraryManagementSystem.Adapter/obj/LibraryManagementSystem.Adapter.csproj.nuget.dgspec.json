@@ -1,32 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Adapter\\LibraryManagementSystem.Adapter.csproj": {}
+    "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Adapter\\LibraryManagementSystem.Adapter.csproj": {}
   },
   "projects": {
-    "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Adapter\\LibraryManagementSystem.Adapter.csproj": {
+    "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Adapter\\LibraryManagementSystem.Adapter.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Adapter\\LibraryManagementSystem.Adapter.csproj",
+        "projectUniqueName": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Adapter\\LibraryManagementSystem.Adapter.csproj",
         "projectName": "LibraryManagementSystem.Adapter",
-        "projectPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Adapter\\LibraryManagementSystem.Adapter.csproj",
-        "packagesPath": "C:\\Users\\bogumil.ruksc\\.nuget\\packages\\",
-        "outputPath": "C:\\Private projects\\LibraryManagementSystem\\LibraryManagementSystem.Adapter\\obj\\",
+        "projectPath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Adapter\\LibraryManagementSystem.Adapter.csproj",
+        "packagesPath": "C:\\Users\\Legion\\.nuget\\packages\\",
+        "outputPath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Adapter\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\bogumil.ruksc\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "c:\\private projects\\librarymanagementsystem\\librarymanagementsystem.adapter\\bin\\release\\net6.0\\publish": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Adapter\\bin\\Debug\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -82,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
