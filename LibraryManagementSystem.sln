@@ -13,11 +13,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagementSystem.Ada
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagementSystem.Tests", "LibraryManagementSystem.Tests\LibraryManagementSystem.Tests.csproj", "{1204807A-561B-4BF8-B0CD-F444AE14252E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.ViewsAdapter", "LibraryManagementSystem.ViewsAdapter\LibraryManagementSystem.ViewsAdapter.csproj", "{973309F1-7426-4267-8E33-24EAFC482FFC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagementSystem.ViewsAdapter", "LibraryManagementSystem.ViewsAdapter\LibraryManagementSystem.ViewsAdapter.csproj", "{973309F1-7426-4267-8E33-24EAFC482FFC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.Logic", "LibraryManagementSystem.Logic\LibraryManagementSystem.Logic.csproj", "{0237AF1B-BC02-4489-93DA-A6A04CE53CFB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagementSystem.Logic", "LibraryManagementSystem.Logic\LibraryManagementSystem.Logic.csproj", "{0237AF1B-BC02-4489-93DA-A6A04CE53CFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LibraryManagementSystem.WindowsPointing", "LibraryManagementSystem.WindowsPointing\LibraryManagementSystem.WindowsPointing.csproj", "{E51E4598-E6CD-4B75-A893-470F49E9EB42}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LibraryManagementSystem.WindowsPointing", "LibraryManagementSystem.WindowsPointing\LibraryManagementSystem.WindowsPointing.csproj", "{E51E4598-E6CD-4B75-A893-470F49E9EB42}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

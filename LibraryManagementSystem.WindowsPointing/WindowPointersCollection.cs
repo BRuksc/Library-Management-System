@@ -21,8 +21,8 @@ namespace LibraryManagementSystem.WindowsPointing
             this.windowGuidContainer = windowGuidContainer;
         }
 
-        public async Task AddAsync(Guid guid, Func<Task> run, Func<Task> close) => 
-            Add(guid, run, close);
+        public async Task AddAsync(Guid guid, Func<Task> run, Func<Task> close, Func<Task> hide) => 
+            Add(guid, run, close, hide);
 
         public IEnumerator<WindowPointer> GetEnumerator()
         {
@@ -41,7 +41,7 @@ namespace LibraryManagementSystem.WindowsPointing
             return GetEnumerator();
         }
 
-        public void Add(Guid guid, Func<Task> run, Func<Task> close)
+        public void Add(Guid guid, Func<Task> run, Func<Task> close, Func<Task> hide)
         {
             try
             {
@@ -50,7 +50,8 @@ namespace LibraryManagementSystem.WindowsPointing
                     throw new Exception("LibrariesManagementWindow can be initialize only once!");
                 }
 
-                var windowPointer = new WindowPointer(run.Invoke(), close.Invoke(), guid);
+                var windowPointer = new WindowPointer
+                    (run.Invoke(), close.Invoke(), hide.Invoke(), guid);
             }
 
             catch (Exception ex) 

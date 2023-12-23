@@ -12,6 +12,7 @@ namespace LibraryManagementSystem.WindowsPointing
     {
         private readonly Func<Task> close;
         private readonly Func<Task> run;
+        private readonly Func<Task> hide;
 
         public Func<Task> Close => () => close();
         public Func<Task> Run => () => close();
@@ -19,7 +20,9 @@ namespace LibraryManagementSystem.WindowsPointing
         private readonly Guid windowGuid;
         public Guid WindowGuid => windowGuid;
 
-        public WindowPointer(Task run, Task close, Guid windowGuid)
+        public Func<Task> Hide => hide;
+
+        public WindowPointer(Task run, Task close, Task hide, Guid windowGuid)
         {
             this.windowGuid = windowGuid;
 
@@ -32,6 +35,12 @@ namespace LibraryManagementSystem.WindowsPointing
             this.close = () => 
             {
                 close.Start();
+                return Task.CompletedTask;
+            };
+
+            this.hide = () =>
+            {
+                hide.Start();
                 return Task.CompletedTask;
             };
         }

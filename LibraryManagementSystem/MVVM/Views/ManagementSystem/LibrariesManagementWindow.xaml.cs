@@ -38,11 +38,17 @@ namespace LibraryManagementSystem.MVVM.Views.ManagementSystem
                 Func<Task> close = async () =>
                 {
                     this.Close();
-                };         
+                };
+
+                Func<Task> hide = async () =>
+                {
+                    this.Hide();
+                };
+
 
                 scope.Resolve<WindowPointersCollection>()
                     .Add(scope.Resolve<IWindowGuidContainer>().LibraryManagementWindow,
-                    show, close);
+                    show, close, hide);
             }
 
             InitializeComponent();

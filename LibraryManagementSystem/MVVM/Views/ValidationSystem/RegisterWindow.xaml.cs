@@ -28,7 +28,8 @@ namespace LibraryManagementSystem.MVVM.Views.ValidationSystem
 
             var run = new Task(new Action(() => this.Show()));
             var close = new Task(new Action(() => this.Close()));
-            var windowsPointer = new WindowPointer(run, close, windowGuidContainer.LibraryManagementWindow);
+            var hide = new Task(new Action(() => this.Hide()));
+            var windowsPointer = new WindowPointer(run, close, hide, windowGuidContainer.LibraryManagementWindow);
 
             DataContext = new RegisterWindowViewModel(windowsPointer);
 
