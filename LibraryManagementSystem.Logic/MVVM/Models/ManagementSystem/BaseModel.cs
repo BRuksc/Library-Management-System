@@ -1,18 +1,16 @@
-﻿using LibraryManagementSystem.DataModels;
-using LibraryManagementSystem.DataManagers;
-using LibraryManagementSystem.Models;
+﻿using LibraryManagementSystem.Data.DataModels;
+using LibraryManagementSystem.Data.DataManagers;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
-using LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews;
-using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
-using LibraryManagementSystem.Interfaces.Data;
+using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
 using System.Windows;
+using LibraryManagementSystem.Data.Interfaces;
 
-namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
+namespace LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem
 {
     public abstract class BaseModel : IDataWinLibWorkers<List<Book>, List<Loan>, List<User>>, IAddRemove<Task>
     {

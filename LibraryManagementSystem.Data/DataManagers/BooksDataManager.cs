@@ -5,15 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using LibraryManagementSystem.DataModels;
-using LibraryManagementSystem.Interfaces.Data;
-using LibraryManagementSystem.Models;
+using LibraryManagementSystem.Data.DataModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query.Internal;
 using Microsoft.Extensions.DependencyModel;
 using System.Windows;
+using LibraryManagementSystem.Data.Interfaces;
 
-namespace LibraryManagementSystem.DataManagers
+namespace LibraryManagementSystem.Data.DataManagers
 {
     public class BooksDataManager : IDataManagement<Book>, IManyRecordsOperations<Book>, IBookData
     {

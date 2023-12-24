@@ -1,6 +1,6 @@
-﻿using LibraryManagementSystem.DataModels;
-using LibraryManagementSystem.Models;
-using LibraryManagementSystem.MVVM.Models.ManagementSystem;
+﻿using LibraryManagementSystem.Data.DataModels;
+using LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem;
+using LibraryManagementSystem.Logic.Tools;
 using LibraryManagementSystem.Tools;
 using System;
 using System.Collections.Generic;
@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Controls;
 using System.Windows.Input;
 
-namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
+namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem
 {
     public class AdminViewModel : BasicViewModel
     {
@@ -170,16 +170,16 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
             {
                 if (addTab2 == null)
                 {
-                    addTab2 = new RelayCommand(
-                        async (object o) =>
-                        {
-                            await model.AddTab2(this);
-                        },
-                        (object o) =>
-                        {
-                            return (Books != null) || (AvailableBooks != null) || (BorrowedBooks != null)
-                            || (Books == null) || (AvailableBooks == null) || (BorrowedBooks == null);
-                        });
+                    //addTab2 = new Tools.RelayCommand(
+                    //    async (object o) =>
+                    //    {
+                    //        await model.AddTab2(this);
+                    //    },
+                    //    (object o) =>
+                    //    {
+                    //        return (Books != null) || (AvailableBooks != null) || (BorrowedBooks != null)
+                    //        || (Books == null) || (AvailableBooks == null) || (BorrowedBooks == null);
+                    //    });
                 }
 
                 return addTab2;

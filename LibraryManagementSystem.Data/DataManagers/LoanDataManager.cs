@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LibraryManagementSystem.DataModels;
+using LibraryManagementSystem.Data.DataModels;
 using System.Windows;
-using LibraryManagementSystem.Models;
 using Microsoft.EntityFrameworkCore;
-using LibraryManagementSystem.Interfaces.Data;
+using LibraryManagementSystem.Data.Interfaces;
 
-namespace LibraryManagementSystem.DataManagers
+namespace LibraryManagementSystem.Data.DataManagers
 {
     public class LoanDataManager : IDataManagement<Loan>, IManyRecordsOperations<Loan>
     {

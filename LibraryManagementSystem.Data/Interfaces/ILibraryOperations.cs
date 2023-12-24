@@ -1,8 +1,8 @@
-﻿using LibraryManagementSystem.DataModels;
+﻿using LibraryManagementSystem.Data.DataModels;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.Interfaces.Data
+namespace LibraryManagementSystem.Data.Interfaces
 {
     public interface ILibraryOperations<T>
     {

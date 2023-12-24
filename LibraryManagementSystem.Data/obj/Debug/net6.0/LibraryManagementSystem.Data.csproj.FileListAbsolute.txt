@@ -26,3 +26,17 @@ D:\Bogumił\Library-Management-System\LibraryManagementSystem.Data\obj\Debug\net
 D:\Bogumił\Library-Management-System\LibraryManagementSystem.Data\obj\Debug\net6.0\LibraryManagementSystem.Data.pdb
 D:\Bogumił\Library-Management-System\LibraryManagementSystem.Data\obj\Debug\net6.0\LibraryManagementSystem.Data.genruntimeconfig.cache
 D:\Bogumił\Library-Management-System\LibraryManagementSystem.Data\obj\Debug\net6.0\ref\LibraryManagementSystem.Data.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Data\bin\Debug\net6.0\LibraryManagementSystem.Data.deps.json
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Data\bin\Debug\net6.0\LibraryManagementSystem.Data.runtimeconfig.json
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Data\bin\Debug\net6.0\LibraryManagementSystem.Data.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Data\bin\Debug\net6.0\LibraryManagementSystem.Data.pdb
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Data\obj\Debug\net6.0\LibraryManagementSystem.Data.csproj.AssemblyReference.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Data\obj\Debug\net6.0\LibraryManagementSystem.Data.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Data\obj\Debug\net6.0\LibraryManagementSystem.Data.AssemblyInfoInputs.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Data\obj\Debug\net6.0\LibraryManagementSystem.Data.AssemblyInfo.cs
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Data\obj\Debug\net6.0\LibraryManagementSystem.Data.csproj.CoreCompileInputs.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Data\obj\Debug\net6.0\LibraryManagementSystem.Data.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Data\obj\Debug\net6.0\refint\LibraryManagementSystem.Data.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Data\obj\Debug\net6.0\LibraryManagementSystem.Data.pdb
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Data\obj\Debug\net6.0\LibraryManagementSystem.Data.genruntimeconfig.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Data\obj\Debug\net6.0\ref\LibraryManagementSystem.Data.dll

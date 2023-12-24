@@ -1,7 +1,7 @@
-﻿using LibraryManagementSystem.MVVM.Models.ValidationSystem;
-using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
-using LibraryManagementSystem.Tools;
-using LibraryManagementSystem.MVVM.Views.ValidationSystem;
+﻿using LibraryManagementSystem.WindowsPointing.Interfaces;
+using LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem;
+using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
+using LibraryManagementSystem.Logic.Tools;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -12,12 +12,12 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
 
-namespace LibraryManagementSystem.MVVM.ViewModels.ValidationSystem
+namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ValidationSystem
 {
-    internal class MainViewModel : BasicViewModel
+    public class MainViewModel : BasicViewModel
     {
         private MainModel model;
-        private readonly MainWindow view;
+        private readonly IWindowPointing windowPointer;
         public string LoginText
         {
             get => model.LoginText;
@@ -48,10 +48,10 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ValidationSystem
             }
         }
 
-        public MainViewModel(MainWindow view)
+        public MainViewModel(IWindowPointing windowPointer)
         {
             model = new MainModel();
-            this.view = view;
+            this.windowPointer = windowPointer;
         }
 
         private ICommand passwordRecovery = null;
@@ -72,14 +72,15 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ValidationSystem
             {
                 if (registering == null)
                 {
-                    registering = new RelayCommand(
-                       (o) =>
-                       {
-                           var rw = new RegisterWindow();
-                           rw.Show();
+                    //registering = new RelayCommand(
+                    //   (o) =>
+                    //   {
+                           //TODO
+                           //var rw = new RegisterWindow();
+                           //rw.Show();
 
-                           view.Close();
-                       }, null);
+                       //    windowPointer.Close();
+                       //}, null);
                 }
 
                 return registering;
@@ -92,21 +93,22 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ValidationSystem
             {
                 if (login == null)
                 {
-                    login = new RelayCommand(
-                        async (o) =>
-                        {
-                            if (model.GetExceptions() == string.Empty)
-                            {
-                                await model.Login();
-                                view.Close();
-                            }
+                    //TODO
+                    //login = new RelayCommand(
+                    //    async (o) =>
+                    //    {
+                    //        if (model.GetExceptions() == string.Empty)
+                    //        {
+                    //            await model.Login();
+                    //            windowPointer.Close();
+                    //        }
 
-                            else MessageBox.Show(model.GetExceptions());
-                        },
-                        (o) =>
-                        {
-                            return login != null;
-                        });
+                    //        else MessageBox.Show(model.GetExceptions());
+                    //    },
+                    //    (o) =>
+                    //    {
+                    //        return login != null;
+                    //    });
                 }
 
                 return login;

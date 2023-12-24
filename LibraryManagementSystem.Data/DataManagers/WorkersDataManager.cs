@@ -1,5 +1,5 @@
-﻿using LibraryManagementSystem.DataModels;
-using LibraryManagementSystem.Interfaces.Data;
+﻿using LibraryManagementSystem.Data.DataModels;
+using LibraryManagementSystem.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows;
 
-namespace LibraryManagementSystem.DataManagers
+namespace LibraryManagementSystem.Data.DataManagers
 {
     public class WorkersDataManager : IDataManagement<Worker>, IManyRecordsOperations<Worker>
     {

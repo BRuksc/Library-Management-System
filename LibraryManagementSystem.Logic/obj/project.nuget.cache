@@ -1,10 +1,9 @@
 {
   "version": 2,
-  "dgSpecHash": "AqaB5BVag5/MfQEXKIWOQs2lcj7zRTDwL7ySu8gMaqkg67p3rEjYw1HbEBtaDH3dyyaDdehycIJivSbmrIhwDA==",
+  "dgSpecHash": "+2LoJuo7b/AK2Di/VYFey9V/G/kYpAf38Gm3sqxC88qRzxI+x4FrK/Jz31IAEwDKRiaMfgvmFYk93NYCftGP1g==",
   "success": true,
   "projectFilePath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Logic\\LibraryManagementSystem.Logic.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Legion\\.nuget\\packages\\autofac\\7.1.0\\autofac.7.1.0.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\extended.wpf.toolkit\\4.5.0\\extended.wpf.toolkit.4.5.0.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\librarymanagementsystem.adapter\\1.0.0\\librarymanagementsystem.adapter.1.0.0.nupkg.sha512",
@@ -117,10 +116,10 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'PresentationFramework 4.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "message": "Package 'PresentationFramework 4.6.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
       "libraryId": "PresentationFramework",
       "targetGraphs": [
-        "net6.0-windows7.0"
+        "net6.0"
       ]
     }
   ]

@@ -1,5 +1,6 @@
-﻿using LibraryManagementSystem.MVVM.ViewModels;
-using LibraryManagementSystem.MVVM.ViewModels.ValidationSystem;
+﻿using LibraryManagementSystem.Logic.MVVM.ViewModels.ValidationSystem;
+using LibraryManagementSystem.WindowsPointing;
+using LibraryManagementSystem.WindowsPointing.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,10 +22,16 @@ namespace LibraryManagementSystem.MVVM.Views.ValidationSystem
     /// </summary>
     public partial class RegisterWindow : Window
     {
-        public RegisterWindow()
+        public RegisterWindow(IWindowGuidContainer windowGuidContainer)
         {
             InitializeComponent();
-            DataContext = new RegisterWindowViewModel(this);
+
+            var run = new Task(new Action(() => this.Show()));
+            var close = new Task(new Action(() => this.Close()));
+            var hide = new Task(new Action(() => this.Hide()));
+            var windowsPointer = new WindowPointer(run, close, hide, windowGuidContainer.LibraryManagementWindow);
+
+            DataContext = new RegisterWindowViewModel(windowsPointer);
 
             MessageBox.Show("You have not to get data with '*' symbol");
         }

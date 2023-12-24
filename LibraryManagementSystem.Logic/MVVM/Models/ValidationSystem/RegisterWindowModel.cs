@@ -1,5 +1,5 @@
-﻿using LibraryManagementSystem.DataManagers;
-using LibraryManagementSystem.DataModels;
+﻿using LibraryManagementSystem.Data.DataManagers;
+using LibraryManagementSystem.Data.DataModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace LibraryManagementSystem.MVVM.Models.ValidationSystem
+namespace LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem
 {
     public class RegisterWindowModel
     {

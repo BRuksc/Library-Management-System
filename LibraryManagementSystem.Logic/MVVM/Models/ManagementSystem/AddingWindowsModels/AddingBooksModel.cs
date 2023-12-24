@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LibraryManagementSystem.DataManagers;
-using LibraryManagementSystem.DataModels;
-using LibraryManagementSystem.Interfaces.Data;
-using LibraryManagementSystem.Models;
-using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
+using LibraryManagementSystem.Logic.Interfaces;
+using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
+using LibraryManagementSystem.Logic.Interfaces.UI;
+using LibraryManagementSystem.Data.DataManagers;
+using LibraryManagementSystem.Data.DataModels;
 
-namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsModels
+namespace LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindowsModels
 {
     public class AddingBooksModel : BaseAddingModel, IViewModelsTypes
     {

@@ -5,8 +5,6 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LibraryManagementSystem"
         xmlns:tools="clr-namespace:LibraryManagementSystem.Tools"
-        xmlns:viewmodels="clr-namespace:LibraryManagementSystem.MVVM.ViewModels.ValidationSystem" 
-        d:DataContext="{d:DesignInstance Type=viewmodels:MainViewModel}"
         mc:Ignorable="d"
         Title="Login into Library Management System"
         MinHeight="800" MinWidth="400" Width="400" Height="600" 

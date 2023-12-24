@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.Interfaces.Database
+namespace LibraryManagementSystem.Data.Interfaces
 {
     public interface IDbTable<T>
     {

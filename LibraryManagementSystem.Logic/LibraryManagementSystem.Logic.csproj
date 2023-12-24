@@ -7,11 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="LibraryManagementSystem.Adapter" Version="1.0.0" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\LibraryManagementSystem.Data\LibraryManagementSystem.Data.csproj" />
+    <ProjectReference Include="..\LibraryManagementSystem.WindowsPointing\LibraryManagementSystem.WindowsPointing.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,5 +1,5 @@
-﻿using LibraryManagementSystem.DataModels;
-using LibraryManagementSystem.Interfaces.Database;
+﻿using LibraryManagementSystem.Data.DataModels;
+using LibraryManagementSystem.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace LibraryManagementSystem.Interfaces
+namespace LibraryManagementSystem.Logic.Interfaces
 {
     public interface IAddingViewModel
     {

@@ -1,11 +1,11 @@
-﻿using LibraryManagementSystem.DataModels;
+﻿using LibraryManagementSystem.Data.DataModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.Interfaces.Data
+namespace LibraryManagementSystem.Data.Interfaces
 {
     public interface IManyRecordsOperations<T>
     {

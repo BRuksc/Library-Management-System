@@ -1,16 +1,15 @@
-﻿using LibraryManagementSystem.DataManagers;
-using LibraryManagementSystem.DataModels;
-using LibraryManagementSystem.Tools;
-using LibraryManagementSystem.MVVM.Views.ManagementSystem;
+﻿using LibraryManagementSystem.Logic.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
+using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
+using LibraryManagementSystem.Data.DataManagers;
+using LibraryManagementSystem.Data.DataModels;
 
-namespace LibraryManagementSystem.MVVM.Models.ValidationSystem
+namespace LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem
 {
     public class MainModel
     {
@@ -118,8 +117,9 @@ namespace LibraryManagementSystem.MVVM.Models.ValidationSystem
                     if (admin != null)
                     {
                         ViewModelLocator.ViewModelManagementWindow = new AdminViewModel(lib);
-                        var win = new AdminWorkerWindow();
-                        win.Show();
+                        //TODO
+                        //var win = new AdminWorkerWindowAdapter();
+                        //win.Show();
                     }
 
                     else MessageBox.Show("I cannot find user with that login data!");

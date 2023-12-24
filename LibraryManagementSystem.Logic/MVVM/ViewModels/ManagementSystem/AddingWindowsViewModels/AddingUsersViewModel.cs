@@ -1,7 +1,6 @@
-﻿using LibraryManagementSystem.Interfaces;
-using LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsModels;
-using LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews;
+﻿using LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindowsModels;
 using LibraryManagementSystem.Tools;
+using LibraryManagementSystem.WindowsPointing.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,9 +8,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels
+namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels
 {
-    internal class AddingUsersViewModel : BaseAddingViewModel<AddingUsersModel>
+    public class AddingUsersViewModel : BaseAddingViewModel<AddingUsersModel>
     {
         #region Properties
         public string Email
@@ -120,9 +119,9 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindows
         #endregion
 
         #region Constructors
-        public AddingUsersViewModel(AdminViewModel viewmodel, AddUsersWindow view)
+        public AddingUsersViewModel(AdminViewModel viewmodel, IWindowPointing windowPointer)
         {
-            model = new AddingUsersModel(viewmodel, view);
+            //model = new AddingUsersModel(viewmodel, view);
         }
         #endregion
     }

@@ -1,5 +1,4 @@
-﻿using LibraryManagementSystem.Interfaces;
-using LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsModels;
+﻿using LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindowsModels;
 using LibraryManagementSystem.Tools;
 using System;
 using System.Collections.Generic;
@@ -8,9 +7,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels
+namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels
 {
-    internal abstract class BaseAddingViewModel<T> : BasicViewModel, IAddingViewModel where T : class
+    public abstract class BaseAddingViewModel<T> : BasicViewModel where T : class
     {
         public abstract bool IsOne { get; set; }
         public abstract bool IsMany { get; set; }

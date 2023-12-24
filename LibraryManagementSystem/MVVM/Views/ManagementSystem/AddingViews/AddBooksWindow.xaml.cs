@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.InteropServices;
@@ -12,8 +13,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
-using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels;
+using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels;
 
 namespace LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews
 {
@@ -24,10 +24,8 @@ namespace LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews
     {
         public AddBooksWindow(AdminViewModel adminVM)
         {
+            this.DataContext = new AddingBooksViewModel(adminVM);
             InitializeComponent();
-
-            if (adminVM != null)
-                DataContext = new AddingBooksViewModel(adminVM);
         }
     }
 }

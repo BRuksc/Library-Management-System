@@ -1,4 +1,4 @@
-﻿using LibraryManagementSystem.DataModels;
+﻿using LibraryManagementSystem.Data.DataModels;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Storage;

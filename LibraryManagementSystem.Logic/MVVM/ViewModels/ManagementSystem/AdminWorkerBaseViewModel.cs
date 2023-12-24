@@ -1,7 +1,5 @@
-﻿using LibraryManagementSystem.DataModels;
-using LibraryManagementSystem.Models;
-using LibraryManagementSystem.MVVM.Models.ManagementSystem;
-using LibraryManagementSystem.MVVM.Views.ManagementSystem;
+﻿using LibraryManagementSystem.Data.DataModels;
+using LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 
-namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
+namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem
 {
     public abstract partial class AdminWorkerBaseViewModel : BasicViewModel
     {

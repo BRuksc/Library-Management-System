@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.Interfaces
+namespace LibraryManagementSystem.Logic.Interfaces.UI
 {
-    internal interface IAdvancedEditingOptions
+    public interface IAdvancedEditingOptions
     {
     }
 }

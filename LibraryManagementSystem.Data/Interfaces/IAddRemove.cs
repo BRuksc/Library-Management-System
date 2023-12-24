@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.Interfaces.Data
+namespace LibraryManagementSystem.Data.Interfaces
 {
     public interface IAddRemove<T>
     {

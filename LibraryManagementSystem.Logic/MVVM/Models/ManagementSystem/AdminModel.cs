@@ -1,13 +1,12 @@
-﻿using LibraryManagementSystem.DataManagers;
-using LibraryManagementSystem.DataModels;
-using LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews;
+﻿using LibraryManagementSystem.Data.DataManagers;
+using LibraryManagementSystem.Data.DataModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
+namespace LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem
 {
     public class AdminModel : BaseModel
     {
@@ -18,15 +17,17 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem
 
         public override async Task AddTab1(dynamic viewmodel)
         {
-            if (TabSelectedBeforeAdd == "Users")
-                new AddUsersWindow(viewmodel).Show();
+            //TODO
+            //if (TabSelectedBeforeAdd == "Users")
+            //    new AddUsersWindowAdapter(viewmodel).Show();
 
-            else new AddLoansWindow().Show();
+            //else new AddLoansWindowAdapter().Show();
         }
 
         public override async Task AddTab2(dynamic viewmodel)
         {
-            new AddBooksWindow(viewmodel).Show();
+            //TODO
+            //new AddBooksWindowAdapter(viewmodel).Show();
         }
     }
 }

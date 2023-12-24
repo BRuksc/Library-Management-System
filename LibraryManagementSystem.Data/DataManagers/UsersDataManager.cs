@@ -1,5 +1,5 @@
-﻿using LibraryManagementSystem.DataModels;
-using LibraryManagementSystem.Interfaces.Data;
+﻿using LibraryManagementSystem.Data.DataModels;
+using LibraryManagementSystem.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyModel;
 using System;
@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace LibraryManagementSystem.DataManagers
+namespace LibraryManagementSystem.Data.DataManagers
 {
     public class UsersDataManager : IDataManagement<User>, IManyRecordsOperations<User>
     {

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.DataModels
+namespace LibraryManagementSystem.Data.DataModels
 {
     public class Worker
     {

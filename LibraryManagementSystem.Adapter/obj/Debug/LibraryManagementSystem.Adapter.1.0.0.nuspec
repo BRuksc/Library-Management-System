@@ -18,7 +18,7 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\bin\Debug\net6.0\LibraryManagementSystem.Adapter.runtimeconfig.json" target="lib\net6.0\LibraryManagementSystem.Adapter.runtimeconfig.json" />
-    <file src="C:\Private projects\LibraryManagementSystem\LibraryManagementSystem.Adapter\bin\Debug\net6.0\LibraryManagementSystem.Adapter.dll" target="lib\net6.0\LibraryManagementSystem.Adapter.dll" />
+    <file src="D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Adapter\bin\Debug\net6.0\LibraryManagementSystem.Adapter.runtimeconfig.json" target="lib\net6.0\LibraryManagementSystem.Adapter.runtimeconfig.json" />
+    <file src="D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.Adapter\bin\Debug\net6.0\LibraryManagementSystem.Adapter.dll" target="lib\net6.0\LibraryManagementSystem.Adapter.dll" />
   </files>
 </package>

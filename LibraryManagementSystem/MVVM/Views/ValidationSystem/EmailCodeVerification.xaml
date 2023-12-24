@@ -4,8 +4,6 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LibraryManagementSystem.MVVM.Views.ValidationSystem" 
-        xmlns:viewmodels="clr-namespace:LibraryManagementSystem.MVVM.ViewModels.ValidationSystem" 
-        d:DataContext="{d:DesignInstance Type=viewmodels:EmailCodeViewModel}"
         mc:Ignorable="d"
         Title="Verifying Email Code" MinHeight="450" MinWidth="800" Background="LightGray">
     <Grid>

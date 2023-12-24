@@ -1,6 +1,7 @@
-﻿using LibraryManagementSystem.DataManagers;
-using LibraryManagementSystem.MVVM.Models.ValidationSystem;
+﻿using LibraryManagementSystem.Data.DataManagers;
+using LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem;
 using LibraryManagementSystem.MVVM.Views.ValidationSystem;
+using LibraryManagementSystem.WindowsPointing.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -10,10 +11,12 @@ namespace LibraryManagementSystem.Tools
     public class LibraryRegisterValidator
     {
         private readonly RegisterWindowModel model;
+        private readonly IWindowGuidContainer windowGuidContainer;
 
-        public LibraryRegisterValidator(RegisterWindowModel model)
+        public LibraryRegisterValidator(RegisterWindowModel model, IWindowGuidContainer windowGuidContainer)
         {
             this.model = model;
+            this.windowGuidContainer = windowGuidContainer;
         }
 
         public List<string> GetExceptions()
@@ -137,7 +140,7 @@ namespace LibraryManagementSystem.Tools
             "SECRET-CODE"))
             {
                 var verifyingView = new EmailCodeVerification
-                (this.model, verifyingCode, EmailCodeModel.VerifyingRegistration);
+                (this.model, verifyingCode, EmailCodeModel.VerifyingRegistration, windowGuidContainer);
                 verifyingView.Show();
 
                 return true;

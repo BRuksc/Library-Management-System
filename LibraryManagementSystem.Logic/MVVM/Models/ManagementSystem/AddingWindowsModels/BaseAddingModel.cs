@@ -1,11 +1,11 @@
-﻿using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
+﻿using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsModels
+namespace LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindowsModels
 {
     public abstract class BaseAddingModel
     {

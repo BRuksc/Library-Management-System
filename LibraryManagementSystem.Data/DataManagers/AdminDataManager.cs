@@ -1,5 +1,5 @@
-﻿using LibraryManagementSystem.DataModels;
-using LibraryManagementSystem.Models;
+﻿using LibraryManagementSystem.Data.DataModels;
+using LibraryManagementSystem.Data.Interfaces;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,10 +8,9 @@ using System.Security.Cryptography.Xml;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
-using LibraryManagementSystem.Interfaces.Data;
 using System.Windows;
 
-namespace LibraryManagementSystem.DataManagers
+namespace LibraryManagementSystem.Data.DataManagers
 {
     public class AdminDataManager : IDataManagement<Admin>, IManyRecordsOperations<Admin>
     {

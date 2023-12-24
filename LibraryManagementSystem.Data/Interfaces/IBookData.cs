@@ -1,5 +1,4 @@
-﻿using LibraryManagementSystem.DataModels;
-using LibraryManagementSystem.Models;
+﻿using LibraryManagementSystem.Data.DataModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using LibraryManagementSystem;
 
-namespace LibraryManagementSystem.Interfaces.Data
+namespace LibraryManagementSystem.Data.Interfaces
 {
     public interface IBookData
     {

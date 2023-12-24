@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Autofac" Version="7.1.0" />
     <PackageReference Include="FluentEmail.Razor" Version="3.0.2" />
     <PackageReference Include="FluentEmail.Smtp" Version="3.0.2" />
     <PackageReference Include="LibraryManagementSystem.Adapter" Version="1.0.0" /> 
@@ -18,6 +19,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LibraryManagementSystem.Data\LibraryManagementSystem.Data.csproj" />
+    <ProjectReference Include="..\LibraryManagementSystem.Logic\LibraryManagementSystem.Logic.csproj" />
+    <ProjectReference Include="..\LibraryManagementSystem.WindowsPointing\LibraryManagementSystem.WindowsPointing.csproj" />
   </ItemGroup>
 
 </Project>

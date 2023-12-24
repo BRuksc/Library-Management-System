@@ -1,7 +1,6 @@
-﻿using LibraryManagementSystem.Models;
-using LibraryManagementSystem.MVVM.Models.ValidationSystem;
-using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
-using LibraryManagementSystem.Tools;
+﻿using LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem;
+using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
+using LibraryManagementSystem.Logic.Tools;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -11,21 +10,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
-using LibraryManagementSystem.MVVM.Views.ValidationSystem;
+using LibraryManagementSystem.WindowsPointing.Interfaces;
 
-namespace LibraryManagementSystem.MVVM.ViewModels.ValidationSystem
+namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ValidationSystem
 {
-    internal class RegisterWindowViewModel : BasicViewModel
+    public class RegisterWindowViewModel : BasicViewModel
     {
         private RegisterWindowModel model;
-        private RegisterWindow view;
+        private readonly IWindowPointing windowPointer;
 
-        public RegisterWindowViewModel(RegisterWindow view)
+        public RegisterWindowViewModel(IWindowPointing windowPointer)
         {
             model = new RegisterWindowModel();
-            this.view = view;
 
             OnPropertyChangedAll();
+            this.windowPointer = windowPointer;
         }
 
         public string Address
@@ -221,12 +220,12 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ValidationSystem
             {
                 if (clearAll == null)
                 {
-                    clearAll = new RelayCommand(
-                        (o) =>
-                        {
-                            model.ClearAll();
-                            OnPropertyChangedAll();
-                        }, null);
+                    //clearAll = new RelayCommand(
+                    //    (o) =>
+                    //    {
+                    //        model.ClearAll();
+                    //        OnPropertyChangedAll();
+                    //    }, null);
                 }
 
                 return clearAll;
@@ -239,29 +238,29 @@ namespace LibraryManagementSystem.MVVM.ViewModels.ValidationSystem
             {
                 if (register == null)
                 {
-                    register = new RelayCommand(
-                        async (o) =>
-                        {
-                            var validator = new LibraryRegisterValidator(model);
+                    //register = new RelayCommand(
+                    //    async (o) =>
+                    //    {
+                    //        var validator = new LibraryRegisterValidator(model);
 
-                            if (validator.GetExceptions().Count == 0)
-                            {
-                                model.LibraryCanBeCreated = true;
-                                validator = new LibraryRegisterValidator(model);
+                    //        if (validator.GetExceptions().Count == 0)
+                    //        {
+                    //            model.LibraryCanBeCreated = true;
+                    //            validator = new LibraryRegisterValidator(model);
 
-                                var wasEmailSent =
-                                    await validator.SendRegistrationEmail();
-                                view.Close();
-                            }
+                    //            var wasEmailSent =
+                    //                await validator.SendRegistrationEmail();
+                    //            windowPointer.Close();
+                    //        }
 
-                            else
-                            {
-                                foreach (var i in validator.GetExceptions())
-                                    MessageBox.Show(i);
-                            }
+                    //        else
+                    //        {
+                    //            foreach (var i in validator.GetExceptions())
+                    //                MessageBox.Show(i);
+                    //        }
 
 
-                        }, null);
+                    //    }, null);
                 }
 
                 return register;

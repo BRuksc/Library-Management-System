@@ -1,22 +1,20 @@
-﻿using LibraryManagementSystem.DataManagers;
-using LibraryManagementSystem.DataModels;
-using LibraryManagementSystem.Interfaces.Data;
-using LibraryManagementSystem.Models;
-using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem;
-using LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels;
-using LibraryManagementSystem.Logic.Interfaces.UI;
-using LibraryManagementSystem.MVVM.Models.ValidationSystem;
-using LibraryManagementSystem.Tools;
+﻿using LibraryManagementSystem.Data.DataManagers;
+using LibraryManagementSystem.Data.DataModels;
+using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
+using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels;
+using LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem;
+using LibraryManagementSystem.Logic.Tools;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using LibraryManagementSystem.WindowsPointing.Interfaces;
 
-namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsModels
+namespace LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindowsModels
 {
-    public class AddingUsersModel : BaseAddingModel, IViewModelsTypes
+    public class AddingUsersModel : BaseAddingModel
     {
         #region Properties
         public string Email { get; set; } = String.Empty;
@@ -26,14 +24,15 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
         public string Pesel { get; set; } = String.Empty;
         public string Address { get; set; } = String.Empty;
         public AdminViewModel? AdminVM { get; set; } = null;
-        private readonly AddUsersWindow view;
+        private IWindowPointing windowPointer;
+
         #endregion
 
         #region Constructors
-        public AddingUsersModel(AdminViewModel viewmodel, AddUsersWindow view)
+        public AddingUsersModel(AdminViewModel viewmodel, IWindowPointing windowPointer)
         {
             AdminVM = viewmodel;
-            this.view = view;
+            this.windowPointer = windowPointer;
         }
         #endregion
 
@@ -75,7 +74,7 @@ namespace LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsMode
                                     MessageBoxButton.OK, MessageBoxImage.Information);
 
                                 if (result == MessageBoxResult.OK)
-                                    view.Close();
+                                    windowPointer.Close();
                             }
 
                             AdminVM.OnPropertyChanged(nameof(AdminVM.Users));

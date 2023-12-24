@@ -1,5 +1,4 @@
-﻿using LibraryManagementSystem.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -9,7 +8,7 @@ using System.Security;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.DataModels
+namespace LibraryManagementSystem.Data.DataModels
 {
     public class LibDataModel
     {

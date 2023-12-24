@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsModels;
+using LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindowsModels;
 
-namespace LibraryManagementSystem.MVVM.Models.ValidationSystem
+namespace LibraryManagementSystem.Logic.MVVM.Models.ValidationSystem
 {
 	public class AddingUsersValidation
 	{

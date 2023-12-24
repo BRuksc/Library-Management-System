@@ -1,5 +1,4 @@
-﻿using LibraryManagementSystem.MVVM.Views.ManagementSystem;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -8,7 +7,7 @@ using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem
+namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem
 {
     public abstract class BasicViewModel : INotifyPropertyChanged
     {

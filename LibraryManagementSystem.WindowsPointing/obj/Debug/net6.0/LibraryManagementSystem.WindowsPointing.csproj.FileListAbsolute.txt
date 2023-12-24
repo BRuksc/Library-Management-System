@@ -1,0 +1,12 @@
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.WindowsPointing\bin\Debug\net6.0\LibraryManagementSystem.WindowsPointing.deps.json
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.WindowsPointing\bin\Debug\net6.0\LibraryManagementSystem.WindowsPointing.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.WindowsPointing\bin\Debug\net6.0\LibraryManagementSystem.WindowsPointing.pdb
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.WindowsPointing\obj\Debug\net6.0\LibraryManagementSystem.WindowsPointing.csproj.AssemblyReference.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.WindowsPointing\obj\Debug\net6.0\LibraryManagementSystem.WindowsPointing.GeneratedMSBuildEditorConfig.editorconfig
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.WindowsPointing\obj\Debug\net6.0\LibraryManagementSystem.WindowsPointing.AssemblyInfoInputs.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.WindowsPointing\obj\Debug\net6.0\LibraryManagementSystem.WindowsPointing.AssemblyInfo.cs
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.WindowsPointing\obj\Debug\net6.0\LibraryManagementSystem.WindowsPointing.csproj.CoreCompileInputs.cache
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.WindowsPointing\obj\Debug\net6.0\LibraryManagementSystem.WindowsPointing.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.WindowsPointing\obj\Debug\net6.0\refint\LibraryManagementSystem.WindowsPointing.dll
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.WindowsPointing\obj\Debug\net6.0\LibraryManagementSystem.WindowsPointing.pdb
+D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem.WindowsPointing\obj\Debug\net6.0\ref\LibraryManagementSystem.WindowsPointing.dll

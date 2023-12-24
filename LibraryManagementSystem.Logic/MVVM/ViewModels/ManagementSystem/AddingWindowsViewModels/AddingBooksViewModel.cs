@@ -5,13 +5,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using LibraryManagementSystem.Interfaces;
-using LibraryManagementSystem.MVVM.Models.ManagementSystem.AddingWindowsModels;
+using LibraryManagementSystem.Logic.MVVM.Models.ManagementSystem.AddingWindowsModels;
 using LibraryManagementSystem.Tools;
 
-namespace LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels
+namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels
 {
-    internal class AddingBooksViewModel : BaseAddingViewModel<AddingBooksModel>
+    public class AddingBooksViewModel : BaseAddingViewModel<AddingBooksModel>
     {
         public string Title
         {

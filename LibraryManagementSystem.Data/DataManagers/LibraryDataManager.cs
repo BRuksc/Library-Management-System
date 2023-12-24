@@ -1,5 +1,4 @@
-﻿using LibraryManagementSystem.DataModels;
-using LibraryManagementSystem.DataManagers;
+﻿using LibraryManagementSystem.Data.DataModels;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -8,10 +7,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Xml.Linq;
-using LibraryManagementSystem.Interfaces.Data;
 using System.Windows;
+using LibraryManagementSystem.Data.Interfaces;
 
-namespace LibraryManagementSystem.DataManagers
+namespace LibraryManagementSystem.Data.DataManagers
 {
     public class LibraryDataManager : IDataManagement<LibDataModel>
     {

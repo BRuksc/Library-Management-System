@@ -4,9 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews"
-        xmlns:viewmodels="clr-namespace:LibraryManagementSystem.MVVM.ViewModels.ManagementSystem.AddingWindowsViewModels"
         mc:Ignorable="d"
-        d:DataContext="{d:DesignInstance Type=viewmodels:AddingBooksViewModel}"
         Title="Add Books" Height="600" Width="500" MinHeight="300" 
         MinWidth="250" Background="#272537">
     <Grid>
