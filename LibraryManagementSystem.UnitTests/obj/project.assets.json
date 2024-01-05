@@ -1,0 +1,98 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "LibraryManagementSystem/1.0.0": {
+        "type": "project",
+        "framework": "Unsupported,Version=v0.0",
+        "compile": {
+          "bin/placeholder/LibraryManagementSystem.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LibraryManagementSystem.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "LibraryManagementSystem/1.0.0": {
+      "type": "project",
+      "path": "../LibraryManagementSystem/LibraryManagementSystem.csproj",
+      "msbuildProject": "../LibraryManagementSystem/LibraryManagementSystem.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "LibraryManagementSystem >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Legion\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.UnitTests\\LibraryManagementSystem.UnitTests.csproj",
+      "projectName": "LibraryManagementSystem.UnitTests",
+      "projectPath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.UnitTests\\LibraryManagementSystem.UnitTests.csproj",
+      "packagesPath": "C:\\Users\\Legion\\.nuget\\packages\\",
+      "outputPath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.UnitTests\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\Legion\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "D:\\Bogumił\\Library-Management-System\\LibraryManagementSystem.Adapter\\bin\\Debug\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj": {
+              "projectPath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project LibraryManagementSystem is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Project LibraryManagementSystem supports: net6.0-windows7.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "LibraryManagementSystem",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

@@ -10,5 +10,7 @@ namespace LibraryManagementSystem.WindowsPointing.Interfaces
     public interface IWindowGuidContainer
     {
         public Guid LibraryManagementWindow { get; }
+        public Guid RegisterWindow { get; }
+        public Guid LoginWindow { get; }
     }
 }

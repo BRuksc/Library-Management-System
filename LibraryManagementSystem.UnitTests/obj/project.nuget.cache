@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "dgSpecHash": "KyJxPsiiog7zVIAdsuP9xCSrr4r/8+TXS2sCbMfBV5hZnLnApkZfTkZPxuFcjdL18j1jjtVC8Dcug89+2uT3jQ==",
+  "success": false,
+  "projectFilePath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.UnitTests\\LibraryManagementSystem.UnitTests.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Legion\\.nuget\\packages\\librarymanagementsystem\\1.0.0\\librarymanagementsystem.1.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1201",
+      "level": "Error",
+      "message": "Project LibraryManagementSystem is not compatible with net6.0 (.NETCoreApp,Version=v6.0). Project LibraryManagementSystem supports: net6.0-windows7.0 (.NETCoreApp,Version=v6.0)",
+      "libraryId": "LibraryManagementSystem",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}

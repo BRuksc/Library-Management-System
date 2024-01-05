@@ -2220,6 +2220,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "Autofac": "7.1.0",
           "LibraryManagementSystem.Data": "1.0.0",
           "LibraryManagementSystem.WindowsPointing": "1.0.0"
         },

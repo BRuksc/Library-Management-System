@@ -8,50 +8,30 @@ using System.Threading.Tasks;
 
 namespace LibraryManagementSystem.WindowsPointing
 {
-    public class WindowPointersCollection : IValidatingCollection<WindowPointer>
+    public class WindowPointersCollection<T> : IValidatingCollection<T>
     {
-        private readonly IList<WindowPointer> windowPointers;
-        public IEnumerable<WindowPointer> WindowPointers => windowPointers;
+        private readonly IList<T> collection;
+        public IEnumerable<T> Collection => collection;
 
         private readonly IWindowGuidContainer windowGuidContainer;
 
         public WindowPointersCollection(IWindowGuidContainer windowGuidContainer)
         { 
-            windowPointers = new List<WindowPointer>();
+            collection  = new List<T>();
             this.windowGuidContainer = windowGuidContainer;
         }
 
-        public async Task AddAsync(Guid guid, Func<Task> run, Func<Task> close, Func<Task> hide) => 
-            Add(guid, run, close, hide);
+        public async Task AddAsync(T windowPointer) => 
+            Add(windowPointer);
+        public void Remove(T obj) => collection.Remove(obj);
 
-        public IEnumerator<WindowPointer> GetEnumerator()
-        {
-            return WindowPointers.GetEnumerator();
-        }
+        public async Task RemoveAsync(T obj) => Remove(obj);
 
-        public void Remove(Guid guid)
-        {
-            throw new NotImplementedException();
-        }
-
-        public async Task RemoveAsync(Guid guid) => Remove(guid);
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return GetEnumerator();
-        }
-
-        public void Add(Guid guid, Func<Task> run, Func<Task> close, Func<Task> hide)
+        public void Add(T obj)
         {
             try
             {
-                if (guid == windowGuidContainer.LibraryManagementWindow)
-                {
-                    throw new Exception("LibrariesManagementWindow can be initialize only once!");
-                }
-
-                var windowPointer = new WindowPointer
-                    (run.Invoke(), close.Invoke(), hide.Invoke(), guid);
+                collection.Add(obj);
             }
 
             catch (Exception ex) 
@@ -59,5 +39,8 @@ namespace LibraryManagementSystem.WindowsPointing
                 
             }
         }
+
+        public IEnumerator<T> GetEnumerator() => Collection.GetEnumerator();
+        IEnumerator IEnumerable.GetEnumerator() => Collection.GetEnumerator();
     }
 }

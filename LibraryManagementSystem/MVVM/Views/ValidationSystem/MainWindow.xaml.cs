@@ -25,16 +25,35 @@ namespace LibraryManagementSystem.MVVM.Views.ValidationSystem
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow(IWindowGuidContainer windowGuidContainer)
+        private readonly IWindowGuidContainer windowGuidContainer;
+        private readonly WindowPointersCollection<IWindowPointing> windowPointings;
+
+        public MainWindow(IWindowGuidContainer windowGuidContainer,
+            WindowPointersCollection<IWindowPointing> windowPointings)
         {
             InitializeComponent();
 
-            var run = new Task(new Action(() => this.Show()));
-            var close = new Task(new Action(() => this.Close()));
-            var hide = new Task(new Action(() => this.Hide()));
-            var windowsPointer = new WindowPointer(run, close, hide, windowGuidContainer.LibraryManagementWindow);
+            Func<Task> run = async () =>
+            {
+                this.Show();
+            };
+
+            Func<Task> close = async () =>
+            {
+                this.Close();
+            };
+
+            Func<Task> hide = async () =>
+            {
+                this.Hide();
+            };
+
+            var windowsPointer = new WindowPointer(run, close, hide, windowGuidContainer.LoginWindow);
+
 
             this.DataContext = new MainViewModel(windowsPointer);
+            this.windowGuidContainer = windowGuidContainer;
+            this.windowPointings = windowPointings;
         }
     }
 }

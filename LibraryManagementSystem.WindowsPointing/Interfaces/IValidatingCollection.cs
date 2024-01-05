@@ -8,11 +8,11 @@ namespace LibraryManagementSystem.WindowsPointing.Interfaces
 {
     public interface IValidatingCollection<T> : IEnumerable<T>
     {
-        public IEnumerable<T> WindowPointers { get; }
+        public IEnumerable<T> Collection { get; }
         public IEnumerator<T> GetEnumerator();
-        public void Add(Guid guid, Func<Task> run, Func<Task> close, Func<Task> hide);
-        public Task AddAsync(Guid guid, Func<Task> run, Func<Task> close, Func<Task> hide);
-        public void Remove(Guid guid);
-        public Task RemoveAsync(Guid guid);
+        public void Add(T obj);
+        public Task AddAsync(T obj);
+        public void Remove(T obj);
+        public Task RemoveAsync(T obj);
     }
 }

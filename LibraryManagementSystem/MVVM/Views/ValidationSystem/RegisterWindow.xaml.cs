@@ -22,18 +22,41 @@ namespace LibraryManagementSystem.MVVM.Views.ValidationSystem
     /// </summary>
     public partial class RegisterWindow : Window
     {
-        public RegisterWindow(IWindowGuidContainer windowGuidContainer)
+        private readonly IWindowGuidContainer windowGuidContainer;
+
+        private readonly WindowPointersCollection<IWindowPointing> 
+            windowPointings;
+
+        public RegisterWindow
+            (IWindowGuidContainer windowGuidContainer, 
+            WindowPointersCollection<IWindowPointing> windowPointings)
         {
             InitializeComponent();
 
-            var run = new Task(new Action(() => this.Show()));
-            var close = new Task(new Action(() => this.Close()));
-            var hide = new Task(new Action(() => this.Hide()));
-            var windowsPointer = new WindowPointer(run, close, hide, windowGuidContainer.LibraryManagementWindow);
+            Func<Task> run = async () =>
+            {
+                this.Show();
+            };
+
+            Func<Task> hide = async () =>
+            {
+                this.Hide();
+            };
+
+            Func<Task> close = async () =>
+            {
+                this.Close();
+            };
+
+            var windowsPointer = 
+                new WindowPointer(run, close, hide, windowGuidContainer.RegisterWindow);
+            windowPointings.Add(windowsPointer);
 
             DataContext = new RegisterWindowViewModel(windowsPointer);
 
             MessageBox.Show("You have not to get data with '*' symbol");
+            this.windowGuidContainer = windowGuidContainer;
+            this.windowPointings = windowPointings;
         }
     }
 }

@@ -13,6 +13,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using Autofac;
+using Autofac.Core;
+using LibraryManagementSystem.Data.DataModels;
+using LibraryManagementSystem.Interfaces;
+using LibraryManagementSystem.Tools;
 using LibraryManagementSystem.WindowsPointing;
 using LibraryManagementSystem.WindowsPointing.Interfaces;
 
@@ -23,35 +27,52 @@ namespace LibraryManagementSystem.MVVM.Views.ManagementSystem
     /// </summary>
     public partial class LibrariesManagementWindow : Window
     {
+        private readonly IList<LibDataModel> testLibs;
+
+        private readonly Autofac.IContainer container;
+        private IAddingTestCollectionData<LibDataModel> addingTestCollectionData => 
+            container.Resolve<IAddingTestCollectionData<LibDataModel>>();
+
+        private WindowPointersCollection<IWindowPointing> validatingCollection =>
+            container.Resolve<WindowPointersCollection<IWindowPointing>>();
+
+        private IWindowGuidContainer windowGuidContainer =>
+            container.Resolve<IWindowGuidContainer>();
+
         public LibrariesManagementWindow()
         {
-            Bootstrapper.Run();
-
-            var container = Bootstrapper.Container;
-            using (var scope = container.BeginLifetimeScope())
-            {
-                Func<Task> show = async () => 
-                {
-                    this.Show();
-                };
-
-                Func<Task> close = async () =>
-                {
-                    this.Close();
-                };
-
-                Func<Task> hide = async () =>
-                {
-                    this.Hide();
-                };
-
-
-                scope.Resolve<WindowPointersCollection>()
-                    .Add(scope.Resolve<IWindowGuidContainer>().LibraryManagementWindow,
-                    show, close, hide);
-            }
+            this.testLibs = new List<LibDataModel>();
+            this.container = Bootstrapper.Container;
+            AddWindowPointer();
 
             InitializeComponent();
+
+            addingTestCollectionData.AddingTestAdminsCollection(ref testLibs, 10);
+            librariesDataGrid.ItemsSource = testLibs;
+        }
+
+        private void AddWindowPointer()
+        {
+            Func<Task> show = async () =>
+            {
+                this.Show();
+            };
+
+            Func<Task> close = async () =>
+            {
+                this.Close();
+            };
+
+            Func<Task> hide = async () =>
+            {
+                this.Hide();
+            };
+
+            var libraryManagementSystemGuid =
+                windowGuidContainer.LibraryManagementWindow;
+            IWindowPointing windowPointer =
+                new WindowPointer(show, close, hide, libraryManagementSystemGuid);
+            validatingCollection.Add(windowPointer);
         }
     }
 }

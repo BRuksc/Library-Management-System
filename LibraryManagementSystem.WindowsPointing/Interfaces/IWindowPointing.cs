@@ -13,5 +13,6 @@ namespace LibraryManagementSystem.WindowsPointing.Interfaces
         public Func<Task> Close { get; }
         public Func<Task> Hide { get; }
         public Guid WindowGuid { get; }
+        public bool SetWindowGuid(Guid windowGuid);
     }
 }

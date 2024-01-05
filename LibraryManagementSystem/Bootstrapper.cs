@@ -10,6 +10,9 @@ using System.Text;
 using System.Threading.Tasks;
 using LibraryManagementSystem.WindowsPointing;
 using LibraryManagementSystem.WindowsPointing.Interfaces;
+using System.Reflection;
+using System.Windows;
+using LibraryManagementSystem.Data.DataModels;
 
 namespace LibraryManagementSystem
 {
@@ -33,14 +36,36 @@ namespace LibraryManagementSystem
         {
             if (container == null)
             {
-                var builder = new ContainerBuilder();
+                try
+                {
+                    var builder = new ContainerBuilder();
 
-                builder.RegisterType<WindowGuidContainer>().As<IWindowGuidContainer>().
-                    SingleInstance();
-                builder.RegisterType<WindowPointersCollection>().SingleInstance();
+                    builder.RegisterType<WindowGuidContainer>().As<IWindowGuidContainer>().SingleInstance();
+                    builder.RegisterType<AddingTestCollectionData>().As<IAddingTestCollectionData<LibDataModel>>().SingleInstance();
+                    builder.RegisterType<WindowPointer>().As<IWindowPointing>();
+                    builder.RegisterType<WindowPointersCollection<IWindowPointing>>()
+                        .SingleInstance();
 
-                container = builder.Build();
+                    RegisterAssembly(ref builder);
+
+                    container = builder.Build();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
         }
+
+        private static void RegisterAssembly(ref ContainerBuilder builder)
+        {
+            
+        }
+
+        public static T Resolve<T>()
+        {
+            return Container.Resolve<T>();
+        }
+
     }
 }

@@ -27,9 +27,18 @@ namespace LibraryManagementSystem.MVVM.Views.ManagementSystem.AddingViews
         {
             InitializeComponent();
 
-            var run = new Task(new Action(() => this.Show()));
-            var close = new Task(new Action(() => this.Close()));
-            var hide = new Task(new Action(() => this.Hide()));
+            Func<Task> run = async () =>
+            {
+                this.Show();
+            };
+            Func<Task> close = async () =>
+            {
+                this.Close();
+            };
+            Func<Task> hide = async () =>
+            {
+                this.Hide();
+            };
             var windowsPointer = new WindowPointer(run, close, hide, windowGuidContainer.LibraryManagementWindow);
 
             DataContext = new AddingUsersViewModel(adminVM, windowsPointer);
