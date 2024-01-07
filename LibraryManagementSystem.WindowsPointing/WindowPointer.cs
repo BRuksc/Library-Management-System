@@ -17,32 +17,36 @@ namespace LibraryManagementSystem.WindowsPointing
         public Func<Task> Close => () => close();
         public Func<Task> Run => () => close();
 
-        private readonly Guid windowGuid;
+        private Guid windowGuid;
         public Guid WindowGuid => windowGuid;
 
         public Func<Task> Hide => hide;
 
-        public WindowPointer(Task run, Task close, Task hide, Guid windowGuid)
+        public WindowPointer(Func<Task> run, Func<Task> close, Func<Task> hide, Guid windowGuid)
         {
             this.windowGuid = windowGuid;
+            this.run = run;
+            this.close = close;
+            this.hide = hide;
+        }
 
-            this.run = () => 
+        public bool SetWindowGuid(Guid windowGuid)
+        {
+            try
             {
-                run.Start();
-                return Task.CompletedTask;
-            };
+                if (windowGuid == null)
+                {
+                    throw new ArgumentNullException(nameof(windowGuid));
+                }
 
-            this.close = () => 
-            {
-                close.Start();
-                return Task.CompletedTask;
-            };
+                this.windowGuid = windowGuid;
+                return true;
+            }
 
-            this.hide = () =>
+            catch (Exception ex)
             {
-                hide.Start();
-                return Task.CompletedTask;
-            };
+                return false;
+            }
         }
     }
 }

@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 D:\Bogumił\LibraryManagementSystem\LibraryManagementSystem\App.xaml
-91957246875
+10-167381397
 
-24-860664722
+27-895705522
 357-1517283683
-MVVM\Views\ManagementSystem\AddingViews\AddBooksWindow.xaml;MVVM\Views\ManagementSystem\AddingViews\AddLoansWindow.xaml;MVVM\Views\ManagementSystem\AddingViews\AddUsersWindow.xaml;MVVM\Views\ManagementSystem\AdminWorkerWindow.xaml;MVVM\Views\ManagementSystem\LibrariesManagementWindow.xaml;MVVM\Views\ManagementSystem\UserWindow.xaml;MVVM\Views\ValidationSystem\EmailCodeVerification.xaml;MVVM\Views\ValidationSystem\MainWindow.xaml;MVVM\Views\ValidationSystem\RegisterWindow.xaml;
+MVVM\Views\ManagementSystem\AddingViews\AddBooksWindow.xaml;MVVM\Views\ManagementSystem\AddingViews\AddLoansWindow.xaml;MVVM\Views\ManagementSystem\AddingViews\AddUsersWindow.xaml;MVVM\Views\ManagementSystem\AdminWorkerWindow.xaml;MVVM\Views\ManagementSystem\ConnectToServerView.xaml;MVVM\Views\ManagementSystem\LibrariesManagementWindow.xaml;MVVM\Views\ManagementSystem\UserWindow.xaml;MVVM\Views\ValidationSystem\EmailCodeVerification.xaml;MVVM\Views\ValidationSystem\MainWindow.xaml;MVVM\Views\ValidationSystem\RegisterWindow.xaml;
 
 False
 

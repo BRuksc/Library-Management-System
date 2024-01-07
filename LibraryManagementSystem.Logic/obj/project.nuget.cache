@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "+2LoJuo7b/AK2Di/VYFey9V/G/kYpAf38Gm3sqxC88qRzxI+x4FrK/Jz31IAEwDKRiaMfgvmFYk93NYCftGP1g==",
+  "dgSpecHash": "QoiemGkf3UflTIQHy+cqzq0+0g29trs/cVRdFalmXFlutfsxnyaZcjbwg/0h/hiBPXEriif1H8VocAA7Zj7Jlg==",
   "success": true,
   "projectFilePath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Logic\\LibraryManagementSystem.Logic.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Legion\\.nuget\\packages\\autofac\\7.1.0\\autofac.7.1.0.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\extended.wpf.toolkit\\4.5.0\\extended.wpf.toolkit.4.5.0.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\librarymanagementsystem.adapter\\1.0.0\\librarymanagementsystem.adapter.1.0.0.nupkg.sha512",

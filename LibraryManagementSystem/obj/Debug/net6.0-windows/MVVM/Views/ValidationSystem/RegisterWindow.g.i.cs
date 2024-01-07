@@ -54,8 +54,8 @@ namespace LibraryManagementSystem.MVVM.Views.ValidationSystem {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/LibraryManagementSystem;component/mvvm/views/validationsystem/registerwindow.xam" +
-                    "l", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/LibraryManagementSystem;V1.0.0.0;component/mvvm/views/validationsystem/registerw" +
+                    "indow.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\..\MVVM\Views\ValidationSystem\RegisterWindow.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);
