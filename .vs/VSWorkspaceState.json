@@ -1,10 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\LibraryManagementSystem",
-    "\\LibraryManagementSystem.Authentication",
-    "\\LibraryManagementSystem.Tests"
+    ""
   ],
-  "SelectedNode": "\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
+  "SelectedNode": "\\LibraryManagementSystem.sln",
   "PreviewInSolutionExplorer": false
 }
