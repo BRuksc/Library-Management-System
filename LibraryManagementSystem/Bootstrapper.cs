@@ -40,10 +40,13 @@ namespace LibraryManagementSystem
                 {
                     var builder = new ContainerBuilder();
 
-                    builder.RegisterType<WindowGuidContainer>().As<IWindowGuidContainer>().SingleInstance();
+                    builder.RegisterType<WindowGuidContainer>().As<IWindowGuidContainer>()
+                        .SingleInstance();
                     builder.RegisterType<AddingTestCollectionData>().As<IAddingTestCollectionData<LibDataModel>>().SingleInstance();
                     builder.RegisterType<WindowPointer>().As<IWindowPointing>();
                     builder.RegisterType<WindowPointersCollection<IWindowPointing>>()
+                        .SingleInstance();
+                    builder.RegisterType<CommandsCreator>().As<ICommandsCreating>()
                         .SingleInstance();
 
                     RegisterAssembly(ref builder);

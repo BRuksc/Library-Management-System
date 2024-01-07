@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Prism.Commands;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,8 +10,8 @@ namespace LibraryManagementSystem.Logic.Interfaces
 {
     public interface ILibrariesManagementWindow
     {
-        public ICommand Open { get; }
-        public ICommand Create { get; }
-        public ICommand JoinFromServer { get; }
+        public DelegateCommand Open { get; set; }
+        public DelegateCommand Create { get; set; }
+        public DelegateCommand JoinFromServer { get; set; }
     }
 }

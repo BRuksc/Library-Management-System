@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "QoiemGkf3UflTIQHy+cqzq0+0g29trs/cVRdFalmXFlutfsxnyaZcjbwg/0h/hiBPXEriif1H8VocAA7Zj7Jlg==",
+  "dgSpecHash": "YOnD/3nPQvE4198K9Wix2/ImQrDf5tMRfv0QCOcU4wuQ1v2rk7ipOR7/cJ/hzLsXOpD/ponfBEeD4ovCa1m3bg==",
   "success": true,
   "projectFilePath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem.Logic\\LibraryManagementSystem.Logic.csproj",
   "expectedPackageFiles": [
@@ -38,6 +38,7 @@
     "C:\\Users\\Legion\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\presentationframework\\4.6.0\\presentationframework.4.6.0.nupkg.sha512",
+    "C:\\Users\\Legion\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

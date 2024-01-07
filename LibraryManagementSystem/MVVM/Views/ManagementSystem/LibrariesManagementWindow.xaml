@@ -37,11 +37,11 @@
             <RibbonTab>
                 <RibbonGroup>
                     <RibbonButton Label="Open" Width="200" Height="50" 
-                      Content="Open" />
+                      Content="Open" Command="{Binding Open}" />
                     <RibbonButton Label="Create" Width="200" Height="50" 
-                      Content="Create" />
+                      Content="Create" Command="{Binding Create}" />
                     <RibbonButton Label="Join from server" Width="200" Height="50" 
-                      Content="Join" />
+                      Content="Join" Command="{Binding JoinFromServer}" />
                 </RibbonGroup>
             </RibbonTab>
         </Ribbon>

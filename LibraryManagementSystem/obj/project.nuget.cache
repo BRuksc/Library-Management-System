@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "5BI/hr36TQp2fd4Ko2Jt4UYsb6j2zI+FGInUabK05ovjs075RF56+I926Isps10GJL6TRMP3LhdY44XJk7nrmw==",
+  "dgSpecHash": "fbpKyPTYhEAD2GgVS46OI8nS5vrc+CJ0rJgHKrLPJouX5KAvf0CWd3VYRlgWOZznLEUghtBEf8qOk9TnaMTmjA==",
   "success": true,
   "projectFilePath": "D:\\Bogumił\\LibraryManagementSystem\\LibraryManagementSystem\\LibraryManagementSystem.csproj",
   "expectedPackageFiles": [
@@ -50,6 +50,7 @@
     "C:\\Users\\Legion\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\presentationframework\\4.6.0\\presentationframework.4.6.0.nupkg.sha512",
+    "C:\\Users\\Legion\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\razorlight\\2.0.0-rc.3\\razorlight.2.0.0-rc.3.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\Legion\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

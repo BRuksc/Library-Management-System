@@ -1,9 +1,11 @@
 ﻿using LibraryManagementSystem.Logic.Interfaces;
+using Prism.Commands;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Input;
 
 namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem
@@ -12,52 +14,33 @@ namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem
     {
         private readonly Autofac.IContainer container;
 
-        private ICommand? open;
-        private ICommand? create;
-        private ICommand? joinFromServer;
+        private readonly Func<Task> createAndShowConnectToServerView;
+        private readonly Func<Task> openDatabase;
+        private readonly Func<Task> joinFromServerFunc;
 
-        public ICommand Open
-        {
-            get
-            {
-                if (open == null)
-                {
-
-                }
-
-                return open;
-            }
-        }
-
-        public ICommand Create
-        {
-            get
-            {
-                if (create == null) 
-                {
-                
-                }
-
-                return create;
-            }
-        }
-
-        public ICommand JoinFromServer
-        {
-            get
-            {
-                if (joinFromServer == null)
-                {
-
-                }
-
-                return joinFromServer;
-            }
-        }
-
-        public LibrariesManagementWindowViewModel(Autofac.IContainer container) : base()
+        public LibrariesManagementWindowViewModel(
+            ref Autofac.IContainer container,
+            Func<Task> createAndShowConnectToServerView,
+            Func<Task> openDatabase,
+            Func<Task> joinFromServerFunc
+            ) : base()
         {
             this.container = container;
+            this.createAndShowConnectToServerView = createAndShowConnectToServerView;
+            this.openDatabase = openDatabase;
+            this.joinFromServerFunc = joinFromServerFunc;
+
+            Open = new DelegateCommand(open, () => true);
+            Create = new DelegateCommand(create, () => true);
+            JoinFromServer = new DelegateCommand(joinFromServer, () => true);
         }
+
+        public DelegateCommand Open { get; set; }
+        public DelegateCommand Create { get; set; }
+        public DelegateCommand JoinFromServer { get; set; }
+
+        private void open() => openDatabase?.Invoke();
+        private void create() => createAndShowConnectToServerView?.Invoke();
+        private void joinFromServer() => joinFromServerFunc?.Invoke();
     }
 }

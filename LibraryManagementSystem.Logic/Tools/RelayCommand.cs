@@ -1,47 +1,47 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
+using System.Windows.Input;
 
-namespace MVVMBoostUniversalWindowsApp
+namespace LibraryManagementSystem.Logic.Tools
 {
-    public static class RelayCommand
+    public class RelayCommand : ICommand
     {
-        private static List<Action> _raiseCanExecuteChangedActions = new List<Action>();
+        private readonly Action<object> _execute;
+        private readonly Predicate<object> _canExecute;
 
-        public static void AddRaiseCanExecuteChangedAction(ref Action raiseCanExecuteChangedAction)
-        {
-            _raiseCanExecuteChangedActions.Add(raiseCanExecuteChangedAction);
-        }
 
-        public static void RemoveRaiseCanExecuteChangedAction(Action raiseCanExecuteChangedAction)
+        public event EventHandler CanExecuteChanged
         {
-            _raiseCanExecuteChangedActions.Remove(raiseCanExecuteChangedAction);
-        }
-
-        public static void AssignOnPropertyChanged(ref PropertyChangedEventHandler propertyEventHandler)
-        {
-            propertyEventHandler += OnPropertyChanged;
-        }
-
-        private static void OnPropertyChanged(object sender, PropertyChangedEventArgs e)
-        {
-            // this if clause is to prevent an infinity loop
-            if (e.PropertyName != "CanExecute")
+            add
             {
-                RefreshCommandStates();
+                if (_canExecute != null)
+                    ;//CommandManager.RequerySuggested += value;
+            }
+            remove
+            {
+                if (_canExecute != null)
+                    ;//CommandManager.RequerySuggested -= value;
             }
         }
 
-        public static void RefreshCommandStates()
+        public RelayCommand(Action<object> execute, Predicate<object> canExecute = null)
         {
-            for (var i = 0; i < _raiseCanExecuteChangedActions.Count; i++)
-            {
-                var raiseCanExecuteChangedAction = _raiseCanExecuteChangedActions[i];
-                if (raiseCanExecuteChangedAction != null)
-                {
-                    raiseCanExecuteChangedAction.Invoke();
-                }
-            }
+            _execute = execute ?? throw new ArgumentNullException(nameof(execute));
+            _canExecute = canExecute;
+        }
+
+        public bool CanExecute(object parameter)
+        {
+            return _canExecute == null || _canExecute(parameter);
+        }
+
+        public void Execute(object parameter)
+        {
+            _execute(parameter);
+        }
+
+        public void RaiseCanExecuteChanged()
+        {
+            ;//CommandManager.InvalidateRequerySuggested();
         }
     }
 }

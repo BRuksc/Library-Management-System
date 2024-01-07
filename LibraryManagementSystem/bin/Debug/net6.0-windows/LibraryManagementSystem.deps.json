@@ -999,6 +999,17 @@
         }
       },
       "PresentationFramework/4.6.0": {},
+      "Prism.Core/8.1.97": {
+        "runtime": {
+          "lib/net5.0/Prism.dll": {
+            "assemblyVersion": "8.1.97.5141",
+            "fileVersion": "8.1.97.5141"
+          }
+        },
+        "compile": {
+          "lib/net5.0/Prism.dll": {}
+        }
+      },
       "RazorLight/2.0.0-rc.3": {
         "dependencies": {
           "Microsoft.AspNetCore.Mvc.Razor.Extensions": "5.0.0",
@@ -1650,7 +1661,8 @@
         "dependencies": {
           "Autofac": "7.1.0",
           "LibraryManagementSystem.Data": "1.0.0",
-          "LibraryManagementSystem.WindowsPointing": "1.0.0"
+          "LibraryManagementSystem.WindowsPointing": "1.0.0",
+          "Prism.Core": "8.1.97"
         },
         "runtime": {
           "LibraryManagementSystem.Logic.dll": {}
@@ -3910,6 +3922,13 @@
       "sha512": "sha512-37FpU6XcB1Hgr5X03MgUOxvzWLJYKJP72J3g5hnZHi/DXsTxpJEu4brCGW+TmplVWfntuysO/uRcZcPS9YK0Bw==",
       "path": "presentationframework/4.6.0",
       "hashPath": "presentationframework.4.6.0.nupkg.sha512"
+    },
+    "Prism.Core/8.1.97": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EP5zrvWddw3eSq25Y7hHnDYdmLZEC2Z/gMrvmHzUuLbitmA1UaS7wQUlSwNr9Km8lzJNCvytFnaGBEFukHgoHg==",
+      "path": "prism.core/8.1.97",
+      "hashPath": "prism.core.8.1.97.nupkg.sha512"
     },
     "RazorLight/2.0.0-rc.3": {
       "type": "package",

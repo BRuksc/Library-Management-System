@@ -125,6 +125,10 @@
             "Autofac": {
               "target": "Package",
               "version": "[7.1.0, )"
+            },
+            "Prism.Core": {
+              "target": "Package",
+              "version": "[8.1.97, )"
             }
           },
           "imports": [

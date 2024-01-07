@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LibraryManagementSystem.Logic.Enums;
+using Microsoft.EntityFrameworkCore.Migrations.Operations;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,9 +21,12 @@ namespace LibraryManagementSystem.MVVM.Views.ManagementSystem
     /// </summary>
     public partial class ConnectToServerView : Window
     {
-        public ConnectToServerView()
+        private readonly DatabaseOperations databaseOperation;
+
+        public ConnectToServerView(DatabaseOperations databaseOperation)
         {
             InitializeComponent();
+            this.databaseOperation = databaseOperation;
         }
     }
 }

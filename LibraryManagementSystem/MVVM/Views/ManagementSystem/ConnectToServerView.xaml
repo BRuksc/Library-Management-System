@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LibraryManagementSystem.MVVM.Views.ManagementSystem"
         mc:Ignorable="d"
-        Title="ConnectToServerView" MinHeight="450" Width="800"
+        Title="Connect to server" MinHeight="450" Width="800"
         Background="DimGray">
     <Grid>
         <Grid.Resources>
