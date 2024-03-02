@@ -37,7 +37,8 @@
             <RibbonTab>
                 <RibbonGroup>
                     <RibbonButton Label="Open" Width="200" Height="50" 
-                      Content="Open" Command="{Binding Open}" />
+                      Content="Open" Command="{Binding Open}" 
+                                  IsEnabled="{Binding DatabaseOperationsEnabled}" />
                     <RibbonButton Label="Create" Width="200" Height="50" 
                       Content="Create" Command="{Binding Create}" />
                     <RibbonButton Label="Join from server" Width="200" Height="50" 
@@ -45,6 +46,7 @@
                 </RibbonGroup>
             </RibbonTab>
         </Ribbon>
-        <DataGrid Grid.Row="2" Margin="30" x:Name="librariesDataGrid"/>
+        <DataGrid Grid.Row="2" Margin="30" x:Name="librariesDataGrid"
+                  SelectedItem="{Binding SelectedItem, Mode=OneWayToSource}"/>
     </Grid>
 </Window>

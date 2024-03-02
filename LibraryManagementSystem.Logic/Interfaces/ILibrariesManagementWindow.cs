@@ -1,4 +1,5 @@
-﻿using Prism.Commands;
+﻿using LibraryManagementSystem.Data.DataModels;
+using Prism.Commands;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,5 +14,7 @@ namespace LibraryManagementSystem.Logic.Interfaces
         public DelegateCommand Open { get; set; }
         public DelegateCommand Create { get; set; }
         public DelegateCommand JoinFromServer { get; set; }
+        public LibDataModel SelectedItem { get; set; }
+        public bool DatabaseOperationsEnabled { get; set; }
     }
 }

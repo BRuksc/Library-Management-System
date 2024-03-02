@@ -1,17 +1,39 @@
-﻿using LibraryManagementSystem.Logic.Interfaces;
+﻿using LibraryManagementSystem.Data.DataModels;
+using LibraryManagementSystem.Logic.Interfaces;
 using Prism.Commands;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows;
-using System.Windows.Input;
 
 namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem
 {
     public class LibrariesManagementWindowViewModel : BasicViewModel, ILibrariesManagementWindow
     {
+        private LibDataModel selectedItem;
+        public LibDataModel SelectedItem
+        {
+            get
+            {
+                //_canExecuteChanged?.Invoke(this, EventArgs.Empty);
+                return this.selectedItem;
+            }
+            set
+            {
+                selectedItem = value;
+                OnPropertyChanged(nameof(SelectedItem));
+
+                _canExecuteChanged?.Invoke(this, EventArgs.Empty);
+            }
+        }
+
+        private bool databaseOperationsEnabled;
+        public bool DatabaseOperationsEnabled 
+        {
+            get => databaseOperationsEnabled;
+            set
+            {
+                databaseOperationsEnabled = value;
+                OnPropertyChanged(nameof(DatabaseOperationsEnabled));
+            }
+        }
+
         private readonly Autofac.IContainer container;
 
         private readonly Func<Task> createAndShowConnectToServerView;
@@ -30,14 +52,26 @@ namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem
             this.openDatabase = openDatabase;
             this.joinFromServerFunc = joinFromServerFunc;
 
-            Open = new DelegateCommand(open, () => true);
+            _canExecuteChanged += ExecuteChangedEnabled;
+
+            Open = new DelegateCommand(open, () => _canExecuteCommand);
             Create = new DelegateCommand(create, () => true);
-            JoinFromServer = new DelegateCommand(joinFromServer, () => true);
+            JoinFromServer = new DelegateCommand(joinFromServer, () => _canExecuteCommand);
+        }
+
+        private void ExecuteChangedEnabled(object? sender, EventArgs e)
+        {
+            DatabaseOperationsEnabled = _canExecuteCommand;
+            OnPropertyChanged(nameof(DatabaseOperationsEnabled));
         }
 
         public DelegateCommand Open { get; set; }
         public DelegateCommand Create { get; set; }
         public DelegateCommand JoinFromServer { get; set; }
+
+        private event EventHandler _canExecuteChanged;
+
+        private bool _canExecuteCommand => SelectedItem == null ? false : true;
 
         private void open() => openDatabase?.Invoke();
         private void create() => createAndShowConnectToServerView?.Invoke();

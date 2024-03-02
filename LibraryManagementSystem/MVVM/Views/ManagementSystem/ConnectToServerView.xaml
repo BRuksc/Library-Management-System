@@ -5,14 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:LibraryManagementSystem.MVVM.Views.ManagementSystem"
         mc:Ignorable="d"
-        Title="Connect to server" MinHeight="450" Width="800"
+        Title="Connect to server" MinHeight="200" Width="500"
         Background="DimGray">
     <Grid>
         <Grid.Resources>
             <Style TargetType="Label">
                 <Setter Property="Margin" Value="20" />
                 <Setter Property="Foreground" Value="White" />
-                <Setter Property="FontSize" Value="30" />
+                <Setter Property="FontSize" Value="15" />
                 <Setter Property="HorizontalContentAlignment" Value="Center" />
             </Style>
             <Style TargetType="TextBox">
@@ -31,7 +31,7 @@
             <Label Content="Database password" />
             <TextBox />
             <Button Width="200" MinHeight="50" Margin="10, 20, 10, 10" 
-                    Content="Login to the server" FontSize="20" />
+                    Content="Login to the server" FontSize="14" />
         </StackPanel>
     </Grid>
 </Window>
