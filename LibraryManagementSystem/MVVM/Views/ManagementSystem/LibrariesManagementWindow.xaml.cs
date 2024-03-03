@@ -16,6 +16,7 @@ using Autofac;
 using Autofac.Core;
 using LibraryManagementSystem.Data.DataModels;
 using LibraryManagementSystem.Interfaces;
+using LibraryManagementSystem.Logic.Interfaces;
 using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
 using LibraryManagementSystem.Tools;
 using LibraryManagementSystem.WindowsPointing;
@@ -40,8 +41,8 @@ namespace LibraryManagementSystem.MVVM.Views.ManagementSystem
         private IWindowGuidContainer windowGuidContainer =>
             container.Resolve<IWindowGuidContainer>();
 
-        private ICommandsCreating commandsCreating =>
-            container.Resolve<ICommandsCreating>();
+        private ILibraryManagementWindowOperations libraryManagementOperations
+            => container.Resolve<ILibraryManagementWindowOperations>();
 
         public LibrariesManagementWindow()
         {
@@ -51,9 +52,7 @@ namespace LibraryManagementSystem.MVVM.Views.ManagementSystem
 
             this.DataContext = new LibrariesManagementWindowViewModel(
                 ref container,
-                commandsCreating.CreateAndShowConnectToServerView,
-                commandsCreating.OpenDatabase,
-                commandsCreating.JoinFromServerFunc
+                libraryManagementOperations
             );
 
             InitializeComponent();

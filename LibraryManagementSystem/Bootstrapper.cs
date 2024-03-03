@@ -13,6 +13,8 @@ using LibraryManagementSystem.WindowsPointing.Interfaces;
 using System.Reflection;
 using System.Windows;
 using LibraryManagementSystem.Data.DataModels;
+using LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem;
+using LibraryManagementSystem.Logic.Interfaces;
 
 namespace LibraryManagementSystem
 {
@@ -39,6 +41,8 @@ namespace LibraryManagementSystem
                 try
                 {
                     var builder = new ContainerBuilder();
+                    ICommandsCreating commandsCreator =
+                        new CommandsCreator();
 
                     builder.RegisterType<WindowGuidContainer>().As<IWindowGuidContainer>()
                         .SingleInstance();
@@ -46,8 +50,15 @@ namespace LibraryManagementSystem
                     builder.RegisterType<WindowPointer>().As<IWindowPointing>();
                     builder.RegisterType<WindowPointersCollection<IWindowPointing>>()
                         .SingleInstance();
-                    builder.RegisterType<CommandsCreator>().As<ICommandsCreating>()
-                        .SingleInstance();
+                    builder.RegisterType<LibraryManagementWindowOperations>()
+                        .As<ILibraryManagementWindowOperations>()
+                        .SingleInstance()
+                        .WithParameter((x, ctx) => x.ParameterType == typeof(Func<Task>),
+                           (x, ctx) => commandsCreator.OpenDatabase)
+                        .WithParameter((x, ctx) => x.ParameterType == typeof(Func<Task>),
+                            (x, ctx) => commandsCreator.CreateAndShowConnectToServerView)
+                        .WithParameter((x, ctx) => x.ParameterType == typeof(Func<Task>),
+                            (x, ctx) => commandsCreator.JoinFromServerFunc);
 
                     RegisterAssembly(ref builder);
 

@@ -11,9 +11,6 @@ namespace LibraryManagementSystem.Logic.Interfaces
 {
     public interface ILibrariesManagementWindow
     {
-        public DelegateCommand Open { get; set; }
-        public DelegateCommand Create { get; set; }
-        public DelegateCommand JoinFromServer { get; set; }
         public LibDataModel SelectedItem { get; set; }
         public bool DatabaseOperationsEnabled { get; set; }
     }
