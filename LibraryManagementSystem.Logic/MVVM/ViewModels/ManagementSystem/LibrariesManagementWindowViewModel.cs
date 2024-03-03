@@ -42,7 +42,7 @@ namespace LibraryManagementSystem.Logic.MVVM.ViewModels.ManagementSystem
 
         private readonly Autofac.IContainer container;
 
-        public LibrariesManagementWindowViewModel(ref Autofac.IContainer container) : base()
+        public LibrariesManagementWindowViewModel(Autofac.IContainer container) : base()
         {
             _canExecuteChanged += ExecuteChangedEnabled;
             

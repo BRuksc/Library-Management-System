@@ -50,6 +50,7 @@ namespace LibraryManagementSystem
                     builder.RegisterType<WindowPointer>().As<IWindowPointing>();
                     builder.RegisterType<WindowPointersCollection<IWindowPointing>>()
                         .SingleInstance();
+
                     builder.RegisterType<LibraryManagementWindowOperations>()
                         .As<ILibraryManagementWindowOperations>()
                         .SingleInstance()
@@ -59,6 +60,13 @@ namespace LibraryManagementSystem
                             (x, ctx) => commandsCreator.CreateAndShowConnectToServerView)
                         .WithParameter((x, ctx) => x.ParameterType == typeof(Func<Task>),
                             (x, ctx) => commandsCreator.JoinFromServerFunc);
+
+                    builder.RegisterType<LibrariesManagementWindowViewModel>()
+                        .As<ILibrariesManagementWindow>()
+                        .SingleInstance()
+                        .WithParameter((x, ctx) =>
+                            x.ParameterType == typeof(Autofac.IContainer),
+                            (x, ctx) => container);
 
                     RegisterAssembly(ref builder);
 

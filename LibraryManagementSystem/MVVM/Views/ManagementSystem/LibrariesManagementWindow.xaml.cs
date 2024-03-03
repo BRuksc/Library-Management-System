@@ -47,8 +47,7 @@ namespace LibraryManagementSystem.MVVM.Views.ManagementSystem
             this.container = Bootstrapper.Container;
             AddWindowPointer();
 
-            this.DataContext = new LibrariesManagementWindowViewModel(
-                ref container);
+            this.DataContext = container.Resolve<ILibrariesManagementWindow>();
 
             InitializeComponent();
 
