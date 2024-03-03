@@ -41,9 +41,6 @@ namespace LibraryManagementSystem.MVVM.Views.ManagementSystem
         private IWindowGuidContainer windowGuidContainer =>
             container.Resolve<IWindowGuidContainer>();
 
-        private ILibraryManagementWindowOperations libraryManagementOperations
-            => container.Resolve<ILibraryManagementWindowOperations>();
-
         public LibrariesManagementWindow()
         {
             this.testLibs = new List<LibDataModel>();
@@ -51,9 +48,7 @@ namespace LibraryManagementSystem.MVVM.Views.ManagementSystem
             AddWindowPointer();
 
             this.DataContext = new LibrariesManagementWindowViewModel(
-                ref container,
-                libraryManagementOperations
-            );
+                ref container);
 
             InitializeComponent();
 
